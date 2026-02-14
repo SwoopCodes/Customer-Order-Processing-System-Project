@@ -14,5 +14,25 @@ namespace SoftwareProject
         {
             InitializeComponent();
         }
+
+        private void frm_orders_createOrder_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Order.findCompany(Input_ModelNo.Text, Input_CompanyName, Input_ShippingAddress);
+        }
+
+        private void Button_Add_Item_Click(object sender, EventArgs e)
+        {
+            Order_Items_Table.Rows.Add(Input_ModelNo.Text, Input_Quantity.Text);
+        }
     }
 }

@@ -47,9 +47,30 @@ INSERT INTO CUSTOMER (CUSTOMER_ID, COMPANY_NAME, EMAIL, PHONE, ADDRESS, REPRESEN
 INSERT INTO CUSTOMER (CUSTOMER_ID, COMPANY_NAME, EMAIL, PHONE, ADDRESS, REPRESENTATIVE) VALUES (1008, 'Urban Design Studio', 'studio@urbandesign.com', '5558901234', '258 Creative Lane, Arts Quarter, Portland, OR 97205', 'Maria Garcia');
 INSERT INTO CUSTOMER (CUSTOMER_ID, COMPANY_NAME, EMAIL, PHONE, ADDRESS, REPRESENTATIVE) VALUES (1010, 'Swift Delivery Network', 'contact@swiftdelivery.com', '5550123456', '741 Express Highway, Logistics Center, Atlanta, GA 30301', 'Lisa Wong');
 
+CREATE TABLE orders(
+Order_ID NUMBER(5),
+Customer_ID number(4),
+Order_date DATE,
+Status Char(1),
+Shipping_address varchar2(300),
+
+CONSTRAINT PK_Order_ID PRIMARY KEY (Order_ID),
+CONSTRAINT CHK_Status_Valid CHECK (Status IN ('A', 'C', 'D'))
+);
+
+ALTER TABLE inventory ADD CONSTRAINT Model_no UNIQUE (model_no);
+
+CREATE TABLE Order_items(
+order_ID NUMBER(5),
+Model_no VARCHAR2(50),
+Quantity Number(3),
+Unit_price Number(8,2),
+
+FOREIGN KEY (order_ID) REFERENCES orders(order_ID),
+FOREIGN KEY (Model_NO) REFERENCES inventory(model_no)
+);
+
+
+
 COMMIT;
 
--- Verify data insertion
-SELECT 'PRODUCT table: ' || COUNT(*) || ' rows inserted' AS RESULT FROM PRODUCT
-UNION ALL
-SELECT 'CUSTOMER table: ' || COUNT(*) || ' rows inserted' FROM CUSTOMER;
