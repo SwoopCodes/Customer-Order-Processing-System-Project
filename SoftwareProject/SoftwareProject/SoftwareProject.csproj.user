@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="frm_addExistingStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_addNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_customers_addCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_customers_viewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_finances_revenueAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_inventory_addStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_inventory_lowStockAlerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_inventory_manageStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_inventory_viewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_modifyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_orders_createOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_orders_viewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm_updateCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

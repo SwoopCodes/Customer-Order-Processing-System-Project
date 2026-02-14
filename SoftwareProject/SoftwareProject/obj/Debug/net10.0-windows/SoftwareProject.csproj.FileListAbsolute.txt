@@ -1,0 +1,109 @@
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.exe
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.deps.json
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.runtimeconfig.json
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.pdb
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_mainMenu.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.Properties.Resources.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.GenerateResource.cache
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.AssemblyInfoInputs.cache
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.AssemblyInfo.cs
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.CoreCompileInputs.cache
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\refint\SoftwareProject.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.pdb
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.genruntimeconfig.cache
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\ref\SoftwareProject.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_viewStock.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_manageStock.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_addStock.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_lowStockAlerts.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_customers_addCustomers.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_customers_viewCustomers.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_updateCustomers.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_finances_revenueAnalysis.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_modifyOrder.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_orders_createOrder.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_orders_viewOrders.resources
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.AssemblyReference.cache
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\Software.130D1476.Up2Date
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\OneDrive - Munster Technological University\Year 2\Semester 2\Software Project\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.exe
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.deps.json
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.runtimeconfig.json
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.pdb
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.AssemblyReference.cache
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_customers_addCustomers.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_customers_viewCustomers.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_finances_revenueAnalysis.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_addStock.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_lowStockAlerts.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_manageStock.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_viewStock.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_mainMenu.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_modifyOrder.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_orders_createOrder.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_orders_viewOrders.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_updateCustomers.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.Properties.Resources.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.GenerateResource.cache
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.AssemblyInfoInputs.cache
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.AssemblyInfo.cs
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.CoreCompileInputs.cache
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\Software.130D1476.Up2Date
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\refint\SoftwareProject.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.pdb
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.genruntimeconfig.cache
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\ref\SoftwareProject.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.exe
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.deps.json
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.runtimeconfig.json
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\SoftwareProject.pdb
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.AssemblyReference.cache
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_customers_addCustomers.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_customers_viewCustomers.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_finances_revenueAnalysis.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_addStock.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_lowStockAlerts.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_manageStock.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_inventory_viewStock.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_mainMenu.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_modifyOrder.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_orders_createOrder.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_orders_viewOrders.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_updateCustomers.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.Properties.Resources.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.GenerateResource.cache
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.AssemblyInfoInputs.cache
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.AssemblyInfo.cs
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.csproj.CoreCompileInputs.cache
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\Software.130D1476.Up2Date
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\refint\SoftwareProject.dll
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.pdb
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.genruntimeconfig.cache
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\ref\SoftwareProject.dll
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_addExistingStock.resources
+C:\Users\StudentPatrykGraszk(\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_addNewItem.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_addExistingStock.resources
+C:\Users\pat2g\Desktop\Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.frm_addNewItem.resources
