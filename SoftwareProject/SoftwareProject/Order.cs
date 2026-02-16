@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace SoftwareProject
@@ -30,6 +32,106 @@ namespace SoftwareProject
 
             companyName.Text = Database.ExecuteMultiRowQuery(companyQuery).Tables[0].Rows[0]["company_name"].ToString();
             companyAddress.Text = Database.ExecuteMultiRowQuery(addressQuery).Tables[0].Rows[0]["address"].ToString();
+
+        }
+
+        public void createOrder()
+        {
+
+            string insertQuery = $"INSERT INTO orders VALUES( {this.order_ID}, {this.customer_ID}, TO_DATE('{this.order_date}', 'DD-MON-YYYY'), '{this.status}', '{this.shipping_address}')";
+
+            MessageBox.Show(insertQuery);
+
+            Database.ExecuteNonQuery(insertQuery);
+
+
+        }
+
+        public static int getNextOrderID()
+        {
+
+            string sqlQuery = "SELECT MAX(order_ID) FROM orders";
+
+            OracleDataReader dr = Database.ExecuteSingleRowQuery(sqlQuery);
+            int nextId;
+
+            dr.Read();
+
+            if (dr.IsDBNull(0))
+                nextId = 1;
+            else
+                nextId = dr.GetInt32(0) + 1;
+
+            dr.Close();
+            return nextId;
+        }
+
+        public static string getCustomerID(String companyName)
+        {
+            string findCompanyIDQuery = $"Select customer_id from customer WHERE company_name LIKE '{companyName}'";
+
+            return Database.ExecuteMultiRowQuery(findCompanyIDQuery).Tables[0].Rows[0]["customer_id"].ToString();
+
+        }
+
+        public static int getLatestOrderID()
+        {
+            string getLatestOrder = "SELECT MAX(order_ID) AS max FROM orders";
+            String order_id = Database.ExecuteMultiRowQuery(getLatestOrder).Tables[0].Rows[0]["max"].ToString();
+            return Int32.Parse(order_id);
+        }
+
+        public static Boolean checkItemToAdd(String itemName, int quantity) 
+        {
+
+            string checkItemExists = $"SELECT model_no FROM inventory WHERE model_no LIKE '{itemName}'";
+            string checkQuantity = $"SELECT current_stock from inventory WHERE model_no LIKE '{itemName}'";
+
+            try
+            {
+                Database.ExecuteMultiRowQuery(checkItemExists).Tables[0].Rows[0]["model_no"].ToString();
+                int currentInventory = Int32.Parse(Database.ExecuteMultiRowQuery(checkQuantity).Tables[0].Rows[0]["current_stock"].ToString());
+
+                if (quantity < currentInventory)
+                {
+
+                    return true;
+                }
+
+                MessageBox.Show("Chosen quantity exceeds current stock");
+                return false;
+
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("Item Not found");
+                return false;
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An Error has occurred \n\n" + ex);
+                return false;
+            }
+
+        }
+
+        public static void addOrderItems(int order_ID, string model_no, int quantity)
+        {
+
+            string findSalePrice = $"SELECT sale_price FROM inventory WHERE model_no LIKE '{model_no}'";
+            string findCostPrice = $"SELECT COST_PRICE FROM inventory WHERE model_no LIKE '{model_no}'";
+
+            double salePrice = double.Parse(Database.ExecuteMultiRowQuery(findSalePrice).Tables[0].Rows[0]["sale_price"].ToString());
+            double costPrice = double.Parse(Database.ExecuteMultiRowQuery(findCostPrice).Tables[0].Rows[0]["COST_PRICE"].ToString());
+
+            double salePriceTotal = salePrice * quantity;
+            double costPriceTotal = costPrice * quantity;
+            double net = salePriceTotal - costPriceTotal;
+
+            string addOrderItemQuery = $"INSERT INTO order_items VALUES({order_ID}, '{model_no}', {quantity}, {salePriceTotal}, {costPriceTotal}, {net})";
+
+            Database.ExecuteNonQuery(addOrderItemQuery);
 
         }
     }

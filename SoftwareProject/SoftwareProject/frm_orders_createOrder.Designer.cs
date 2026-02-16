@@ -176,6 +176,7 @@
             button2.TabIndex = 30;
             button2.Text = "Complete";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // frm_orders_createOrder
             // 
