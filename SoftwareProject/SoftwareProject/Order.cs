@@ -46,11 +46,9 @@ namespace SoftwareProject
 
             string insertQuery = $"INSERT INTO orders VALUES( {this.order_ID}, {this.customer_ID}, TO_DATE('{this.order_date}', 'DD-MON-YYYY'), '{this.status}', '{this.shipping_address}')";
 
-            MessageBox.Show(insertQuery);
-
             Database.ExecuteNonQuery(insertQuery);
 
-
+            MessageBox.Show($"Success\nOrder has been created\nOrder ID: {this.order_ID}");
         }
 
         public static int getNextOrderID()

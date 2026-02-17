@@ -13,7 +13,15 @@ namespace SoftwareProject
         public frm_orders_createOrder()
         {
             InitializeComponent();
+
+            DataGridViewButtonColumn c = (DataGridViewButtonColumn)deleteButtonColumn;
+            c.DefaultCellStyle.BackColor = Color.Red;
+            c.DefaultCellStyle.ForeColor = Color.White;
+
+            Order_Items_Table.CellClick += Order_Items_Table_CellClick;
         }
+
+
 
         private void frm_orders_createOrder_Load(object sender, EventArgs e)
         {
@@ -33,7 +41,15 @@ namespace SoftwareProject
         private void Button_Add_Item_Click(object sender, EventArgs e)
         {
 
-            if(Order.checkItemToAdd(Input_ModelNo.Text, Int32.Parse(Input_Quantity.Text)))
+            if (string.IsNullOrWhiteSpace(Input_Quantity.Text) || !int.TryParse(Input_Quantity.Text, out _))
+            {
+
+                MessageBox.Show("Invalid quantity entered\nMust be number and not empty");
+                return;
+            }
+
+
+            if (Order.checkItemToAdd(Input_ModelNo.Text, Int32.Parse(Input_Quantity.Text)))
             {
 
                 foreach (DataGridViewRow row in Order_Items_Table.Rows)
@@ -61,7 +77,6 @@ namespace SoftwareProject
 
 
             //Creating order in orders table
-
             string customerID = Order.getCustomerID(Input_CompanyName.Text);
             string formattedDate = DateTime.Now.ToString("dd-MMM-yyyy").ToUpper();
 
@@ -85,9 +100,18 @@ namespace SoftwareProject
                 Order.addOrderItems(latestOrder, modelNo.ToString(), Convert.ToInt32(quantity));
             }
 
-
         }
 
+        private void Order_Items_Table_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex >= 0 && e.ColumnIndex == Order_Items_Table.Columns["deleteButtonColumn"].Index)
+            {
+
+             Order_Items_Table.Rows.RemoveAt(e.RowIndex);
+             
+            }
+        }
 
     }
 }
