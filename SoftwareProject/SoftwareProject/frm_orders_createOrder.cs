@@ -27,7 +27,7 @@ namespace SoftwareProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Order.findCompany(Input_ModelNo.Text, Input_CompanyName, Input_ShippingAddress);
+            Order.findCompany(Input_CompanyName.Text, Input_CompanyName, Input_ShippingAddress);
         }
 
         private void Button_Add_Item_Click(object sender, EventArgs e)
