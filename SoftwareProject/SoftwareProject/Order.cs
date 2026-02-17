@@ -27,11 +27,17 @@ namespace SoftwareProject
 
         public static void findCompany(String searchItem, TextBox companyName, TextBox companyAddress)
         {
-            String companyQuery = $"SELECT company_name FROM customer WHERE company_name LIKE '%{searchItem}%'";
-            String addressQuery = $"SELECT address FROM customer WHERE company_name LIKE '%{searchItem}%'";
+            string query = $@"
+            SELECT company_name, address 
+            FROM customer 
+            WHERE company_name LIKE '{searchItem}%'
+            ORDER BY company_name";
 
-            companyName.Text = Database.ExecuteMultiRowQuery(companyQuery).Tables[0].Rows[0]["company_name"].ToString();
-            companyAddress.Text = Database.ExecuteMultiRowQuery(addressQuery).Tables[0].Rows[0]["address"].ToString();
+            var result = Database.ExecuteMultiRowQuery(query);
+
+            companyName.Text = result.Tables[0].Rows[0]["company_name"].ToString();
+            companyAddress.Text = result.Tables[0].Rows[0]["address"].ToString();
+
 
         }
 
