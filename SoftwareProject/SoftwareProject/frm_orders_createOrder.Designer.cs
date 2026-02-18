@@ -78,23 +78,28 @@
             // 
             // Input_ModelNo
             // 
+            Input_ModelNo.BackColor = SystemColors.ScrollBar;
             Input_ModelNo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Input_ModelNo.Location = new Point(591, 193);
             Input_ModelNo.Name = "Input_ModelNo";
+            Input_ModelNo.ReadOnly = true;
             Input_ModelNo.Size = new Size(197, 38);
             Input_ModelNo.TabIndex = 3;
             // 
             // Input_Quantity
             // 
+            Input_Quantity.BackColor = SystemColors.ScrollBar;
             Input_Quantity.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Input_Quantity.Location = new Point(591, 250);
             Input_Quantity.Name = "Input_Quantity";
+            Input_Quantity.ReadOnly = true;
             Input_Quantity.Size = new Size(87, 38);
             Input_Quantity.TabIndex = 4;
             // 
             // Button_Add_Item
             // 
-            Button_Add_Item.BackColor = Color.FromArgb(128, 255, 128);
+            Button_Add_Item.BackColor = Color.FromArgb(224, 224, 224);
+            Button_Add_Item.Enabled = false;
             Button_Add_Item.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Button_Add_Item.Location = new Point(422, 309);
             Button_Add_Item.Name = "Button_Add_Item";
@@ -151,9 +156,11 @@
             // 
             // Input_ShippingAddress
             // 
+            Input_ShippingAddress.BackColor = SystemColors.ScrollBar;
             Input_ShippingAddress.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Input_ShippingAddress.Location = new Point(309, 85);
             Input_ShippingAddress.Name = "Input_ShippingAddress";
+            Input_ShippingAddress.ReadOnly = true;
             Input_ShippingAddress.Size = new Size(447, 38);
             Input_ShippingAddress.TabIndex = 28;
             Input_ShippingAddress.TextChanged += textBox4_TextChanged;
@@ -182,7 +189,8 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(128, 255, 128);
+            button2.BackColor = Color.FromArgb(224, 224, 224);
+            button2.Enabled = false;
             button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.Location = new Point(698, 435);
             button2.Name = "button2";

@@ -36,6 +36,21 @@ namespace SoftwareProject
         private void button1_Click(object sender, EventArgs e)
         {
             Order.findCompany(Input_CompanyName.Text, Input_CompanyName, Input_ShippingAddress);
+
+            Input_ModelNo.ReadOnly = false;
+            Input_ModelNo.BackColor = Color.White;
+
+            Input_Quantity.ReadOnly = false;
+            Input_Quantity.BackColor = Color.White;
+
+            Input_ShippingAddress.ReadOnly = false;
+            Input_ShippingAddress.BackColor = Color.White;
+            Button_Add_Item.BackColor = Color.FromArgb(127, 253, 127);
+            Button_Add_Item.Enabled = true;
+
+            button2.BackColor = Color.FromArgb(127, 253, 127);
+            button2.Enabled = true;
+
         }
 
         private void Button_Add_Item_Click(object sender, EventArgs e)
@@ -75,6 +90,11 @@ namespace SoftwareProject
         private void button2_Click(object sender, EventArgs e)
         {
 
+            if (Order_Items_Table.Rows.Count == 1)
+            {
+                MessageBox.Show("No Items selected for order\nPlease add items before continuing");
+                return;
+            }
 
             //Creating order in orders table
             string customerID = Order.getCustomerID(Input_CompanyName.Text);

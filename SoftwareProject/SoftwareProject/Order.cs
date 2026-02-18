@@ -35,8 +35,15 @@ namespace SoftwareProject
 
             var result = Database.ExecuteMultiRowQuery(query);
 
-            companyName.Text = result.Tables[0].Rows[0]["company_name"].ToString();
-            companyAddress.Text = result.Tables[0].Rows[0]["address"].ToString();
+
+            try
+            {
+                companyName.Text = result.Tables[0].Rows[0]["company_name"].ToString();
+                companyAddress.Text = result.Tables[0].Rows[0]["address"].ToString();
+            } catch(Exception e)
+            {
+                MessageBox.Show("Company not found");
+            }
 
 
         }
