@@ -14,5 +14,25 @@ namespace SoftwareProject
         {
             InitializeComponent();
         }
+
+        private void Order_Items_Table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (int.TryParse(Input_orderID.Text, out int orderId))
+            {
+
+                Order.viewOrderDetails(Convert.ToInt32(Input_orderID.Text), box_companyName, box_shippingAddress, Order_Items_Table);
+            }
+            else
+            {
+                MessageBox.Show("Invalid value entered for order ID\nMust be a number");
+            }
+
+        }
     }
 }

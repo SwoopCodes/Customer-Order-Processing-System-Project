@@ -173,5 +173,17 @@ namespace SoftwareProject
 
             return Database.ExecuteMultiRowQuery(query);
         }
+
+        public static void viewOrderDetails(Int32 order_id, TextBox customerNameBox, TextBox shippingAddressBox, DataGridView itemsTable)
+        {
+            String companyNameQuery = $"SELECT c.company_name FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE order_id = {order_id}";
+            String shippingAddressQuery = $"SELECT shipping_address FROM orders WHERE order_id = {order_id}";
+            String retrieveOrderItemsQuery = $"SELECT oi.model_no, i.description, oi.quantity, oi.total FROM order_items oi INNER JOIN inventory i ON oi.model_no = i.model_no WHERE order_id = {order_id}";
+
+            customerNameBox.Text = Database.ExecuteMultiRowQuery(companyNameQuery).Tables[0].Rows[0]["company_name"].ToString();
+            shippingAddressBox.Text = Database.ExecuteMultiRowQuery(shippingAddressQuery).Tables[0].Rows[0]["shipping_address"].ToString();
+
+            itemsTable.DataSource = Database.ExecuteMultiRowQuery(retrieveOrderItemsQuery).Tables[0];
+        }
     }
 }
