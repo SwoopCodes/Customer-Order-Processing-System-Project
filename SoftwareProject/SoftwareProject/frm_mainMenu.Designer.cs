@@ -148,7 +148,7 @@
             // 
             mnu_orders_modifyOrder.Name = "mnu_orders_modifyOrder";
             mnu_orders_modifyOrder.Size = new Size(305, 36);
-            mnu_orders_modifyOrder.Text = "Modify Order";
+            mnu_orders_modifyOrder.Text = "Order Details";
             mnu_orders_modifyOrder.Click += mnu_orders_modifyOrder_Click;
             // 
             // mnu_finances

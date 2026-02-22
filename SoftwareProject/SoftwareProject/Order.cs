@@ -145,5 +145,33 @@ namespace SoftwareProject
             Database.ExecuteNonQuery(addOrderItemQuery);
 
         }
+
+        public static DataSet getAllOrders()
+        {
+            string query = "SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id";
+
+            return Database.ExecuteMultiRowQuery(query);
+        }
+
+        public static DataSet findOrderByName(string searchQuery)
+        {
+            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE company_name LIKE '{searchQuery}%'";
+
+            return Database.ExecuteMultiRowQuery(query);
+        }
+
+        public static DataSet viewOrderByDateDesc()
+        {
+            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id ORDER BY order_date DESC";
+
+            return Database.ExecuteMultiRowQuery(query);
+        }
+
+        public static DataSet viewOrderByDateAsc()
+        {
+            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id ORDER BY order_date asc";
+
+            return Database.ExecuteMultiRowQuery(query);
+        }
     }
 }
