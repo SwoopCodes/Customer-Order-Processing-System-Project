@@ -149,7 +149,7 @@
               "RelativeDocumentMoniker": "SoftwareProject\\frm_modifyOrder.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_modifyOrder.cs",
               "RelativeToolTip": "SoftwareProject\\frm_modifyOrder.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCwAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA7wCEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T01:31:24.925Z",
               "EditorCaption": ""
@@ -225,8 +225,7 @@
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs [Design]",
               "RelativeToolTip": "SoftwareProject\\frm_updateCustomers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T00:34:35.494Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-22T00:34:35.494Z"
             },
             {
               "$type": "Document",
@@ -236,7 +235,7 @@
               "RelativeDocumentMoniker": "SoftwareProject\\Order.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
               "RelativeToolTip": "SoftwareProject\\Order.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAADwv9YAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAANgAAAAAAAAAAAAtwO8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T22:59:29.063Z",
               "EditorCaption": ""
@@ -264,8 +263,7 @@
               "RelativeToolTip": "SoftwareProject\\Customers.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAcwAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:42:46.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-08T19:42:46.88Z"
             },
             {
               "$type": "Document",
@@ -277,8 +275,7 @@
               "RelativeToolTip": "SoftwareProject\\frm_updateCustomers.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwCMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T01:37:21.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-22T01:37:21.423Z"
             },
             {
               "$type": "Document",

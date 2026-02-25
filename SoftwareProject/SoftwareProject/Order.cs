@@ -218,5 +218,33 @@ namespace SoftwareProject
                 MessageBox.Show("an error occured\n" + e);
             }
         }
+
+        public static void getOrderTotal(Int32 orderID, Label orderTotalField)
+        {
+            string findOrderTotalQuery = $"SELECT SUM(total) AS total FROM order_items WHERE order_ID = {orderID}";
+            orderTotalField.Text += Database.ExecuteMultiRowQuery(findOrderTotalQuery).Tables[0].Rows[0]["total"].ToString();
+            orderTotalField.Visible = true;
+        }
+
+        public static void displayOrderStatus(Int32 orderID, Label statusText) 
+        {
+            string findStatusQuery = $"SELECT status FROM orders WHERE order_ID = {orderID}";
+            string currentStatus = Database.ExecuteMultiRowQuery(findStatusQuery).Tables[0].Rows[0]["status"].ToString();
+
+            if (currentStatus == "A") 
+            {
+                statusText.Visible = true;
+                statusText.Text += "Active";
+            } else if (currentStatus == "C")
+            {
+                statusText.Visible = true;
+                statusText.Text += "Completed";
+            }
+            else
+            {
+                statusText.Visible = true;
+                statusText.Text += "Removed";
+            }
+        }
     }
 }

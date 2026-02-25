@@ -27,6 +27,12 @@ namespace SoftwareProject
             {
 
                 Order.viewOrderDetails(Convert.ToInt32(Input_orderID.Text), box_companyName, box_shippingAddress, Order_Items_Table, button_markComplete, button_removeOrder);
+                Order.getOrderTotal(Convert.ToInt32(Input_orderID.Text), label_orderTotal);
+                Order.displayOrderStatus(Convert.ToInt32(Input_orderID.Text), Label_Status);
+                button1.Enabled = false;
+                button1.BackColor = Color.Gray;
+                Input_orderID.Enabled = false;
+                
             }
             else
             {
