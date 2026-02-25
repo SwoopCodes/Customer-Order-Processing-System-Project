@@ -31,6 +31,7 @@
             label1 = new Label();
             Input_orderID = new TextBox();
             panel1 = new Panel();
+            label_orderTotal = new Label();
             label4 = new Label();
             Order_Items_Table = new DataGridView();
             label3 = new Label();
@@ -40,6 +41,7 @@
             button_markComplete = new Button();
             button_removeOrder = new Button();
             button1 = new Button();
+            Label_Status = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Order_Items_Table).BeginInit();
             SuspendLayout();
@@ -65,6 +67,8 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlLight;
+            panel1.Controls.Add(Label_Status);
+            panel1.Controls.Add(label_orderTotal);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(Order_Items_Table);
             panel1.Controls.Add(label3);
@@ -75,6 +79,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(897, 447);
             panel1.TabIndex = 17;
+            // 
+            // label_orderTotal
+            // 
+            label_orderTotal.AutoSize = true;
+            label_orderTotal.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_orderTotal.ForeColor = Color.FromArgb(0, 192, 0);
+            label_orderTotal.Location = new Point(538, 344);
+            label_orderTotal.Name = "label_orderTotal";
+            label_orderTotal.Size = new Size(121, 41);
+            label_orderTotal.TabIndex = 31;
+            label_orderTotal.Text = "Total: €";
+            label_orderTotal.Visible = false;
             // 
             // label4
             // 
@@ -175,6 +191,18 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // Label_Status
+            // 
+            Label_Status.AutoSize = true;
+            Label_Status.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Status.ForeColor = Color.Black;
+            Label_Status.Location = new Point(538, 388);
+            Label_Status.Name = "Label_Status";
+            Label_Status.Size = new Size(121, 41);
+            Label_Status.TabIndex = 32;
+            Label_Status.Text = "Status: ";
+            Label_Status.Visible = false;
+            // 
             // frm_modifyOrder
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -210,5 +238,7 @@
         private Button button_removeOrder;
         private Label label4;
         private Button button1;
+        private Label label_orderTotal;
+        private Label Label_Status;
     }
 }
