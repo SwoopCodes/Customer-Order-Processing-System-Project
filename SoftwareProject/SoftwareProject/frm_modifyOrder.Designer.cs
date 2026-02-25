@@ -137,7 +137,8 @@
             // 
             // button_markComplete
             // 
-            button_markComplete.BackColor = Color.PaleGreen;
+            button_markComplete.BackColor = SystemColors.AppWorkspace;
+            button_markComplete.Enabled = false;
             button_markComplete.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_markComplete.Location = new Point(550, 549);
             button_markComplete.Margin = new Padding(3, 4, 3, 4);
@@ -146,10 +147,12 @@
             button_markComplete.TabIndex = 19;
             button_markComplete.Text = "Mark Complete";
             button_markComplete.UseVisualStyleBackColor = false;
+            button_markComplete.Click += button_markComplete_Click;
             // 
             // button_removeOrder
             // 
-            button_removeOrder.BackColor = Color.DarkSalmon;
+            button_removeOrder.BackColor = SystemColors.AppWorkspace;
+            button_removeOrder.Enabled = false;
             button_removeOrder.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_removeOrder.Location = new Point(796, 549);
             button_removeOrder.Margin = new Padding(3, 4, 3, 4);
@@ -158,6 +161,7 @@
             button_removeOrder.TabIndex = 20;
             button_removeOrder.Text = "Remove Order";
             button_removeOrder.UseVisualStyleBackColor = false;
+            button_removeOrder.Click += button_removeOrder_Click;
             // 
             // button1
             // 

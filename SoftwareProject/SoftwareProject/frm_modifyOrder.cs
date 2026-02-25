@@ -26,13 +26,23 @@ namespace SoftwareProject
             if (int.TryParse(Input_orderID.Text, out int orderId))
             {
 
-                Order.viewOrderDetails(Convert.ToInt32(Input_orderID.Text), box_companyName, box_shippingAddress, Order_Items_Table);
+                Order.viewOrderDetails(Convert.ToInt32(Input_orderID.Text), box_companyName, box_shippingAddress, Order_Items_Table, button_markComplete, button_removeOrder);
             }
             else
             {
                 MessageBox.Show("Invalid value entered for order ID\nMust be a number");
             }
 
+        }
+
+        private void button_markComplete_Click(object sender, EventArgs e)
+        {
+            Order.markOrderComplete(Convert.ToInt32(Input_orderID.Text));
+        }
+
+        private void button_removeOrder_Click(object sender, EventArgs e)
+        {
+            Order.removeOrder(Convert.ToInt32(Input_orderID.Text));
         }
     }
 }
