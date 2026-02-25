@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,12 +15,24 @@
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_orders_vieworders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_orders_vieworders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\frm_orders_vieworders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,18 +51,6 @@
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_inventory_addstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,7 +59,7 @@
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\frm_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{86FB2C69-C95A-0547-52C5-F6A98C3D0D87}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\frm_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -104,7 +104,7 @@
         },
         {
           "DockedWidth": 696,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -120,44 +120,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frm_customers_addCustomers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_customers_addCustomers.cs",
-              "RelativeDocumentMoniker": "SoftwareProject\\frm_customers_addCustomers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_customers_addCustomers.cs [Design]",
-              "RelativeToolTip": "SoftwareProject\\frm_customers_addCustomers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-14T21:25:13.103Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "frm_orders_createOrder.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_orders_createOrder.cs",
               "RelativeDocumentMoniker": "SoftwareProject\\frm_orders_createOrder.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_orders_createOrder.cs [Design]",
               "RelativeToolTip": "SoftwareProject\\frm_orders_createOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-14T20:57:03.249Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-14T20:57:03.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
-              "RelativeDocumentMoniker": "SoftwareProject\\Order.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
-              "RelativeToolTip": "SoftwareProject\\Order.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAkwLAAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T22:59:29.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Database.cs",
               "RelativeDocumentMoniker": "SoftwareProject\\Database.cs",
@@ -165,8 +139,7 @@
               "RelativeToolTip": "SoftwareProject\\Database.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAlwCAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T20:46:18.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-01T20:46:18.914Z"
             },
             {
               "$type": "Document",
@@ -176,22 +149,32 @@
               "RelativeDocumentMoniker": "SoftwareProject\\frm_modifyOrder.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_modifyOrder.cs",
               "RelativeToolTip": "SoftwareProject\\frm_modifyOrder.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswCEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T01:31:24.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "frm_customers_addCustomers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_customers_addCustomers.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\frm_customers_addCustomers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_customers_addCustomers.cs [Design]",
+              "RelativeToolTip": "SoftwareProject\\frm_customers_addCustomers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T21:25:13.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "frm_inventory_addStock.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_inventory_addStock.cs",
               "RelativeDocumentMoniker": "SoftwareProject\\frm_inventory_addStock.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_inventory_addStock.cs [Design]",
               "RelativeToolTip": "SoftwareProject\\frm_inventory_addStock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-14T21:29:08.509Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-14T21:29:08.509Z"
             },
             {
               "$type": "Document",
@@ -202,8 +185,7 @@
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_inventory_viewStock.cs [Design]",
               "RelativeToolTip": "SoftwareProject\\frm_inventory_viewStock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T00:34:45.185Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-22T00:34:45.185Z"
             },
             {
               "$type": "Document",
@@ -214,8 +196,7 @@
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_mainMenu.cs [Design]",
               "RelativeToolTip": "SoftwareProject\\frm_mainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T01:14:04.659Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-22T01:14:04.659Z"
             },
             {
               "$type": "Document",
@@ -233,32 +214,31 @@
         },
         {
           "DockedWidth": 696,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frm_updateCustomers.cs",
+              "DocumentIndex": 6,
+              "Title": "frm_updateCustomers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs",
               "RelativeDocumentMoniker": "SoftwareProject\\frm_updateCustomers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs",
-              "RelativeToolTip": "SoftwareProject\\frm_updateCustomers.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs [Design]",
+              "RelativeToolTip": "SoftwareProject\\frm_updateCustomers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T01:37:21.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-22T00:34:35.494Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Customers.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Customers.cs",
-              "RelativeDocumentMoniker": "SoftwareProject\\Customers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Customers.cs",
-              "RelativeToolTip": "SoftwareProject\\Customers.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAkwHwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Order.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
+              "RelativeToolTip": "SoftwareProject\\Order.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAADwv9YAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:42:46.88Z",
+              "WhenOpened": "2026-02-16T22:59:29.063Z",
               "EditorCaption": ""
             },
             {
@@ -277,26 +257,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Customers.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Customers.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Customers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Customers.cs",
+              "RelativeToolTip": "SoftwareProject\\Customers.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T19:42:46.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_updateCustomers.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\frm_updateCustomers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs",
+              "RelativeToolTip": "SoftwareProject\\frm_updateCustomers.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T01:37:21.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "frm_orders_viewOrders.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_orders_viewOrders.cs",
               "RelativeDocumentMoniker": "SoftwareProject\\frm_orders_viewOrders.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_orders_viewOrders.cs [Design]",
               "RelativeToolTip": "SoftwareProject\\frm_orders_viewOrders.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T00:34:36.314Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frm_updateCustomers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs",
-              "RelativeDocumentMoniker": "SoftwareProject\\frm_updateCustomers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_updateCustomers.cs [Design]",
-              "RelativeToolTip": "SoftwareProject\\frm_updateCustomers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T00:34:35.494Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-22T00:34:36.314Z"
             },
             {
               "$type": "Document",
@@ -308,8 +301,7 @@
               "RelativeToolTip": "SoftwareProject\\frm_orders_createOrder.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-14T21:23:28.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-14T21:23:28.923Z"
             }
           ]
         }

@@ -174,7 +174,7 @@ namespace SoftwareProject
             return Database.ExecuteMultiRowQuery(query);
         }
 
-        public static void viewOrderDetails(Int32 order_id, TextBox customerNameBox, TextBox shippingAddressBox, DataGridView itemsTable)
+        public static void viewOrderDetails(Int32 order_id, TextBox customerNameBox, TextBox shippingAddressBox, DataGridView itemsTable ,Button markComplete, Button removeOrder)
         {
             String companyNameQuery = $"SELECT c.company_name FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE order_id = {order_id}";
             String shippingAddressQuery = $"SELECT shipping_address FROM orders WHERE order_id = {order_id}";
@@ -182,8 +182,41 @@ namespace SoftwareProject
 
             customerNameBox.Text = Database.ExecuteMultiRowQuery(companyNameQuery).Tables[0].Rows[0]["company_name"].ToString();
             shippingAddressBox.Text = Database.ExecuteMultiRowQuery(shippingAddressQuery).Tables[0].Rows[0]["shipping_address"].ToString();
+            markComplete.Enabled = true;
+            markComplete.BackColor = Color.FromArgb(152, 251, 152);
+
+            removeOrder.Enabled = true;
+            removeOrder.BackColor = Color.FromArgb(233, 150, 122);
 
             itemsTable.DataSource = Database.ExecuteMultiRowQuery(retrieveOrderItemsQuery).Tables[0];
+        }
+
+        public static void markOrderComplete(Int32 orderID) 
+        {
+            try
+            {
+                string updateStatusQuery = $"UPDATE orders SET status = 'C' WHERE order_ID = {orderID}";
+                Database.ExecuteUpdateStatement(updateStatusQuery);
+                MessageBox.Show("Status successfully updated");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("an error occured\n" + e);
+            }
+        }
+
+        public static void removeOrder(Int32 orderID)
+        {
+            try
+            {
+                string updateStatusQuery = $"UPDATE orders SET status = 'D' WHERE order_ID = {orderID}";
+                Database.ExecuteUpdateStatement(updateStatusQuery);
+                MessageBox.Show("Order successfully removed");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("an error occured\n" + e);
+            }
         }
     }
 }
