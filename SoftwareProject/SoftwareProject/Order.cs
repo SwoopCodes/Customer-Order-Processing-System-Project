@@ -25,27 +25,22 @@ namespace SoftwareProject
             this.shipping_address = shipping_address;
         }
 
-        public static void findCompany(String searchItem, TextBox companyName, TextBox companyAddress)
+        public static bool findCompany(String searchItem, TextBox companyName, TextBox companyAddress)
         {
-            string query = $@"
-            SELECT company_name, address 
-            FROM customer 
-            WHERE company_name LIKE '{searchItem}%'
-            ORDER BY company_name";
+            string query = $" SELECT company_name, address FROM customer WHERE company_name LIKE '{searchItem}%' ORDER BY company_name";
 
             var result = Database.ExecuteMultiRowQuery(query);
-
 
             try
             {
                 companyName.Text = result.Tables[0].Rows[0]["company_name"].ToString();
                 companyAddress.Text = result.Tables[0].Rows[0]["address"].ToString();
-            } catch(Exception e)
-            {
-                MessageBox.Show("Company not found");
+                return true;
             }
-
-
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         public void createOrder()

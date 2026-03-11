@@ -37,19 +37,31 @@ namespace SoftwareProject
         {
             Order.findCompany(Input_CompanyName.Text, Input_CompanyName, Input_ShippingAddress);
 
-            Input_ModelNo.ReadOnly = false;
-            Input_ModelNo.BackColor = Color.White;
+            bool companyFound = Order.findCompany(Input_CompanyName.Text, Input_CompanyName, Input_ShippingAddress);
 
-            Input_Quantity.ReadOnly = false;
-            Input_Quantity.BackColor = Color.White;
 
-            Input_ShippingAddress.ReadOnly = false;
-            Input_ShippingAddress.BackColor = Color.White;
-            Button_Add_Item.BackColor = Color.FromArgb(127, 253, 127);
-            Button_Add_Item.Enabled = true;
+            if (companyFound)
+            {
+                Input_ModelNo.ReadOnly = false;
+                Input_ModelNo.BackColor = Color.White;
 
-            button2.BackColor = Color.FromArgb(127, 253, 127);
-            button2.Enabled = true;
+                Input_Quantity.ReadOnly = false;
+                Input_Quantity.BackColor = Color.White;
+
+                Input_ShippingAddress.ReadOnly = false;
+                Input_ShippingAddress.BackColor = Color.White;
+                Button_Add_Item.BackColor = Color.FromArgb(127, 253, 127);
+                Button_Add_Item.Enabled = true;
+
+                button2.BackColor = Color.FromArgb(127, 253, 127);
+                button2.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Company not found");
+            }
+
+
 
         }
 
