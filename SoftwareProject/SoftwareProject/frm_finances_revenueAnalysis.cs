@@ -13,6 +13,11 @@ namespace SoftwareProject
         public frm_finances_revenueAnalysis()
         {
             InitializeComponent();
+
+            Label_InventoryValue.Text = "€" + Finances.getTotalInventoryValue().ToString();
+            Label_totalOrders.Text = Finances.getTotalOrdersYTD().ToString();
+            Label_AverageOrderValue.Text = "€" + Finances.getAverageOrderValue().ToString();
+            Label_totalOrderValue.Text = "€" + Finances.getTotalOrderValue().ToString();
         }
     }
 }

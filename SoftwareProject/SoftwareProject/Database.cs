@@ -9,8 +9,8 @@ namespace SoftwareProject
 {
     class Database
     {
-        public const string connectionString = "Data Source = localhost/orcl; User Id = C##user1; Password = REDACTED";
-        //public const string connectionString = "Data Source = studentoracle/orcl; User Id = T00257714; Password = ttn97vy?dKhi";
+        //public const string connectionString = "Data Source = localhost/orcl; User Id = C##user1; Password = REDACTED";
+        public const string connectionString = "Data Source = studentoracle/orcl; User Id = T00257714; Password = ttn97vy?dKhi";
 
         public static OracleConnection OpenConnection()
 
