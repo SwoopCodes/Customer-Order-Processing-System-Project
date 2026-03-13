@@ -75,7 +75,6 @@ namespace SoftwareProject
                 return;
             }
 
-
             if (Order.checkItemToAdd(Input_ModelNo.Text, Int32.Parse(Input_Quantity.Text)))
             {
 
@@ -114,7 +113,6 @@ namespace SoftwareProject
 
             Order newOrder = new Order(Order.getNextOrderID(), Int32.Parse(customerID), formattedDate, 'A', Input_ShippingAddress.Text);
             newOrder.createOrder();
-
 
             //Create order items for current order
             int latestOrder = Order.getLatestOrderID();
