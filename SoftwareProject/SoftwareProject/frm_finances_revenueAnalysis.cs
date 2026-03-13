@@ -18,6 +18,8 @@ namespace SoftwareProject
             Label_totalOrders.Text = Finances.getTotalOrdersYTD().ToString();
             Label_AverageOrderValue.Text = "€" + Finances.getAverageOrderValue().ToString();
             Label_totalOrderValue.Text = "€" + Finances.getTotalOrderValue().ToString();
+            Label_CostOfItemsSold.Text = "-€" + Finances.getTotalCostOfItems().ToString();
+            Label_TotalProfit.Text = "€" + Finances.totalProfit().ToString();
         }
     }
 }
