@@ -145,3 +145,6 @@ C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\
 C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.pdb
 C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\SoftwareProject.genruntimeconfig.cache
 C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\SoftwareProject\obj\Debug\net10.0-windows\ref\SoftwareProject.dll
+C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\LiveCharts.dll
+C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\LiveCharts.WinForms.dll
+C:\Users\pat2g\Desktop\Customer-Order-Processing-System-Project\SoftwareProject\SoftwareProject\bin\Debug\net10.0-windows\LiveCharts.Wpf.dll

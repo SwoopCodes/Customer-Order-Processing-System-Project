@@ -67,11 +67,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 18);
+            label1.Location = new Point(21, 18);
             label1.Name = "label1";
-            label1.Size = new Size(233, 41);
+            label1.Size = new Size(196, 41);
             label1.TabIndex = 12;
-            label1.Text = "Model Number";
+            label1.Text = "Description: ";
             // 
             // Input_ModelNo
             // 

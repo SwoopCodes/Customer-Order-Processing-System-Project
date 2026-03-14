@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareProject.Finances;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,42 @@ namespace SoftwareProject
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            Inventory.findItemToUpdate(Input_Description, Input_CurrentStock, Input_MinStock, Input_SalePrice, Input_CostPrice, Input_Supplier, Input_ModelNo.Text);
+            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_ModelNo.Text);
+            selectionTable.ShowDialog();
+            DataRow selectedRow = selectionTable.selectedItem;
+
+            if (selectedRow != null)
+            {
+                Input_ModelNo.Text = selectedRow["model_no"].ToString();
+
+                Input_Description.Text = selectedRow["Description"].ToString();
+                Input_Description.BackColor = Color.White;
+                Input_Description.ReadOnly = false;
+
+                Input_CurrentStock.Text = selectedRow["current_stock"].ToString();
+                Input_CurrentStock.BackColor = Color.White;
+                Input_CurrentStock.ReadOnly = false;
+
+                Input_MinStock.Text = selectedRow["minimum_stock"].ToString();
+                Input_MinStock.BackColor = Color.White;
+                Input_MinStock.ReadOnly = false;
+
+                Input_SalePrice.Text = selectedRow["sale_price"].ToString();
+                Input_SalePrice.BackColor = Color.White;
+                Input_SalePrice.ReadOnly = false;
+
+                Input_CostPrice.Text = selectedRow["cost_price"].ToString();
+                Input_CostPrice.BackColor = Color.White;
+                Input_CostPrice.ReadOnly = false;
+
+                Input_Supplier.Text = selectedRow["supplier"].ToString();
+                Input_Supplier.BackColor = Color.White;
+                Input_Supplier.ReadOnly = false;
+
+
+            }
+
+
         }
 
         private void Button_Update_Click(object sender, EventArgs e)
@@ -40,7 +76,7 @@ namespace SoftwareProject
 
             bool isValid = true;
 
-            // 1. Validate Model_No (VARCHAR2(50))
+            // Validate Model_No
             if (string.IsNullOrWhiteSpace(Input_ModelNo.Text))
             {
                 Input_ModelNo.BackColor = Color.LightPink;
@@ -54,7 +90,7 @@ namespace SoftwareProject
                 isValid = false;
             }
 
-            // 2. Validate Description (VARCHAR2(200))
+            // Validate Description
             if (string.IsNullOrWhiteSpace(Input_Description.Text))
             {
                 Input_Description.BackColor = Color.LightPink;
@@ -68,7 +104,7 @@ namespace SoftwareProject
                 isValid = false;
             }
 
-            // 3. Validate Current Stock (NUMBER(5,0) - max 99999)
+            // Validate Current Stock
             if (!int.TryParse(Input_CurrentStock.Text, out int currentStock))
             {
                 Input_CurrentStock.BackColor = Color.LightPink;
@@ -82,7 +118,7 @@ namespace SoftwareProject
                 isValid = false;
             }
 
-            // 4. Validate Minimum Stock (NUMBER(5,0) - max 99999)
+            // Validate Minimum Stock
             if (!int.TryParse(Input_MinStock.Text, out int minStock))
             {
                 Input_MinStock.BackColor = Color.LightPink;
@@ -96,7 +132,7 @@ namespace SoftwareProject
                 isValid = false;
             }
 
-            // 5. Validate Sale Price (NUMBER(8,2) - max 999999.99)
+            // Validate sales price
             if (!decimal.TryParse(Input_SalePrice.Text, out decimal salePrice))
             {
                 Input_SalePrice.BackColor = Color.LightPink;
@@ -110,7 +146,7 @@ namespace SoftwareProject
                 isValid = false;
             }
 
-            // 6. Validate Cost Price (NUMBER(8,2) - max 999999.99)
+            // Validate Cost Price
             if (!decimal.TryParse(Input_CostPrice.Text, out decimal costPrice))
             {
                 Input_CostPrice.BackColor = Color.LightPink;
@@ -124,7 +160,7 @@ namespace SoftwareProject
                 isValid = false;
             }
 
-            // 7. Validate Supplier (VARCHAR2(100))
+            // Validate Supplier
             if (string.IsNullOrWhiteSpace(Input_Supplier.Text))
             {
                 Input_Supplier.BackColor = Color.LightPink;

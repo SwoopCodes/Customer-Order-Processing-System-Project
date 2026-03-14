@@ -19,12 +19,19 @@ namespace SoftwareProject
         public frm_inventory_viewStock()
         {
             InitializeComponent();
-            dataGrid.DataSource = Inventory.getAllInventory().Tables[0];
         }
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            dataGrid.DataSource = Inventory.searchItem(input_search.Text).Tables[0];
+
+            if (!String.IsNullOrEmpty(input_search.Text) && input_search.Text.Length > 3)
+            {
+                dataGrid.DataSource = Inventory.getInventory(input_search.Text).Tables[0];
+            }
+            else
+            {
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
     }

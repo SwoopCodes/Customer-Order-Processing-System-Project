@@ -34,13 +34,21 @@ namespace SoftwareProject
             this.Supplier = supplier;
         }
 
-        public static DataSet getAllInventory()
+        public static DataSet getInventory(string search_query)
         {
-            string query = "SELECT * FROM inventory";
+            string query = $"SELECT * FROM inventory WHERE LOWER(inventory.description) LIKE '%{search_query.ToLower()}%'";
+
+            DataSet inventorySet = Database.ExecuteMultiRowQuery(query);
+
+            if (inventorySet.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show($"No items found with description {search_query}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             return Database.ExecuteMultiRowQuery(query);
         }
 
+        //Unused function
         public static DataSet searchItem(String searchItem)
         {
             String query = $"SELECT * FROM inventory WHERE Model_No LIKE '%{searchItem}%'";
@@ -113,10 +121,8 @@ namespace SoftwareProject
 
         {
 
-            //Define the SQL query to be executed
             String sqlQuery = "SELECT * FROM Types ORDER BY TypeCode";
 
-            //Execute the SQL query
 
             return Database.ExecuteMultiRowQuery(sqlQuery);
 
@@ -125,7 +131,6 @@ namespace SoftwareProject
         public void AddProduct()
         {
 
-            //Define the SQL query to be executed
             string sqlQuery = "INSERT INTO inventory Values (" +
                             this.Product_ID + ", '" +           
                             this.Model_No + "', '" +            
@@ -141,53 +146,20 @@ namespace SoftwareProject
 
         }
 
-        public static void findItemToUpdate(RichTextBox descriptionBox, TextBox currentStockBox, TextBox minStockBox, TextBox salePriceBox, TextBox costPriceBox, TextBox supplierBox,String inputModelNo)
+        public static DataSet findItemToUpdate(string item_description)
         {
-            String DescriptionQuery = $"SELECT Description FROM inventory WHERE model_no LIKE '{inputModelNo}'";
-            String currentStockQuery = $"SELECT current_stock FROM inventory WHERE model_no LIKE '{inputModelNo}'";
-            String minStockQuery = $"SELECT MINIMUM_STOCK FROM inventory WHERE model_no LIKE '{inputModelNo}'";
-            String salePriceQuery = $"SELECT SALE_PRICE FROM inventory WHERE model_no LIKE '{inputModelNo}'";
-            String costPriceQuery = $"SELECT COST_PRICE FROM inventory WHERE model_no LIKE '{inputModelNo}'";
-            String supplierQuery = $"SELECT SUPPLIER FROM inventory WHERE model_no LIKE '{inputModelNo}'";
+            string query = $"SELECT * FROM inventory WHERE LOWER(inventory.description) LIKE '%{item_description.ToLower()}%'";
 
+            DataSet inventoryData = Database.ExecuteMultiRowQuery(query);
 
-            try
+            if (inventoryData.Tables[0].Rows.Count == 0)
             {
-
-                descriptionBox.Text = Database.ExecuteMultiRowQuery(DescriptionQuery).Tables[0].Rows[0]["Description"].ToString();
-                descriptionBox.BackColor = Color.White;
-                descriptionBox.ReadOnly = false;
-
-                currentStockBox.Text = Database.ExecuteMultiRowQuery(currentStockQuery).Tables[0].Rows[0]["Current_Stock"].ToString();
-                currentStockBox.BackColor = Color.White;
-                currentStockBox.ReadOnly = false;
-
-                minStockBox.Text = Database.ExecuteMultiRowQuery(minStockQuery).Tables[0].Rows[0]["MINIMUM_STOCK"].ToString();
-                minStockBox.BackColor = Color.White;
-                minStockBox.ReadOnly = false;
-
-                salePriceBox.Text = Database.ExecuteMultiRowQuery(salePriceQuery).Tables[0].Rows[0]["SALE_PRICE"].ToString();
-                salePriceBox.BackColor = Color.White;
-                salePriceBox.ReadOnly = false;
-
-                costPriceBox.Text = Database.ExecuteMultiRowQuery(costPriceQuery).Tables[0].Rows[0]["COST_PRICE"].ToString();
-                costPriceBox.BackColor = Color.White;
-                costPriceBox.ReadOnly = false;
-
-                supplierBox.Text = Database.ExecuteMultiRowQuery(supplierQuery).Tables[0].Rows[0]["SUPPLIER"].ToString();
-                supplierBox.BackColor = Color.White;
-                supplierBox.ReadOnly = false;
-
+                MessageBox.Show($"No items found with description {item_description}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (IndexOutOfRangeException)
-            {
-                MessageBox.Show("Model not found!\nPlease Try again");
 
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show($"An Error Has Occurred\n\n {e}");
-            }
+            return inventoryData;
+
+
         }
 
         public void updateStockItem()

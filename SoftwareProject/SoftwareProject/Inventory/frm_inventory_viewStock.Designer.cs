@@ -67,10 +67,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(31, 45);
+            label2.Font = new Font("Tahoma", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(31, 32);
             label2.Name = "label2";
-            label2.Size = new Size(225, 28);
+            label2.Size = new Size(387, 41);
             label2.TabIndex = 2;
             label2.Text = "Search by product name";
             // 

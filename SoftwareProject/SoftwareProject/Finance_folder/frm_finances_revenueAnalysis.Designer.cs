@@ -261,7 +261,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(1574, 609);
+            ClientSize = new Size(944, 609);
             Controls.Add(panel1);
             Name = "frm_finances_revenueAnalysis";
             Text = "Yearly Revenue Analysis";
