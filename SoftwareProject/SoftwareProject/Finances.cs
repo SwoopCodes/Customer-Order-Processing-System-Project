@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SoftwareProject
 {
-    public class Finances
+    public class FinancesData
     {
 
        
