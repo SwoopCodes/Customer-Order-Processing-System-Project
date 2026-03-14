@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Input_ModelNo = new TextBox();
+            Input_searchQuery = new TextBox();
             label1 = new Label();
             label2 = new Label();
             Box_CurrentQuantity = new TextBox();
@@ -37,30 +37,30 @@
             button1 = new Button();
             button2 = new Button();
             label4 = new Label();
-            Box_Description = new RichTextBox();
+            Box_ModelNo = new RichTextBox();
             button_search = new Button();
             Panel_AddStock = new Panel();
             Panel_AddStock.SuspendLayout();
             SuspendLayout();
             // 
-            // Input_ModelNo
+            // Input_searchQuery
             // 
-            Input_ModelNo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_ModelNo.Location = new Point(266, 38);
-            Input_ModelNo.Name = "Input_ModelNo";
-            Input_ModelNo.Size = new Size(224, 38);
-            Input_ModelNo.TabIndex = 0;
-            Input_ModelNo.TextChanged += Input_ModelNo_TextChanged;
+            Input_searchQuery.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Input_searchQuery.Location = new Point(322, 41);
+            Input_searchQuery.Name = "Input_searchQuery";
+            Input_searchQuery.Size = new Size(224, 38);
+            Input_searchQuery.TabIndex = 0;
+            Input_searchQuery.TextChanged += Input_ModelNo_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(27, 35);
+            label1.Location = new Point(10, 41);
             label1.Name = "label1";
-            label1.Size = new Size(233, 41);
+            label1.Size = new Size(306, 41);
             label1.TabIndex = 1;
-            label1.Text = "Model Number";
+            label1.Text = "Find by description: ";
             // 
             // label2
             // 
@@ -136,27 +136,27 @@
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(363, 131);
             label4.Name = "label4";
-            label4.Size = new Size(180, 41);
+            label4.Size = new Size(167, 41);
             label4.TabIndex = 8;
-            label4.Text = "Description";
+            label4.Text = "Model No:";
             // 
-            // Box_Description
+            // Box_ModelNo
             // 
-            Box_Description.BackColor = SystemColors.GrayText;
-            Box_Description.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Box_Description.Location = new Point(242, 191);
-            Box_Description.Name = "Box_Description";
-            Box_Description.ReadOnly = true;
-            Box_Description.Size = new Size(433, 37);
-            Box_Description.TabIndex = 9;
-            Box_Description.Text = "";
+            Box_ModelNo.BackColor = SystemColors.GrayText;
+            Box_ModelNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Box_ModelNo.Location = new Point(242, 191);
+            Box_ModelNo.Name = "Box_ModelNo";
+            Box_ModelNo.ReadOnly = true;
+            Box_ModelNo.Size = new Size(433, 37);
+            Box_ModelNo.TabIndex = 9;
+            Box_ModelNo.Text = "";
             // 
             // button_search
             // 
             button_search.BackColor = Color.FromArgb(255, 192, 128);
             button_search.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_search.ForeColor = SystemColors.ActiveCaptionText;
-            button_search.Location = new Point(532, 32);
+            button_search.Location = new Point(567, 35);
             button_search.Name = "button_search";
             button_search.Size = new Size(151, 47);
             button_search.TabIndex = 10;
@@ -182,14 +182,14 @@
             ClientSize = new Size(914, 600);
             Controls.Add(Panel_AddStock);
             Controls.Add(button_search);
-            Controls.Add(Box_Description);
+            Controls.Add(Box_ModelNo);
             Controls.Add(label4);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(Box_CurrentQuantity);
             Controls.Add(label1);
-            Controls.Add(Input_ModelNo);
+            Controls.Add(Input_searchQuery);
             Margin = new Padding(3, 4, 3, 4);
             Name = "frm_addExistingStock";
             Text = "Add Existing stock";
@@ -201,7 +201,7 @@
 
         #endregion
 
-        private TextBox Input_ModelNo;
+        private TextBox Input_searchQuery;
         private Label label1;
         private Label label2;
         private TextBox Box_CurrentQuantity;
@@ -210,7 +210,7 @@
         private Button button1;
         private Button button2;
         private Label label4;
-        private RichTextBox Box_Description;
+        private RichTextBox Box_ModelNo;
         private Button button_search;
         private Panel Panel_AddStock;
     }

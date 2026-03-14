@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareProject.Finances;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,8 @@ namespace SoftwareProject
 {
     public partial class frm_addExistingStock : Form
     {
+
+        Boolean isActive = false;
         public frm_addExistingStock()
         {
             InitializeComponent();
@@ -27,16 +30,28 @@ namespace SoftwareProject
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            Inventory.findStockToAdd(Box_Description, Box_CurrentQuantity, Input_ModelNo.Text);
+            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_searchQuery.Text);
+            selectionTable.ShowDialog();
+            DataRow selectedRow = selectionTable.selectedItem;
 
-            if (Box_CurrentQuantity.Text.Length > 0)
+            if (selectedRow != null)
             {
+
+                isActive = true;
+
+                Box_ModelNo.Text = selectedRow["model_no"].ToString();
+                Box_ModelNo.BackColor = Color.White;
+
+                Box_CurrentQuantity.Text = selectedRow["current_stock"].ToString();
+                Box_CurrentQuantity.BackColor = Color.White;
 
                 Panel_AddStock.BackColor = Color.LightGray;
                 Input_StockToAdd.BackColor = Color.White;
                 Label_AddStock.ForeColor = Color.Black;
                 Input_StockToAdd.ReadOnly = false;
+
             }
+
         }
 
         private void Input_StockToAdd_KeyDown(object sender, KeyEventArgs e)
@@ -48,42 +63,52 @@ namespace SoftwareProject
 
         private void button1_Click(object sender, EventArgs ex)
         {
-            String userModelNo = Input_ModelNo.Text;
-            int userNewQuantity = 0;
 
-            try
+            if (isActive)
             {
-                userNewQuantity = int.Parse(Input_StockToAdd.Text);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-                return;
-            }
+                String userModelNo = Box_ModelNo.Text;
+                int userNewQuantity = 0;
+
+                try
+                {
+                    userNewQuantity = int.Parse(Input_StockToAdd.Text);
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("You must enter a digit", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
 
-            Boolean updateQueryResult = Inventory.updateExistingInventory(userModelNo, userNewQuantity);
+                Boolean updateQueryResult = Inventory.updateExistingInventory(userModelNo, userNewQuantity);
 
-            if (updateQueryResult == true)
-            {
-                int newQuantity = int.Parse(Box_CurrentQuantity.Text) + userNewQuantity;
+                if (updateQueryResult == true)
+                {
+                    int newQuantity = int.Parse(Box_CurrentQuantity.Text) + userNewQuantity;
 
-                MessageBox.Show("Success!!\nStock updated in database");
-                MessageBox.Show($"Item: {Input_ModelNo}" +
-                    $"\nNew Quantity: {newQuantity}");
+                    MessageBox.Show($"Item {Box_ModelNo.Text} updated\nNewQuantity: {newQuantity}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Box_CurrentQuantity.Text = $"{newQuantity}";
+                    Box_CurrentQuantity.Text = $"{newQuantity}";
+                }
+                else
+                {
+                    MessageBox.Show("An Error has occured");
+                }
             }
             else
             {
-                MessageBox.Show("An Error has occured");
+                MessageBox.Show("Choose an item first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Box_Description.Text = "";
-            Box_Description.BackColor = ColorTranslator.FromHtml("#626262");
+
+            isActive = false;
+
+            Box_ModelNo.Text = "";
+            Box_ModelNo.BackColor = ColorTranslator.FromHtml("#626262");
 
             Box_CurrentQuantity.Text = "";
             Box_CurrentQuantity.BackColor = ColorTranslator.FromHtml("#626262");
