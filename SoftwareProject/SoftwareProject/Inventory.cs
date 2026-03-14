@@ -56,28 +56,11 @@ namespace SoftwareProject
             return Database.ExecuteMultiRowQuery(query);
         }
 
-        public static void findStockToAdd(RichTextBox descriptionBox, TextBox currentStockBox, String inputModelNo)
+        public static void findStockToAdd(string searchQuery)
         {
-            String DescriptionQuery = $"SELECT Description FROM inventory WHERE model_no LIKE '{inputModelNo}'";
-            String quantityQuery = $"SELECT current_stock FROM inventory WHERE model_no LIKE '{inputModelNo}'";
+            String DescriptionQuery = $"SELECT * FROM inventory WHERE model_no LIKE '%{searchQuery}%'";
 
-            try
-            {
-
-                descriptionBox.Text = Database.ExecuteMultiRowQuery(DescriptionQuery).Tables[0].Rows[0]["Description"].ToString();
-                descriptionBox.BackColor = Color.White;
-       
-                currentStockBox.Text = Database.ExecuteMultiRowQuery(quantityQuery).Tables[0].Rows[0]["Current_Stock"].ToString();
-                currentStockBox.BackColor = Color.White;
-            }
-            catch (IndexOutOfRangeException)
-            {
-                MessageBox.Show("Model not found!\nPlease Try again");
-                
-            } catch (Exception e)
-            {
-                MessageBox.Show($"An Error Has Occurred\n\n {e}");
-            }
+           
         }
 
         public static Boolean updateExistingInventory(String model_no, int stockToAdd)

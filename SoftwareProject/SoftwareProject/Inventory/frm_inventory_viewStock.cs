@@ -24,7 +24,7 @@ namespace SoftwareProject
         private void button_search_Click(object sender, EventArgs e)
         {
 
-            if (!String.IsNullOrEmpty(input_search.Text) && input_search.Text.Length > 3)
+            if (!String.IsNullOrEmpty(input_search.Text) && input_search.Text.Length > 2)
             {
                 dataGrid.DataSource = Inventory.getInventory(input_search.Text).Tables[0];
             }

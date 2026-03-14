@@ -46,7 +46,8 @@
             label4 = new Label();
             Button_Cancel = new Button();
             Button_Update = new Button();
-            Button_Delete = new Button();
+            Input_searchQuery = new TextBox();
+            label8 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             button_search.BackColor = Color.FromArgb(255, 192, 128);
             button_search.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_search.ForeColor = SystemColors.ActiveCaptionText;
-            button_search.Location = new Point(517, 15);
+            button_search.Location = new Point(513, 35);
             button_search.Name = "button_search";
             button_search.Size = new Size(151, 47);
             button_search.TabIndex = 13;
@@ -67,17 +68,19 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(21, 18);
+            label1.Location = new Point(22, 15);
             label1.Name = "label1";
-            label1.Size = new Size(196, 41);
+            label1.Size = new Size(175, 41);
             label1.TabIndex = 12;
-            label1.Text = "Description: ";
+            label1.Text = "Model No: ";
             // 
             // Input_ModelNo
             // 
+            Input_ModelNo.BackColor = SystemColors.GrayText;
             Input_ModelNo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_ModelNo.Location = new Point(251, 21);
+            Input_ModelNo.Location = new Point(210, 18);
             Input_ModelNo.Name = "Input_ModelNo";
+            Input_ModelNo.ReadOnly = true;
             Input_ModelNo.Size = new Size(224, 38);
             Input_ModelNo.TabIndex = 11;
             // 
@@ -89,6 +92,8 @@
             panel1.Controls.Add(label7);
             panel1.Controls.Add(Input_Supplier);
             panel1.Controls.Add(label5);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(Input_ModelNo);
             panel1.Controls.Add(Input_SalePrice);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(Input_MinStock);
@@ -96,16 +101,16 @@
             panel1.Controls.Add(Input_CurrentStock);
             panel1.Controls.Add(Input_Description);
             panel1.Controls.Add(label4);
-            panel1.Location = new Point(21, 68);
+            panel1.Location = new Point(21, 101);
             panel1.Name = "panel1";
-            panel1.Size = new Size(734, 321);
+            panel1.Size = new Size(734, 353);
             panel1.TabIndex = 14;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(385, 184);
+            label6.Location = new Point(387, 224);
             label6.Name = "label6";
             label6.Size = new Size(157, 41);
             label6.TabIndex = 27;
@@ -115,7 +120,7 @@
             // 
             Input_CostPrice.BackColor = SystemColors.GrayText;
             Input_CostPrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_CostPrice.Location = new Point(571, 184);
+            Input_CostPrice.Location = new Point(573, 224);
             Input_CostPrice.Name = "Input_CostPrice";
             Input_CostPrice.ReadOnly = true;
             Input_CostPrice.Size = new Size(148, 38);
@@ -125,7 +130,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(22, 247);
+            label7.Location = new Point(24, 287);
             label7.Name = "label7";
             label7.Size = new Size(137, 41);
             label7.TabIndex = 25;
@@ -135,7 +140,7 @@
             // 
             Input_Supplier.BackColor = SystemColors.GrayText;
             Input_Supplier.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_Supplier.Location = new Point(208, 247);
+            Input_Supplier.Location = new Point(210, 287);
             Input_Supplier.Name = "Input_Supplier";
             Input_Supplier.ReadOnly = true;
             Input_Supplier.Size = new Size(254, 38);
@@ -145,7 +150,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(22, 187);
+            label5.Location = new Point(24, 227);
             label5.Name = "label5";
             label5.Size = new Size(153, 41);
             label5.TabIndex = 23;
@@ -155,7 +160,7 @@
             // 
             Input_SalePrice.BackColor = SystemColors.GrayText;
             Input_SalePrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_SalePrice.Location = new Point(208, 187);
+            Input_SalePrice.Location = new Point(210, 227);
             Input_SalePrice.Name = "Input_SalePrice";
             Input_SalePrice.ReadOnly = true;
             Input_SalePrice.Size = new Size(148, 38);
@@ -165,7 +170,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(22, 132);
+            label2.Location = new Point(24, 172);
             label2.Name = "label2";
             label2.Size = new Size(364, 41);
             label2.TabIndex = 21;
@@ -175,7 +180,7 @@
             // 
             Input_MinStock.BackColor = SystemColors.GrayText;
             Input_MinStock.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_MinStock.Location = new Point(402, 135);
+            Input_MinStock.Location = new Point(404, 175);
             Input_MinStock.Name = "Input_MinStock";
             Input_MinStock.ReadOnly = true;
             Input_MinStock.Size = new Size(109, 38);
@@ -185,7 +190,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(22, 76);
+            label3.Location = new Point(24, 116);
             label3.Name = "label3";
             label3.Size = new Size(210, 41);
             label3.TabIndex = 19;
@@ -195,7 +200,7 @@
             // 
             Input_CurrentStock.BackColor = SystemColors.GrayText;
             Input_CurrentStock.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_CurrentStock.Location = new Point(261, 79);
+            Input_CurrentStock.Location = new Point(263, 119);
             Input_CurrentStock.Name = "Input_CurrentStock";
             Input_CurrentStock.ReadOnly = true;
             Input_CurrentStock.Size = new Size(109, 38);
@@ -205,7 +210,7 @@
             // 
             Input_Description.BackColor = SystemColors.GrayText;
             Input_Description.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_Description.Location = new Point(208, 24);
+            Input_Description.Location = new Point(210, 64);
             Input_Description.Name = "Input_Description";
             Input_Description.ReadOnly = true;
             Input_Description.Size = new Size(433, 37);
@@ -216,7 +221,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(22, 20);
+            label4.Location = new Point(24, 60);
             label4.Name = "label4";
             label4.Size = new Size(180, 41);
             label4.TabIndex = 15;
@@ -227,7 +232,7 @@
             Button_Cancel.BackColor = Color.FromArgb(255, 192, 128);
             Button_Cancel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Button_Cancel.ForeColor = SystemColors.ActiveCaptionText;
-            Button_Cancel.Location = new Point(604, 410);
+            Button_Cancel.Location = new Point(604, 479);
             Button_Cancel.Name = "Button_Cancel";
             Button_Cancel.Size = new Size(151, 76);
             Button_Cancel.TabIndex = 16;
@@ -239,7 +244,7 @@
             // 
             Button_Update.BackColor = Color.FromArgb(128, 255, 128);
             Button_Update.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_Update.Location = new Point(271, 410);
+            Button_Update.Location = new Point(447, 479);
             Button_Update.Name = "Button_Update";
             Button_Update.Size = new Size(151, 76);
             Button_Update.TabIndex = 15;
@@ -247,31 +252,37 @@
             Button_Update.UseVisualStyleBackColor = false;
             Button_Update.Click += Button_Update_Click;
             // 
-            // Button_Delete
+            // Input_searchQuery
             // 
-            Button_Delete.BackColor = Color.FromArgb(255, 128, 128);
-            Button_Delete.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_Delete.Location = new Point(437, 410);
-            Button_Delete.Name = "Button_Delete";
-            Button_Delete.Size = new Size(151, 76);
-            Button_Delete.TabIndex = 17;
-            Button_Delete.Text = "Delete";
-            Button_Delete.UseVisualStyleBackColor = false;
-            Button_Delete.Click += Button_Delete_Click;
+            Input_searchQuery.BackColor = SystemColors.HighlightText;
+            Input_searchQuery.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Input_searchQuery.Location = new Point(198, 41);
+            Input_searchQuery.Name = "Input_searchQuery";
+            Input_searchQuery.Size = new Size(224, 38);
+            Input_searchQuery.TabIndex = 28;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(23, 38);
+            label8.Name = "label8";
+            label8.Size = new Size(175, 41);
+            label8.TabIndex = 28;
+            label8.Text = "Model No: ";
             // 
             // frm_inventory_manageStock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(787, 498);
-            Controls.Add(Button_Delete);
+            ClientSize = new Size(787, 579);
+            Controls.Add(label8);
+            Controls.Add(Input_searchQuery);
             Controls.Add(Button_Cancel);
             Controls.Add(Button_Update);
             Controls.Add(panel1);
             Controls.Add(button_search);
-            Controls.Add(label1);
-            Controls.Add(Input_ModelNo);
             Name = "frm_inventory_manageStock";
             Text = "Manage Stock";
             panel1.ResumeLayout(false);
@@ -300,6 +311,7 @@
         private TextBox Input_CurrentStock;
         private Button Button_Cancel;
         private Button Button_Update;
-        private Button Button_Delete;
+        private TextBox Input_searchQuery;
+        private Label label8;
     }
 }
