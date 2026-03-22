@@ -32,8 +32,6 @@
             label2 = new Label();
             input_search = new TextBox();
             dataGrid = new DataGridView();
-            button_dateAscending = new Button();
-            button_dateDesc = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
             SuspendLayout();
             // 
@@ -79,40 +77,12 @@
             dataGrid.Size = new Size(953, 416);
             dataGrid.TabIndex = 4;
             // 
-            // button_dateAscending
-            // 
-            button_dateAscending.BackColor = Color.FromArgb(255, 192, 128);
-            button_dateAscending.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_dateAscending.ForeColor = SystemColors.ActiveCaptionText;
-            button_dateAscending.Location = new Point(12, 58);
-            button_dateAscending.Name = "button_dateAscending";
-            button_dateAscending.Size = new Size(113, 43);
-            button_dateAscending.TabIndex = 8;
-            button_dateAscending.Text = "Date Asc";
-            button_dateAscending.UseVisualStyleBackColor = false;
-            button_dateAscending.Click += button_dateAscending_Click;
-            // 
-            // button_dateDesc
-            // 
-            button_dateDesc.BackColor = Color.FromArgb(255, 255, 128);
-            button_dateDesc.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_dateDesc.ForeColor = SystemColors.ActiveCaptionText;
-            button_dateDesc.Location = new Point(131, 58);
-            button_dateDesc.Name = "button_dateDesc";
-            button_dateDesc.Size = new Size(124, 43);
-            button_dateDesc.TabIndex = 9;
-            button_dateDesc.Text = "Date desc";
-            button_dateDesc.UseVisualStyleBackColor = false;
-            button_dateDesc.Click += button_dateDesc_Click;
-            // 
             // frm_orders_viewOrders
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(997, 553);
-            Controls.Add(button_dateDesc);
-            Controls.Add(button_dateAscending);
             Controls.Add(button_search);
             Controls.Add(label2);
             Controls.Add(input_search);
@@ -130,7 +100,5 @@
         private Label label2;
         private TextBox input_search;
         private DataGridView dataGrid;
-        private Button button_dateAscending;
-        private Button button_dateDesc;
     }
 }

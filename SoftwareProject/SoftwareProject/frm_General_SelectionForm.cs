@@ -17,13 +17,17 @@ namespace SoftwareProject.Finances
         public DataRow selectedItem;
         public frm_General_SelectionForm(string category, string query)
         {
+
             InitializeComponent();
 
             if (category == "Inventory")
             {
-
                 dataGridView.DataSource = Inventory.findItemToUpdate(query).Tables[0];
+            }
 
+            if(category == "Customers")
+            {
+                dataGridView.DataSource = Customers.findCustomer(query).Tables[0];
             }
         }
 
@@ -36,9 +40,11 @@ namespace SoftwareProject.Finances
         {
             if (e.RowIndex >= 0)
             {
-                DataRowView selectedRowView = (DataRowView)dataGridView.Rows[e.RowIndex].DataBoundItem;
-                DataRow selectedRow = selectedRowView.Row;
-                this.selectedItem = selectedRow;
+                DataGridViewRow currentRow = dataGridView.Rows[e.RowIndex];
+                DataRowView rowData = (DataRowView)currentRow.DataBoundItem;
+                DataRow selectedDataRow = rowData.Row;
+
+                this.selectedItem = selectedDataRow;
                 this.Close();
             }
         }
