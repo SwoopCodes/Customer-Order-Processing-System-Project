@@ -13,13 +13,21 @@ namespace SoftwareProject
         public frm_customers_viewCustomers()
         {
             InitializeComponent();
-            dataGrid.DataSource = Customers.getAllCustomers().Tables[0];
+           
 
         }
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            dataGrid.DataSource = Customers.searchCustomer(input_search.Text).Tables[0];
+            if (!String.IsNullOrEmpty(input_search.Text) && input_search.Text.Length > 2)
+            {
+                dataGrid.DataSource = Customers.searchCustomer(input_search.Text).Tables[0];
+            }
+            else
+            {
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
     }
 }

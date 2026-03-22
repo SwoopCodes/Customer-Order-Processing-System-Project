@@ -35,9 +35,29 @@ namespace SoftwareProject
 
         public static DataSet searchCustomer(String searchItem)
         {
-            String query = $"SELECT * FROM customer WHERE company_name LIKE '%{searchItem}%'";
+            string query = $"SELECT * FROM customer WHERE LOWER(customer.company_name) LIKE '%{searchItem.ToLower()}%'";
+
+            DataSet customerSet = Database.ExecuteMultiRowQuery(query);
+
+            if (customerSet.Tables[0].Rows.Count < 0)
+            {
+                MessageBox.Show($"No items found with description {searchItem}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             return Database.ExecuteMultiRowQuery(query);
+        }
+
+        public static DataSet findCustomer(String searchCompany)
+        {
+            String query = $"SELECT * FROM customer WHERE company_name LIKE '%{searchCompany}%'";
+            DataSet customerData = Database.ExecuteMultiRowQuery(query);
+
+            if (customerData.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show($"No items found with description {searchCompany}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            return customerData;
         }
 
         public void AddCustomer()

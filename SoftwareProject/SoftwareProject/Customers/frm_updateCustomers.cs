@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareProject.Finances;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,34 @@ namespace SoftwareProject
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            Customers.findItemToUpdate(Input_email, Input_phone, Input_address, Input_representative, Input_CompanyName.Text);
+            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Customers", Input_CompanyName.Text);
+            selectionTable.ShowDialog();
+            DataRow selectedRow = selectionTable.selectedItem;
+
+            if (selectedRow != null)
+            {
+
+                Input_CompanyName.Text = selectedRow["company_name"].ToString();
+                Input_CompanyName.ReadOnly = true;
+
+                Input_email.Text = selectedRow["email"].ToString();
+                Input_email.BackColor = Color.White;
+                Input_email.ReadOnly = false;
+
+                Input_phone.Text = selectedRow["phone"].ToString();
+                Input_phone.BackColor = Color.White;
+                Input_phone.ReadOnly = false;
+
+                Input_address.Text = selectedRow["address"].ToString();
+                Input_address.BackColor = Color.White;
+                Input_address.ReadOnly = false;
+
+                Input_representative.Text = selectedRow["representative"].ToString();
+                Input_representative.BackColor = Color.White;
+                Input_representative.ReadOnly = false;
+
+            }
+
         }
 
         private void Button_Update_Click(object sender, EventArgs e)
@@ -111,6 +139,7 @@ namespace SoftwareProject
         private void ClearForm()
         {
             Input_CompanyName.Text = "";
+            Input_CompanyName.ReadOnly = false;
 
             Input_email.ReadOnly = true;
             Input_email.BackColor = Color.Gray;
