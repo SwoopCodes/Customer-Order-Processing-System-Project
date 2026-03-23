@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareProject.Finances;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,9 @@ namespace SoftwareProject
 {
     public partial class frm_modifyOrder : Form
     {
+
+        int orderID;
+
         public frm_modifyOrder()
         {
             InitializeComponent();
@@ -23,32 +27,47 @@ namespace SoftwareProject
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (int.TryParse(Input_orderID.Text, out int orderId))
+            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Orders", Input_orderID.Text);
+            selectionTable.ShowDialog();
+            DataRow selectedRow = selectionTable.selectedItem;
+
+            if (selectedRow != null)
             {
 
-                Order.viewOrderDetails(Convert.ToInt32(Input_orderID.Text), box_companyName, box_shippingAddress, Order_Items_Table, button_markComplete, button_removeOrder);
-                Order.getOrderTotal(Convert.ToInt32(Input_orderID.Text), label_orderTotal);
-                Order.displayOrderStatus(Convert.ToInt32(Input_orderID.Text), Label_Status);
+                orderID = Convert.ToInt32(selectedRow["order_id"].ToString());
+
+                DataSet orderItems = Order.retrieveOrderItems(selectedRow["order_id"].ToString());
+                Order_Items_Table.DataSource = orderItems.Tables[0];
+                Order.getOrderTotal(Convert.ToInt32(orderID), label_orderTotal);
+                Order.displayOrderStatus(Convert.ToInt32(orderID), Label_Status);
+
                 button1.Enabled = false;
                 button1.BackColor = Color.Gray;
                 Input_orderID.Enabled = false;
-                
-            }
-            else
-            {
-                MessageBox.Show("Invalid value entered for order ID\nMust be a number");
+
+                box_companyName.Text = selectedRow["company_name"].ToString();
+                box_shippingAddress.Text = selectedRow["shipping_address"].ToString();
+
+                button_markComplete.Enabled = true;
+                button_markComplete.BackColor = Color.FromArgb(152, 251, 152);
+
+                button_removeOrder.Enabled = true;
+                button_removeOrder.BackColor = Color.FromArgb(233, 150, 122);
+
+
+
             }
 
         }
 
         private void button_markComplete_Click(object sender, EventArgs e)
         {
-            Order.markOrderComplete(Convert.ToInt32(Input_orderID.Text));
+            Order.markOrderComplete(orderID);
         }
 
         private void button_removeOrder_Click(object sender, EventArgs e)
         {
-            Order.removeOrder(Convert.ToInt32(Input_orderID.Text));
+            Order.removeOrder(orderID);
         }
     }
 }

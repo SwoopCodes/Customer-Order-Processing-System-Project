@@ -29,6 +29,11 @@ namespace SoftwareProject.Finances
             {
                 dataGridView.DataSource = Customers.findCustomer(query).Tables[0];
             }
+
+            if (category == "Orders")
+            {
+                dataGridView.DataSource = Order.findOrderByName(query).Tables[0];
+            }
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
