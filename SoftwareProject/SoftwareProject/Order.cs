@@ -150,7 +150,14 @@ namespace SoftwareProject
 
         public static DataSet findOrderByName(string searchQuery)
         {
-            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE company_name LIKE '{searchQuery}%'";
+            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE LOWER(company_name) LIKE '{searchQuery.ToLower()}%'";
+
+            DataSet orderSet = Database.ExecuteMultiRowQuery(query);
+
+            if (orderSet.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show($"No orders found with company {searchQuery}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             return Database.ExecuteMultiRowQuery(query);
         }
@@ -165,6 +172,13 @@ namespace SoftwareProject
         public static DataSet viewOrderByDateAsc()
         {
             string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id ORDER BY order_date asc";
+
+            return Database.ExecuteMultiRowQuery(query);
+        }
+
+        public static DataSet retrieveOrderItems(string order_id)
+        {
+            String query = $"SELECT * FROM order_items WHERE order_id = {order_id}";
 
             return Database.ExecuteMultiRowQuery(query);
         }
