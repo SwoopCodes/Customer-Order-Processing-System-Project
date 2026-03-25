@@ -49,7 +49,7 @@ namespace SoftwareProject
 
         public static DataSet findCustomer(String searchCompany)
         {
-            String query = $"SELECT * FROM customer WHERE company_name LIKE '%{searchCompany}%'";
+            String query = $"SELECT * FROM customer WHERE LOWER(company_name) LIKE '%{searchCompany.ToLower()}%'";
             DataSet customerData = Database.ExecuteMultiRowQuery(query);
 
             if (customerData.Tables[0].Rows.Count == 0)
