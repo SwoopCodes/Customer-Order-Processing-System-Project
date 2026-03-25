@@ -94,7 +94,9 @@ namespace SoftwareProject
             double totalProfit = getTotalOrderValue();
             double totalCost = getTotalCostOfItems();
 
-            return totalProfit - totalCost;
+            
+
+            return Double.Round(totalProfit - totalCost, 2);
 
         }
 

@@ -43,6 +43,9 @@
             label4 = new Label();
             button1 = new Button();
             button2 = new Button();
+            Input_itemSearch = new TextBox();
+            label5 = new Label();
+            Button_findItem = new Button();
             ((System.ComponentModel.ISupportInitialize)Order_Items_Table).BeginInit();
             SuspendLayout();
             // 
@@ -60,7 +63,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(422, 188);
+            label2.Location = new Point(419, 261);
             label2.Name = "label2";
             label2.Size = new Size(175, 41);
             label2.TabIndex = 1;
@@ -70,7 +73,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(422, 247);
+            label3.Location = new Point(419, 320);
             label3.Name = "label3";
             label3.Size = new Size(150, 41);
             label3.TabIndex = 2;
@@ -80,7 +83,7 @@
             // 
             Input_ModelNo.BackColor = SystemColors.ScrollBar;
             Input_ModelNo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_ModelNo.Location = new Point(591, 193);
+            Input_ModelNo.Location = new Point(588, 266);
             Input_ModelNo.Name = "Input_ModelNo";
             Input_ModelNo.ReadOnly = true;
             Input_ModelNo.Size = new Size(197, 38);
@@ -90,7 +93,7 @@
             // 
             Input_Quantity.BackColor = SystemColors.ScrollBar;
             Input_Quantity.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_Quantity.Location = new Point(591, 250);
+            Input_Quantity.Location = new Point(588, 323);
             Input_Quantity.Name = "Input_Quantity";
             Input_Quantity.ReadOnly = true;
             Input_Quantity.Size = new Size(87, 38);
@@ -101,7 +104,7 @@
             Button_Add_Item.BackColor = Color.FromArgb(224, 224, 224);
             Button_Add_Item.Enabled = false;
             Button_Add_Item.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_Add_Item.Location = new Point(422, 309);
+            Button_Add_Item.Location = new Point(419, 382);
             Button_Add_Item.Name = "Button_Add_Item";
             Button_Add_Item.Size = new Size(151, 51);
             Button_Add_Item.TabIndex = 24;
@@ -113,7 +116,7 @@
             // 
             Order_Items_Table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             Order_Items_Table.Columns.AddRange(new DataGridViewColumn[] { Order_Model_no, Data_Quantity, deleteButtonColumn });
-            Order_Items_Table.Location = new Point(31, 190);
+            Order_Items_Table.Location = new Point(31, 251);
             Order_Items_Table.Name = "Order_Items_Table";
             Order_Items_Table.ReadOnly = true;
             Order_Items_Table.RowHeadersWidth = 51;
@@ -200,12 +203,48 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // Input_itemSearch
+            // 
+            Input_itemSearch.BackColor = SystemColors.ScrollBar;
+            Input_itemSearch.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Input_itemSearch.Location = new Point(200, 198);
+            Input_itemSearch.Name = "Input_itemSearch";
+            Input_itemSearch.ReadOnly = true;
+            Input_itemSearch.Size = new Size(370, 38);
+            Input_itemSearch.TabIndex = 32;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(31, 195);
+            label5.Name = "label5";
+            label5.Size = new Size(160, 41);
+            label5.TabIndex = 31;
+            label5.Text = "Find item:";
+            // 
+            // Button_findItem
+            // 
+            Button_findItem.BackColor = Color.FromArgb(255, 192, 128);
+            Button_findItem.Enabled = false;
+            Button_findItem.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Button_findItem.Location = new Point(588, 194);
+            Button_findItem.Name = "Button_findItem";
+            Button_findItem.Size = new Size(151, 43);
+            Button_findItem.TabIndex = 33;
+            Button_findItem.Text = "Find";
+            Button_findItem.UseVisualStyleBackColor = false;
+            Button_findItem.Click += Button_findItem_Click;
+            // 
             // frm_orders_createOrder
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(891, 528);
+            ClientSize = new Size(891, 583);
+            Controls.Add(Button_findItem);
+            Controls.Add(Input_itemSearch);
+            Controls.Add(label5);
             Controls.Add(Order_Items_Table);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -243,5 +282,8 @@
         private DataGridViewTextBoxColumn Order_Model_no;
         private DataGridViewTextBoxColumn Data_Quantity;
         private DataGridViewButtonColumn deleteButtonColumn;
+        private TextBox Input_itemSearch;
+        private Label label5;
+        private Button Button_findItem;
     }
 }

@@ -26,7 +26,6 @@ namespace SoftwareProject
             DataRow selectedRow = selectionTable.selectedItem;
 
            
-
             if (selectedRow != null)
             {
 

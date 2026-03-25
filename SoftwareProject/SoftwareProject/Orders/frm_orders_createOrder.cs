@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareProject.Finances;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,32 +36,37 @@ namespace SoftwareProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Order.findCompany(Input_CompanyName.Text, Input_CompanyName, Input_ShippingAddress);
 
-            bool companyFound = Order.findCompany(Input_CompanyName.Text, Input_CompanyName, Input_ShippingAddress);
+            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Customers", Input_CompanyName.Text);
+            selectionTable.ShowDialog();
+            DataRow selectedRow = selectionTable.selectedItem;
 
-
-            if (companyFound)
+            if (selectedRow != null)
             {
-                Input_ModelNo.ReadOnly = false;
+
                 Input_ModelNo.BackColor = Color.White;
+                Input_CompanyName.Text = selectedRow["company_name"].ToString();
 
                 Input_Quantity.ReadOnly = false;
                 Input_Quantity.BackColor = Color.White;
 
                 Input_ShippingAddress.ReadOnly = false;
                 Input_ShippingAddress.BackColor = Color.White;
+                Input_ShippingAddress.Text = selectedRow["address"].ToString();
+
                 Button_Add_Item.BackColor = Color.FromArgb(127, 253, 127);
                 Button_Add_Item.Enabled = true;
 
                 button2.BackColor = Color.FromArgb(127, 253, 127);
                 button2.Enabled = true;
-            }
-            else
-            {
-                MessageBox.Show("Company not found");
-            }
 
+                Button_findItem.BackColor = Color.FromArgb(255, 192, 128);
+                Button_findItem.Enabled = true;
+
+                Input_itemSearch.BackColor = Color.White;
+                Input_itemSearch.ReadOnly = false ;
+
+            }
 
 
         }
@@ -95,7 +101,7 @@ namespace SoftwareProject
                 }
 
                 Order_Items_Table.Rows.Add(Input_ModelNo.Text, Input_Quantity.Text);
-            } 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -116,13 +122,13 @@ namespace SoftwareProject
 
             //Create order items for current order
             int latestOrder = Order.getLatestOrderID();
-            
-            foreach(DataGridViewRow row in Order_Items_Table.Rows)
+
+            foreach (DataGridViewRow row in Order_Items_Table.Rows)
             {
                 Object modelNo = row.Cells[0].Value;
                 Object quantity = row.Cells[1].Value;
 
-                if(modelNo == null)
+                if (modelNo == null)
                 {
                     return;
                 }
@@ -138,10 +144,35 @@ namespace SoftwareProject
             if (e.RowIndex >= 0 && e.ColumnIndex == Order_Items_Table.Columns["deleteButtonColumn"].Index)
             {
 
-             Order_Items_Table.Rows.RemoveAt(e.RowIndex);
-             
+                Order_Items_Table.Rows.RemoveAt(e.RowIndex);
+
             }
         }
 
+        private void Button_findItem_Click(object sender, EventArgs e)
+        {
+
+            if (Input_itemSearch.TextLength > 2)
+            {
+
+                frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_itemSearch.Text);
+                selectionTable.ShowDialog();
+                DataRow itemRow = selectionTable.selectedItem;
+
+                if (itemRow != null)
+                {
+
+                    Input_ModelNo.Text = itemRow["model_no"].ToString();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Description too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
+
+        }
     }
 }

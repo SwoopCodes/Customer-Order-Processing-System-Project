@@ -127,6 +127,7 @@ namespace SoftwareProject
 
             string findSalePrice = $"SELECT sale_price FROM inventory WHERE model_no LIKE '{model_no}'";
             string findCostPrice = $"SELECT COST_PRICE FROM inventory WHERE model_no LIKE '{model_no}'";
+            string removeStock = $"UPDATE inventory SET current_stock = current_stock - {quantity} WHERE model_no LIKE '{model_no}'";
 
             double salePrice = double.Parse(Database.ExecuteMultiRowQuery(findSalePrice).Tables[0].Rows[0]["sale_price"].ToString());
             double costPrice = double.Parse(Database.ExecuteMultiRowQuery(findCostPrice).Tables[0].Rows[0]["COST_PRICE"].ToString());
@@ -137,6 +138,7 @@ namespace SoftwareProject
 
             string addOrderItemQuery = $"INSERT INTO order_items VALUES({order_ID}, '{model_no}', {quantity}, {salePriceTotal}, {costPriceTotal}, {net})";
 
+            Database.ExecuteSingleRowQuery(removeStock);
             Database.ExecuteNonQuery(addOrderItemQuery);
 
         }
@@ -162,6 +164,8 @@ namespace SoftwareProject
             return Database.ExecuteMultiRowQuery(query);
         }
 
+
+        
         public static DataSet viewOrderByDateDesc()
         {
             string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id ORDER BY order_date DESC";
