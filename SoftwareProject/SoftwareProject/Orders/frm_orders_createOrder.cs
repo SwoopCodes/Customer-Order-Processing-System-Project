@@ -18,8 +18,8 @@ namespace SoftwareProject
             DataGridViewButtonColumn c = (DataGridViewButtonColumn)deleteButtonColumn;
             c.DefaultCellStyle.BackColor = Color.Red;
             c.DefaultCellStyle.ForeColor = Color.White;
-
             Order_Items_Table.CellClick += Order_Items_Table_CellClick;
+
         }
 
 
@@ -141,11 +141,21 @@ namespace SoftwareProject
         private void Order_Items_Table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            if (e.RowIndex >= 0 && e.ColumnIndex == Order_Items_Table.Columns["deleteButtonColumn"].Index)
+            try
             {
 
-                Order_Items_Table.Rows.RemoveAt(e.RowIndex);
+                if (e.RowIndex > 0 && e.ColumnIndex == Order_Items_Table.Columns["deleteButtonColumn"].Index)
+                {
 
+                    Order_Items_Table.Rows.RemoveAt(e.RowIndex);
+
+                }
+
+            }
+            catch{
+
+                MessageBox.Show("Cannot delete row", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
             }
         }
 
