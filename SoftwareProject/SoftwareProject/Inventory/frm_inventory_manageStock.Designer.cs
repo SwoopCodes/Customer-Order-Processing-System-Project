@@ -256,7 +256,7 @@
             // 
             Input_searchQuery.BackColor = SystemColors.HighlightText;
             Input_searchQuery.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_searchQuery.Location = new Point(198, 41);
+            Input_searchQuery.Location = new Point(231, 44);
             Input_searchQuery.Name = "Input_searchQuery";
             Input_searchQuery.Size = new Size(224, 38);
             Input_searchQuery.TabIndex = 28;
@@ -267,9 +267,9 @@
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.Location = new Point(23, 38);
             label8.Name = "label8";
-            label8.Size = new Size(175, 41);
+            label8.Size = new Size(196, 41);
             label8.TabIndex = 28;
-            label8.Text = "Model No: ";
+            label8.Text = "Description: ";
             // 
             // frm_inventory_manageStock
             // 

@@ -63,7 +63,6 @@ namespace SoftwareProject
         public void AddCustomer()
         {
 
-            //Define the SQL query to be executed
             string sqlQuery = "INSERT INTO customer VALUES (" +
                               this.customer_ID + ", '" +
                               this.Company_name.Replace("'", "''") + "', '" +
@@ -72,7 +71,6 @@ namespace SoftwareProject
                               this.address.Replace("'", "''") + "', '" +
                               this.representative.Replace("'", "''") + "')";
 
-            //Execute the SQL query
             Database.ExecuteNonQuery(sqlQuery);
 
         }
@@ -146,11 +144,27 @@ namespace SoftwareProject
 
         public static void deleteCustomer(String companyName)
         {
-            String deleteQuery = $"DELETE FROM customer WHERE company_name LIKE '%{companyName}%'";
+
+            if(companyName == null)
+            {
+                MessageBox.Show("No company name chosen");
+                return;
+            }
+
+            String deleteQuery = $"UPDATE customer SET status = 'D' WHERE company_name LIKE '{companyName}'";
 
             try
             {
-                Database.ExecuteNonQuery(deleteQuery);
+                int rowsAffected = Database.ExecuteUpdateStatement(deleteQuery);
+
+                if (rowsAffected == 0)
+                {
+                    MessageBox.Show("An error has occured");
+                }
+                else
+                {
+                    MessageBox.Show("Customer successfully updated");
+                }
 
             }
             catch (Exception e)
@@ -158,7 +172,35 @@ namespace SoftwareProject
                 MessageBox.Show("Error has occured\n" + e);
             }
 
-            MessageBox.Show("Item successfully deleted");
+
+        }
+
+        public static void activateCustomer(String companyName)
+        {
+            String activateQuery = $"UPDATE customer SET status = 'A' WHERE company_name LIKE '{companyName}'";
+
+            try
+            {
+
+                int rowsAffected = Database.ExecuteUpdateStatement(activateQuery);
+
+                if (rowsAffected == 0)
+                {
+                    MessageBox.Show("Company not found");
+                }
+                else
+                {
+                    MessageBox.Show("Customer successfully updated");
+                }
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show($"An error occured\n\n {e}");
+
+            }
+
 
         }
 

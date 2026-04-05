@@ -31,6 +31,7 @@
             label1 = new Label();
             Input_orderID = new TextBox();
             panel1 = new Panel();
+            Label_Status = new Label();
             label_orderTotal = new Label();
             label4 = new Label();
             Order_Items_Table = new DataGridView();
@@ -41,7 +42,6 @@
             button_markComplete = new Button();
             button_removeOrder = new Button();
             button1 = new Button();
-            Label_Status = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Order_Items_Table).BeginInit();
             SuspendLayout();
@@ -52,9 +52,9 @@
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 31);
             label1.Name = "label1";
-            label1.Size = new Size(230, 41);
+            label1.Size = new Size(244, 41);
             label1.TabIndex = 16;
-            label1.Text = "Enter Order ID:";
+            label1.Text = "Company name:";
             // 
             // Input_orderID
             // 
@@ -79,6 +79,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(897, 447);
             panel1.TabIndex = 17;
+            // 
+            // Label_Status
+            // 
+            Label_Status.AutoSize = true;
+            Label_Status.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Status.ForeColor = Color.Black;
+            Label_Status.Location = new Point(538, 388);
+            Label_Status.Name = "Label_Status";
+            Label_Status.Size = new Size(121, 41);
+            Label_Status.TabIndex = 32;
+            Label_Status.Text = "Status: ";
+            Label_Status.Visible = false;
             // 
             // label_orderTotal
             // 
@@ -190,18 +202,6 @@
             button1.Text = "Find";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // Label_Status
-            // 
-            Label_Status.AutoSize = true;
-            Label_Status.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Status.ForeColor = Color.Black;
-            Label_Status.Location = new Point(538, 388);
-            Label_Status.Name = "Label_Status";
-            Label_Status.Size = new Size(121, 41);
-            Label_Status.TabIndex = 32;
-            Label_Status.Text = "Status: ";
-            Label_Status.Visible = false;
             // 
             // frm_modifyOrder
             // 
