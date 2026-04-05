@@ -49,6 +49,9 @@ namespace SoftwareProject
                 Input_representative.BackColor = Color.White;
                 Input_representative.ReadOnly = false;
 
+                Box_status.Text = selectedRow["status"].ToString();
+                Box_status.BackColor = Color.White;
+
             }
 
         }
@@ -156,6 +159,9 @@ namespace SoftwareProject
             Input_representative.ReadOnly = true;
             Input_representative.BackColor = Color.Gray;
             Input_representative.Text = "";
+
+            Box_status.BackColor = Color.Gray;
+            Box_status.Text = "";
         }
 
         private void Button_Cancel_Click(object sender, EventArgs e)
@@ -167,6 +173,12 @@ namespace SoftwareProject
         {
             Customers.deleteCustomer(Input_CompanyName.Text);
             ClearForm();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Customers.activateCustomer(Input_CompanyName.Text);
+            ClearForm() ;
         }
     }
 }

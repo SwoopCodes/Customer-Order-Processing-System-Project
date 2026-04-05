@@ -32,6 +32,8 @@
             label1 = new Label();
             Input_CompanyName = new TextBox();
             panel1 = new Panel();
+            label6 = new Label();
+            Box_status = new TextBox();
             Input_email = new TextBox();
             label5 = new Label();
             Input_representative = new TextBox();
@@ -43,6 +45,7 @@
             Button_Delete = new Button();
             Button_Cancel = new Button();
             Button_Update = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,6 +83,8 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonFace;
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(Box_status);
             panel1.Controls.Add(Input_email);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(Input_representative);
@@ -92,6 +97,26 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(734, 321);
             panel1.TabIndex = 17;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(22, 252);
+            label6.Name = "label6";
+            label6.Size = new Size(113, 41);
+            label6.TabIndex = 30;
+            label6.Text = "Status:";
+            // 
+            // Box_status
+            // 
+            Box_status.BackColor = SystemColors.GrayText;
+            Box_status.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Box_status.Location = new Point(152, 255);
+            Box_status.Name = "Box_status";
+            Box_status.ReadOnly = true;
+            Box_status.Size = new Size(286, 38);
+            Box_status.TabIndex = 29;
             // 
             // Input_email
             // 
@@ -177,7 +202,7 @@
             // 
             Button_Delete.BackColor = Color.FromArgb(255, 128, 128);
             Button_Delete.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_Delete.Location = new Point(443, 416);
+            Button_Delete.Location = new Point(29, 416);
             Button_Delete.Name = "Button_Delete";
             Button_Delete.Size = new Size(151, 76);
             Button_Delete.TabIndex = 20;
@@ -202,7 +227,7 @@
             // 
             Button_Update.BackColor = Color.FromArgb(128, 255, 128);
             Button_Update.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_Update.Location = new Point(277, 416);
+            Button_Update.Location = new Point(443, 416);
             Button_Update.Name = "Button_Update";
             Button_Update.Size = new Size(151, 76);
             Button_Update.TabIndex = 18;
@@ -210,12 +235,25 @@
             Button_Update.UseVisualStyleBackColor = false;
             Button_Update.Click += Button_Update_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.SteelBlue;
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(186, 416);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 76);
+            button1.TabIndex = 21;
+            button1.Text = "Activate";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // frm_updateCustomers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 504);
+            Controls.Add(button1);
             Controls.Add(Button_Delete);
             Controls.Add(Button_Cancel);
             Controls.Add(Button_Update);
@@ -249,5 +287,8 @@
         private Label label5;
         private TextBox Input_representative;
         private TextBox Input_email;
+        private Label label6;
+        private TextBox Box_status;
+        private Button button1;
     }
 }

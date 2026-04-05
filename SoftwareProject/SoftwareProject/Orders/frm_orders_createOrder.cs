@@ -113,14 +113,12 @@ namespace SoftwareProject
                 return;
             }
 
-            //Creating order in orders table
             string customerID = Order.getCustomerID(Input_CompanyName.Text);
             string formattedDate = DateTime.Now.ToString("dd-MMM-yyyy").ToUpper();
 
             Order newOrder = new Order(Order.getNextOrderID(), Int32.Parse(customerID), formattedDate, 'A', Input_ShippingAddress.Text);
             newOrder.createOrder();
 
-            //Create order items for current order
             int latestOrder = Order.getLatestOrderID();
 
             foreach (DataGridViewRow row in Order_Items_Table.Rows)
@@ -144,7 +142,7 @@ namespace SoftwareProject
             try
             {
 
-                if (e.RowIndex > 0 && e.ColumnIndex == Order_Items_Table.Columns["deleteButtonColumn"].Index)
+                if (e.RowIndex >= 0 && e.ColumnIndex == Order_Items_Table.Columns["deleteButtonColumn"].Index)
                 {
 
                     Order_Items_Table.Rows.RemoveAt(e.RowIndex);
