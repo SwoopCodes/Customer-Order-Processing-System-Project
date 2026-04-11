@@ -1,4 +1,7 @@
-﻿namespace SoftwareProject
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SoftwareProject
 {
     partial class frm_finances_revenueAnalysis
     {
@@ -47,6 +50,7 @@
             panel2 = new Panel();
             Label_InventoryValue = new Label();
             label1 = new Label();
+            comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
             panel6.SuspendLayout();
@@ -256,12 +260,23 @@
             label1.TabIndex = 17;
             label1.Text = "Total Inventory value: ";
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Item", "Item 2" });
+            comboBox1.Location = new Point(1043, 160);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(255, 28);
+            comboBox1.TabIndex = 1;
+            comboBox1.Text = "Year";
+            // 
             // frm_finances_revenueAnalysis
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(944, 609);
+            ClientSize = new Size(1799, 609);
+            Controls.Add(comboBox1);
             Controls.Add(panel1);
             Name = "frm_finances_revenueAnalysis";
             Text = "Yearly Revenue Analysis";
@@ -302,5 +317,6 @@
         private Panel panel6;
         private Label Label_totalOrders;
         private Label label10;
+        private ComboBox comboBox1;
     }
 }

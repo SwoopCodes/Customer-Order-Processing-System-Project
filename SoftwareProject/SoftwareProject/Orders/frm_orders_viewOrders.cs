@@ -27,14 +27,5 @@ namespace SoftwareProject
             }
         }
 
-        private void button_dateDesc_Click(object sender, EventArgs e)
-        {
-            dataGrid.DataSource = Order.viewOrderByDateDesc().Tables[0];
-        }
-
-        private void button_dateAscending_Click(object sender, EventArgs e)
-        {
-            dataGrid.DataSource = Order.viewOrderByDateAsc().Tables[0];
-        }
     }
 }

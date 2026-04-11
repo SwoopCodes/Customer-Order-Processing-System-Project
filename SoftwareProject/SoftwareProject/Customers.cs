@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Windows.Forms;
 
 namespace SoftwareProject
 {
@@ -26,13 +27,9 @@ namespace SoftwareProject
             this.representative = representative;
         }
 
-        public static DataSet getAllCustomers()
-        {
-            string query = "SELECT * FROM customer";
 
-            return Database.ExecuteMultiRowQuery(query);
-        }
 
+        // found in view customers
         public static DataSet searchCustomer(String searchItem)
         {
             string query = $"SELECT * FROM customer WHERE LOWER(customer.company_name) LIKE '%{searchItem.ToLower()}%'";
@@ -47,6 +44,7 @@ namespace SoftwareProject
             return Database.ExecuteMultiRowQuery(query);
         }
 
+        // found in general selection form
         public static DataSet findCustomer(String searchCompany)
         {
             String query = $"SELECT * FROM customer WHERE LOWER(company_name) LIKE '%{searchCompany.ToLower()}%'";
@@ -60,6 +58,8 @@ namespace SoftwareProject
             return customerData;
         }
 
+
+        //found in add customer
         public void AddCustomer()
         {
 
@@ -75,46 +75,7 @@ namespace SoftwareProject
 
         }
 
-        public static void findItemToUpdate(TextBox emailBox, TextBox phoneBox, TextBox addressBox, TextBox representativeBox, String inputCompanyName)
-        {
-    
-            String emailQuery = $"SELECT email FROM customer WHERE company_name LIKE '%{inputCompanyName.Trim()}%'";
-            String phoneQuery = $"SELECT phone FROM customer WHERE company_name LIKE '%{inputCompanyName.Trim()}%'";
-            String addressQuery = $"SELECT address FROM customer WHERE company_name LIKE '%{inputCompanyName.Trim()}%'";
-            String representativeQuery = $"SELECT representative FROM customer WHERE company_name LIKE '%{inputCompanyName.Trim()}%'";
-
-
-            try
-            {
-
-                emailBox.Text = Database.ExecuteMultiRowQuery(emailQuery).Tables[0].Rows[0]["email"].ToString();
-                emailBox.BackColor = Color.White;
-                emailBox.ReadOnly = false;
-
-                phoneBox.Text = Database.ExecuteMultiRowQuery(phoneQuery).Tables[0].Rows[0]["phone"].ToString();
-                phoneBox.BackColor = Color.White;
-                phoneBox.ReadOnly = false;
-
-                addressBox.Text = Database.ExecuteMultiRowQuery(addressQuery).Tables[0].Rows[0]["address"].ToString();
-                addressBox.BackColor = Color.White;
-                addressBox.ReadOnly = false;
-
-                representativeBox.Text = Database.ExecuteMultiRowQuery(representativeQuery).Tables[0].Rows[0]["representative"].ToString();
-                representativeBox.BackColor = Color.White;
-                representativeBox.ReadOnly = false;
-
-            }
-            catch (IndexOutOfRangeException)
-            {
-                MessageBox.Show("Company not found!\nPlease Try again");
-
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show($"An Error Has Occurred\n\n {e}");
-            }
-        }
-
+        // found in update customer
         public void updateCustomer()
         {
 
@@ -142,6 +103,8 @@ namespace SoftwareProject
 
         }
 
+
+        // found in update customer
         public static void deleteCustomer(String companyName)
         {
 
@@ -175,6 +138,7 @@ namespace SoftwareProject
 
         }
 
+        // found in update customer
         public static void activateCustomer(String companyName)
         {
             String activateQuery = $"UPDATE customer SET status = 'A' WHERE company_name LIKE '{companyName}'";
@@ -204,6 +168,8 @@ namespace SoftwareProject
 
         }
 
+
+        // found in add customer
         public static int getNextCustomerID()
         {
 

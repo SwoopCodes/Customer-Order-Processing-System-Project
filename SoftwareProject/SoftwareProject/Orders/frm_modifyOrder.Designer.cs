@@ -1,4 +1,7 @@
-﻿namespace SoftwareProject
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SoftwareProject
 {
     partial class frm_modifyOrder
     {
@@ -28,200 +31,205 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            Input_orderID = new TextBox();
-            panel1 = new Panel();
-            Label_Status = new Label();
-            label_orderTotal = new Label();
-            label4 = new Label();
-            Order_Items_Table = new DataGridView();
-            label3 = new Label();
-            box_shippingAddress = new TextBox();
-            label2 = new Label();
-            box_companyName = new TextBox();
-            button_markComplete = new Button();
-            button_removeOrder = new Button();
-            button1 = new Button();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Order_Items_Table).BeginInit();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Input_orderID = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Label_Status = new System.Windows.Forms.Label();
+            this.label_orderTotal = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Order_Items_Table = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.box_shippingAddress = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.box_companyName = new System.Windows.Forms.TextBox();
+            this.button_markComplete = new System.Windows.Forms.Button();
+            this.button_removeOrder = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Order_Items_Table)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 31);
-            label1.Name = "label1";
-            label1.Size = new Size(244, 41);
-            label1.TabIndex = 16;
-            label1.Text = "Company name:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 41);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Company name:";
             // 
             // Input_orderID
             // 
-            Input_orderID.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_orderID.Location = new Point(260, 34);
-            Input_orderID.Name = "Input_orderID";
-            Input_orderID.Size = new Size(348, 38);
-            Input_orderID.TabIndex = 15;
+            this.Input_orderID.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_orderID.Location = new System.Drawing.Point(379, 30);
+            this.Input_orderID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_orderID.Name = "Input_orderID";
+            this.Input_orderID.Size = new System.Drawing.Size(348, 38);
+            this.Input_orderID.TabIndex = 15;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ControlLight;
-            panel1.Controls.Add(Label_Status);
-            panel1.Controls.Add(label_orderTotal);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(Order_Items_Table);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(box_shippingAddress);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(box_companyName);
-            panel1.Location = new Point(12, 95);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(897, 447);
-            panel1.TabIndex = 17;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.Label_Status);
+            this.panel1.Controls.Add(this.label_orderTotal);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.Order_Items_Table);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.box_shippingAddress);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.box_companyName);
+            this.panel1.Location = new System.Drawing.Point(12, 76);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(897, 358);
+            this.panel1.TabIndex = 17;
             // 
             // Label_Status
             // 
-            Label_Status.AutoSize = true;
-            Label_Status.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_Status.ForeColor = Color.Black;
-            Label_Status.Location = new Point(538, 388);
-            Label_Status.Name = "Label_Status";
-            Label_Status.Size = new Size(121, 41);
-            Label_Status.TabIndex = 32;
-            Label_Status.Text = "Status: ";
-            Label_Status.Visible = false;
+            this.Label_Status.AutoSize = true;
+            this.Label_Status.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Status.ForeColor = System.Drawing.Color.Black;
+            this.Label_Status.Location = new System.Drawing.Point(545, 302);
+            this.Label_Status.Name = "Label_Status";
+            this.Label_Status.Size = new System.Drawing.Size(121, 41);
+            this.Label_Status.TabIndex = 32;
+            this.Label_Status.Text = "Status: ";
+            this.Label_Status.Visible = false;
             // 
             // label_orderTotal
             // 
-            label_orderTotal.AutoSize = true;
-            label_orderTotal.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_orderTotal.ForeColor = Color.FromArgb(0, 192, 0);
-            label_orderTotal.Location = new Point(538, 344);
-            label_orderTotal.Name = "label_orderTotal";
-            label_orderTotal.Size = new Size(121, 41);
-            label_orderTotal.TabIndex = 31;
-            label_orderTotal.Text = "Total: €";
-            label_orderTotal.Visible = false;
+            this.label_orderTotal.AutoSize = true;
+            this.label_orderTotal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_orderTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label_orderTotal.Location = new System.Drawing.Point(545, 267);
+            this.label_orderTotal.Name = "label_orderTotal";
+            this.label_orderTotal.Size = new System.Drawing.Size(121, 41);
+            this.label_orderTotal.TabIndex = 31;
+            this.label_orderTotal.Text = "Total: €";
+            this.label_orderTotal.Visible = false;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 145);
-            label4.Name = "label4";
-            label4.Size = new Size(194, 41);
-            label4.TabIndex = 27;
-            label4.Text = "Order Items:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 116);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(194, 41);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Order Items:";
             // 
             // Order_Items_Table
             // 
-            Order_Items_Table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Order_Items_Table.Location = new Point(12, 199);
-            Order_Items_Table.Name = "Order_Items_Table";
-            Order_Items_Table.ReadOnly = true;
-            Order_Items_Table.RowHeadersWidth = 51;
-            Order_Items_Table.Size = new Size(511, 230);
-            Order_Items_Table.TabIndex = 26;
-            Order_Items_Table.CellContentClick += Order_Items_Table_CellContentClick;
+            this.Order_Items_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Order_Items_Table.Location = new System.Drawing.Point(12, 159);
+            this.Order_Items_Table.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Order_Items_Table.Name = "Order_Items_Table";
+            this.Order_Items_Table.ReadOnly = true;
+            this.Order_Items_Table.RowHeadersWidth = 51;
+            this.Order_Items_Table.Size = new System.Drawing.Size(511, 184);
+            this.Order_Items_Table.TabIndex = 26;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(12, 78);
-            label3.Name = "label3";
-            label3.Size = new Size(270, 41);
-            label3.TabIndex = 21;
-            label3.Text = "Shipping address:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(270, 41);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Shipping address:";
             // 
             // box_shippingAddress
             // 
-            box_shippingAddress.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            box_shippingAddress.Location = new Point(288, 83);
-            box_shippingAddress.Name = "box_shippingAddress";
-            box_shippingAddress.ReadOnly = true;
-            box_shippingAddress.Size = new Size(463, 38);
-            box_shippingAddress.TabIndex = 20;
+            this.box_shippingAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_shippingAddress.Location = new System.Drawing.Point(367, 62);
+            this.box_shippingAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box_shippingAddress.Name = "box_shippingAddress";
+            this.box_shippingAddress.ReadOnly = true;
+            this.box_shippingAddress.Size = new System.Drawing.Size(463, 38);
+            this.box_shippingAddress.TabIndex = 20;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(250, 41);
-            label2.TabIndex = 19;
-            label2.Text = "Comapny Name:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(250, 41);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Comapny Name:";
             // 
             // box_companyName
             // 
-            box_companyName.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            box_companyName.Location = new Point(268, 26);
-            box_companyName.Name = "box_companyName";
-            box_companyName.ReadOnly = true;
-            box_companyName.Size = new Size(348, 38);
-            box_companyName.TabIndex = 18;
+            this.box_companyName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_companyName.Location = new System.Drawing.Point(367, 15);
+            this.box_companyName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.box_companyName.Name = "box_companyName";
+            this.box_companyName.ReadOnly = true;
+            this.box_companyName.Size = new System.Drawing.Size(348, 38);
+            this.box_companyName.TabIndex = 18;
             // 
             // button_markComplete
             // 
-            button_markComplete.BackColor = SystemColors.AppWorkspace;
-            button_markComplete.Enabled = false;
-            button_markComplete.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button_markComplete.Location = new Point(550, 549);
-            button_markComplete.Margin = new Padding(3, 4, 3, 4);
-            button_markComplete.Name = "button_markComplete";
-            button_markComplete.Size = new Size(240, 63);
-            button_markComplete.TabIndex = 19;
-            button_markComplete.Text = "Mark Complete";
-            button_markComplete.UseVisualStyleBackColor = false;
-            button_markComplete.Click += button_markComplete_Click;
+            this.button_markComplete.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button_markComplete.Enabled = false;
+            this.button_markComplete.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_markComplete.Location = new System.Drawing.Point(550, 439);
+            this.button_markComplete.Name = "button_markComplete";
+            this.button_markComplete.Size = new System.Drawing.Size(240, 50);
+            this.button_markComplete.TabIndex = 19;
+            this.button_markComplete.Text = "Mark Complete";
+            this.button_markComplete.UseVisualStyleBackColor = false;
+            this.button_markComplete.Click += new System.EventHandler(this.button_markComplete_Click);
             // 
             // button_removeOrder
             // 
-            button_removeOrder.BackColor = SystemColors.AppWorkspace;
-            button_removeOrder.Enabled = false;
-            button_removeOrder.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button_removeOrder.Location = new Point(796, 549);
-            button_removeOrder.Margin = new Padding(3, 4, 3, 4);
-            button_removeOrder.Name = "button_removeOrder";
-            button_removeOrder.Size = new Size(240, 63);
-            button_removeOrder.TabIndex = 20;
-            button_removeOrder.Text = "Remove Order";
-            button_removeOrder.UseVisualStyleBackColor = false;
-            button_removeOrder.Click += button_removeOrder_Click;
+            this.button_removeOrder.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button_removeOrder.Enabled = false;
+            this.button_removeOrder.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_removeOrder.Location = new System.Drawing.Point(796, 439);
+            this.button_removeOrder.Name = "button_removeOrder";
+            this.button_removeOrder.Size = new System.Drawing.Size(240, 50);
+            this.button_removeOrder.TabIndex = 20;
+            this.button_removeOrder.Text = "Remove Order";
+            this.button_removeOrder.UseVisualStyleBackColor = false;
+            this.button_removeOrder.Click += new System.EventHandler(this.button_removeOrder_Click);
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(255, 192, 128);
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(639, 28);
-            button1.Name = "button1";
-            button1.Size = new Size(151, 47);
-            button1.TabIndex = 30;
-            button1.Text = "Find";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(758, 25);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 47);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Find";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frm_modifyOrder
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(1048, 634);
-            Controls.Add(button1);
-            Controls.Add(button_removeOrder);
-            Controls.Add(button_markComplete);
-            Controls.Add(panel1);
-            Controls.Add(label1);
-            Controls.Add(Input_orderID);
-            Name = "frm_modifyOrder";
-            Text = "Order details";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)Order_Items_Table).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(1048, 507);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_removeOrder);
+            this.Controls.Add(this.button_markComplete);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Input_orderID);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "frm_modifyOrder";
+            this.Text = "Order details";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Order_Items_Table)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

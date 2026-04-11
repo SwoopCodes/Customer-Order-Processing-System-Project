@@ -1,4 +1,7 @@
-﻿namespace SoftwareProject
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SoftwareProject
 {
     partial class frm_addNewItem
     {
@@ -28,202 +31,211 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            Input_ModelNo = new TextBox();
-            label2 = new Label();
-            Input_Description = new TextBox();
-            label3 = new Label();
-            Input_CurrentStock = new TextBox();
-            label4 = new Label();
-            Input_MinStock = new TextBox();
-            label5 = new Label();
-            Input_SalePrice = new TextBox();
-            label7 = new Label();
-            Input_Supplier = new TextBox();
-            label6 = new Label();
-            Input_CostPrice = new TextBox();
-            Button_AddItem = new Button();
-            Button_Cancel = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Input_ModelNo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Input_Description = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Input_CurrentStock = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Input_MinStock = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Input_SalePrice = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Input_Supplier = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Input_CostPrice = new System.Windows.Forms.TextBox();
+            this.Button_AddItem = new System.Windows.Forms.Button();
+            this.Button_Cancel = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(30, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(233, 41);
-            label1.TabIndex = 3;
-            label1.Text = "Model Number";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 41);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Model Number";
             // 
             // Input_ModelNo
             // 
-            Input_ModelNo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_ModelNo.Location = new Point(269, 32);
-            Input_ModelNo.Name = "Input_ModelNo";
-            Input_ModelNo.Size = new Size(224, 38);
-            Input_ModelNo.TabIndex = 2;
+            this.Input_ModelNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_ModelNo.Location = new System.Drawing.Point(304, 26);
+            this.Input_ModelNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_ModelNo.Name = "Input_ModelNo";
+            this.Input_ModelNo.Size = new System.Drawing.Size(224, 38);
+            this.Input_ModelNo.TabIndex = 2;
+            this.Input_ModelNo.TextChanged += new System.EventHandler(this.Input_ModelNo_TextChanged);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(30, 89);
-            label2.Name = "label2";
-            label2.Size = new Size(180, 41);
-            label2.TabIndex = 5;
-            label2.Text = "Description";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(30, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(180, 41);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Description";
             // 
             // Input_Description
             // 
-            Input_Description.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_Description.Location = new Point(269, 92);
-            Input_Description.Name = "Input_Description";
-            Input_Description.Size = new Size(445, 38);
-            Input_Description.TabIndex = 4;
+            this.Input_Description.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_Description.Location = new System.Drawing.Point(304, 74);
+            this.Input_Description.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_Description.Name = "Input_Description";
+            this.Input_Description.Size = new System.Drawing.Size(445, 38);
+            this.Input_Description.TabIndex = 4;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(30, 145);
-            label3.Name = "label3";
-            label3.Size = new Size(210, 41);
-            label3.TabIndex = 7;
-            label3.Text = "Current Stock";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(210, 41);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Current Stock";
             // 
             // Input_CurrentStock
             // 
-            Input_CurrentStock.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_CurrentStock.Location = new Point(269, 148);
-            Input_CurrentStock.Name = "Input_CurrentStock";
-            Input_CurrentStock.Size = new Size(109, 38);
-            Input_CurrentStock.TabIndex = 6;
+            this.Input_CurrentStock.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_CurrentStock.Location = new System.Drawing.Point(304, 118);
+            this.Input_CurrentStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_CurrentStock.Name = "Input_CurrentStock";
+            this.Input_CurrentStock.Size = new System.Drawing.Size(109, 38);
+            this.Input_CurrentStock.TabIndex = 6;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(30, 201);
-            label4.Name = "label4";
-            label4.Size = new Size(364, 41);
-            label4.TabIndex = 9;
-            label4.Text = "Minimum Stock Allowed";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(364, 41);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Minimum Stock Allowed";
             // 
             // Input_MinStock
             // 
-            Input_MinStock.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_MinStock.Location = new Point(410, 204);
-            Input_MinStock.Name = "Input_MinStock";
-            Input_MinStock.Size = new Size(109, 38);
-            Input_MinStock.TabIndex = 8;
+            this.Input_MinStock.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_MinStock.Location = new System.Drawing.Point(445, 163);
+            this.Input_MinStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_MinStock.Name = "Input_MinStock";
+            this.Input_MinStock.Size = new System.Drawing.Size(109, 38);
+            this.Input_MinStock.TabIndex = 8;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(30, 256);
-            label5.Name = "label5";
-            label5.Size = new Size(153, 41);
-            label5.TabIndex = 11;
-            label5.Text = "Sale Price";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 205);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 41);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Sale Price";
             // 
             // Input_SalePrice
             // 
-            Input_SalePrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_SalePrice.Location = new Point(269, 256);
-            Input_SalePrice.Name = "Input_SalePrice";
-            Input_SalePrice.Size = new Size(148, 38);
-            Input_SalePrice.TabIndex = 10;
+            this.Input_SalePrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_SalePrice.Location = new System.Drawing.Point(304, 205);
+            this.Input_SalePrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_SalePrice.Name = "Input_SalePrice";
+            this.Input_SalePrice.Size = new System.Drawing.Size(148, 38);
+            this.Input_SalePrice.TabIndex = 10;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(30, 368);
-            label7.Name = "label7";
-            label7.Size = new Size(137, 41);
-            label7.TabIndex = 15;
-            label7.Text = "Supplier";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(30, 294);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 41);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Supplier";
             // 
             // Input_Supplier
             // 
-            Input_Supplier.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_Supplier.Location = new Point(269, 371);
-            Input_Supplier.Name = "Input_Supplier";
-            Input_Supplier.Size = new Size(250, 38);
-            Input_Supplier.TabIndex = 14;
+            this.Input_Supplier.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_Supplier.Location = new System.Drawing.Point(304, 297);
+            this.Input_Supplier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_Supplier.Name = "Input_Supplier";
+            this.Input_Supplier.Size = new System.Drawing.Size(250, 38);
+            this.Input_Supplier.TabIndex = 14;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(30, 313);
-            label6.Name = "label6";
-            label6.Size = new Size(157, 41);
-            label6.TabIndex = 17;
-            label6.Text = "Cost Price";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(30, 250);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(157, 41);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Cost Price";
             // 
             // Input_CostPrice
             // 
-            Input_CostPrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_CostPrice.Location = new Point(269, 313);
-            Input_CostPrice.Name = "Input_CostPrice";
-            Input_CostPrice.Size = new Size(148, 38);
-            Input_CostPrice.TabIndex = 16;
+            this.Input_CostPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_CostPrice.Location = new System.Drawing.Point(304, 250);
+            this.Input_CostPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_CostPrice.Name = "Input_CostPrice";
+            this.Input_CostPrice.Size = new System.Drawing.Size(148, 38);
+            this.Input_CostPrice.TabIndex = 16;
             // 
             // Button_AddItem
             // 
-            Button_AddItem.BackColor = Color.FromArgb(128, 255, 128);
-            Button_AddItem.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_AddItem.Location = new Point(729, 495);
-            Button_AddItem.Name = "Button_AddItem";
-            Button_AddItem.Size = new Size(151, 76);
-            Button_AddItem.TabIndex = 18;
-            Button_AddItem.Text = "Add Item";
-            Button_AddItem.UseVisualStyleBackColor = false;
-            Button_AddItem.Click += Button_AddItem_Click;
+            this.Button_AddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Button_AddItem.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddItem.Location = new System.Drawing.Point(729, 396);
+            this.Button_AddItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_AddItem.Name = "Button_AddItem";
+            this.Button_AddItem.Size = new System.Drawing.Size(151, 61);
+            this.Button_AddItem.TabIndex = 18;
+            this.Button_AddItem.Text = "Add Item";
+            this.Button_AddItem.UseVisualStyleBackColor = false;
+            this.Button_AddItem.Click += new System.EventHandler(this.Button_AddItem_Click);
             // 
             // Button_Cancel
             // 
-            Button_Cancel.BackColor = Color.FromArgb(255, 128, 128);
-            Button_Cancel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Button_Cancel.ForeColor = SystemColors.ActiveCaptionText;
-            Button_Cancel.Location = new Point(546, 495);
-            Button_Cancel.Name = "Button_Cancel";
-            Button_Cancel.Size = new Size(151, 76);
-            Button_Cancel.TabIndex = 19;
-            Button_Cancel.Text = "Cancel";
-            Button_Cancel.UseVisualStyleBackColor = false;
+            this.Button_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Button_Cancel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Button_Cancel.Location = new System.Drawing.Point(546, 396);
+            this.Button_Cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_Cancel.Name = "Button_Cancel";
+            this.Button_Cancel.Size = new System.Drawing.Size(151, 61);
+            this.Button_Cancel.TabIndex = 19;
+            this.Button_Cancel.Text = "Cancel";
+            this.Button_Cancel.UseVisualStyleBackColor = false;
             // 
             // frm_addNewItem
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(914, 600);
-            Controls.Add(Button_Cancel);
-            Controls.Add(Button_AddItem);
-            Controls.Add(label6);
-            Controls.Add(Input_CostPrice);
-            Controls.Add(label7);
-            Controls.Add(Input_Supplier);
-            Controls.Add(label5);
-            Controls.Add(Input_SalePrice);
-            Controls.Add(label4);
-            Controls.Add(Input_MinStock);
-            Controls.Add(label3);
-            Controls.Add(Input_CurrentStock);
-            Controls.Add(label2);
-            Controls.Add(Input_Description);
-            Controls.Add(label1);
-            Controls.Add(Input_ModelNo);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frm_addNewItem";
-            Text = "Add new Item";
-            Load += frm_addNewItem_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(914, 480);
+            this.Controls.Add(this.Button_Cancel);
+            this.Controls.Add(this.Button_AddItem);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Input_CostPrice);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Input_Supplier);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Input_SalePrice);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Input_MinStock);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Input_CurrentStock);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Input_Description);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Input_ModelNo);
+            this.Name = "frm_addNewItem";
+            this.Text = "Add new Item";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

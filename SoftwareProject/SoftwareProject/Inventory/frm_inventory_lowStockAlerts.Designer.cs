@@ -1,4 +1,7 @@
-﻿namespace SoftwareProject
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SoftwareProject
 {
     partial class frm_inventory_lowStockAlerts
     {
