@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Security.Policy;
 using System.Text;
+using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace SoftwareProject
@@ -34,6 +35,9 @@ namespace SoftwareProject
             this.Supplier = supplier;
         }
 
+
+        //Used
+        //Found in viewStock form
         public static DataSet getInventory(string search_query)
         {
             string query = $"SELECT * FROM inventory WHERE LOWER(inventory.description) LIKE '%{search_query.ToLower()}%'";
@@ -48,14 +52,7 @@ namespace SoftwareProject
             return Database.ExecuteMultiRowQuery(query);
         }
 
-        //Unused function
-        public static DataSet searchItem(String searchItem)
-        {
-            String query = $"SELECT * FROM inventory WHERE Model_No LIKE '%{searchItem}%'";
-
-            return Database.ExecuteMultiRowQuery(query);
-        }
-
+        //Unknown
         public static void findStockToAdd(string searchQuery)
         {
             String DescriptionQuery = $"SELECT * FROM inventory WHERE model_no LIKE '%{searchQuery}%'";
@@ -81,6 +78,8 @@ namespace SoftwareProject
             
         }
 
+        //Used
+        //used in addStock
         public static int getNextProdID()
         {
 
@@ -100,17 +99,8 @@ namespace SoftwareProject
             return nextId;
         }
 
-        public static DataSet getTypes()
-
-        {
-
-            String sqlQuery = "SELECT * FROM Types ORDER BY TypeCode";
-
-
-            return Database.ExecuteMultiRowQuery(sqlQuery);
-
-        }
-
+        
+        // found in add New Item
         public void AddProduct()
         {
 
@@ -124,11 +114,11 @@ namespace SoftwareProject
                             this.Cost_Price + ", '" +           
                             this.Supplier + "')";               
 
-            //Execute the SQL query
             Database.ExecuteNonQuery(sqlQuery);
 
         }
 
+        // Found in general selection form
         public static DataSet findItemToUpdate(string item_description)
         {
             string query = $"SELECT * FROM inventory WHERE LOWER(inventory.description) LIKE '%{item_description.ToLower()}%'";
@@ -145,6 +135,7 @@ namespace SoftwareProject
 
         }
 
+        // found in manage stock
         public void updateStockItem()
         {
 
@@ -172,6 +163,7 @@ namespace SoftwareProject
 
         }
 
+        // found in manage stock
         public static void deleteStockItem(String modelNo)
         {
             String deleteQuery = $"DELETE FROM inventory WHERE model_no = '{modelNo}'";
@@ -189,6 +181,7 @@ namespace SoftwareProject
 
         }
 
+        // used in view Low Stock
         public static DataSet viewLowStock()
         {
             string query = "SELECT * FROM inventory WHERE current_stock < minimum_stock";

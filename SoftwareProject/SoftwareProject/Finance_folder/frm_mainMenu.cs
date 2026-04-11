@@ -1,4 +1,6 @@
 using SoftwareProject.Properties;
+using System;
+using System.Windows.Forms;
 
 namespace SoftwareProject
 {

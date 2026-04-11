@@ -1,4 +1,7 @@
-﻿namespace SoftwareProject.Finances
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SoftwareProject.Finances
 {
     partial class frm_General_SelectionForm
     {

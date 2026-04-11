@@ -56,7 +56,7 @@ namespace SoftwareProject
 
             string convertedAvgOrderValue = averageOrderValue.Tables[0].Rows[0]["avg_value"].ToString();
 
-            return Double.Round(Convert.ToDouble(convertedAvgOrderValue), 2);
+            return Convert.ToDouble(convertedAvgOrderValue);
         }
 
         public static double getTotalOrderValue()
@@ -96,7 +96,7 @@ namespace SoftwareProject
 
             
 
-            return Double.Round(totalProfit - totalCost, 2);
+            return totalProfit - totalCost;
 
         }
 

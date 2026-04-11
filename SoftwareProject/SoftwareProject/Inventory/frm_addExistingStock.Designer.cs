@@ -1,4 +1,7 @@
-﻿namespace SoftwareProject
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SoftwareProject
 {
     partial class frm_addExistingStock
     {
@@ -28,175 +31,180 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Input_searchQuery = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            Box_CurrentQuantity = new TextBox();
-            Label_AddStock = new Label();
-            Input_StockToAdd = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            label4 = new Label();
-            Box_ModelNo = new RichTextBox();
-            button_search = new Button();
-            Panel_AddStock = new Panel();
-            Panel_AddStock.SuspendLayout();
-            SuspendLayout();
+            this.Input_searchQuery = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Box_CurrentQuantity = new System.Windows.Forms.TextBox();
+            this.Label_AddStock = new System.Windows.Forms.Label();
+            this.Input_StockToAdd = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Box_ModelNo = new System.Windows.Forms.RichTextBox();
+            this.button_search = new System.Windows.Forms.Button();
+            this.Panel_AddStock = new System.Windows.Forms.Panel();
+            this.Panel_AddStock.SuspendLayout();
+            this.SuspendLayout();
             // 
             // Input_searchQuery
             // 
-            Input_searchQuery.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_searchQuery.Location = new Point(322, 41);
-            Input_searchQuery.Name = "Input_searchQuery";
-            Input_searchQuery.Size = new Size(224, 38);
-            Input_searchQuery.TabIndex = 0;
-            Input_searchQuery.TextChanged += Input_ModelNo_TextChanged;
+            this.Input_searchQuery.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_searchQuery.Location = new System.Drawing.Point(322, 33);
+            this.Input_searchQuery.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_searchQuery.Name = "Input_searchQuery";
+            this.Input_searchQuery.Size = new System.Drawing.Size(224, 38);
+            this.Input_searchQuery.TabIndex = 0;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(10, 41);
-            label1.Name = "label1";
-            label1.Size = new Size(306, 41);
-            label1.TabIndex = 1;
-            label1.Text = "Find by description: ";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(306, 41);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Find by description: ";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(242, 242);
-            label2.Name = "label2";
-            label2.Size = new Size(257, 41);
-            label2.TabIndex = 3;
-            label2.Text = "Current Quantity";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(242, 194);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(257, 41);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Current Quantity";
             // 
             // Box_CurrentQuantity
             // 
-            Box_CurrentQuantity.BackColor = SystemColors.GrayText;
-            Box_CurrentQuantity.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Box_CurrentQuantity.Location = new Point(532, 247);
-            Box_CurrentQuantity.Name = "Box_CurrentQuantity";
-            Box_CurrentQuantity.ReadOnly = true;
-            Box_CurrentQuantity.Size = new Size(112, 38);
-            Box_CurrentQuantity.TabIndex = 2;
+            this.Box_CurrentQuantity.BackColor = System.Drawing.SystemColors.GrayText;
+            this.Box_CurrentQuantity.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Box_CurrentQuantity.Location = new System.Drawing.Point(532, 198);
+            this.Box_CurrentQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Box_CurrentQuantity.Name = "Box_CurrentQuantity";
+            this.Box_CurrentQuantity.ReadOnly = true;
+            this.Box_CurrentQuantity.Size = new System.Drawing.Size(112, 38);
+            this.Box_CurrentQuantity.TabIndex = 2;
             // 
             // Label_AddStock
             // 
-            Label_AddStock.AutoSize = true;
-            Label_AddStock.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Label_AddStock.ForeColor = SystemColors.ControlDark;
-            Label_AddStock.Location = new Point(45, 17);
-            Label_AddStock.Name = "Label_AddStock";
-            Label_AddStock.Size = new Size(159, 41);
-            Label_AddStock.TabIndex = 5;
-            Label_AddStock.Text = "Add stock";
+            this.Label_AddStock.AutoSize = true;
+            this.Label_AddStock.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_AddStock.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.Label_AddStock.Location = new System.Drawing.Point(49, 6);
+            this.Label_AddStock.Name = "Label_AddStock";
+            this.Label_AddStock.Size = new System.Drawing.Size(159, 41);
+            this.Label_AddStock.TabIndex = 5;
+            this.Label_AddStock.Text = "Add stock";
             // 
             // Input_StockToAdd
             // 
-            Input_StockToAdd.BackColor = SystemColors.MenuBar;
-            Input_StockToAdd.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Input_StockToAdd.Location = new Point(13, 61);
-            Input_StockToAdd.Name = "Input_StockToAdd";
-            Input_StockToAdd.ReadOnly = true;
-            Input_StockToAdd.Size = new Size(224, 38);
-            Input_StockToAdd.TabIndex = 4;
-            Input_StockToAdd.TextChanged += textBox2_TextChanged;
-            Input_StockToAdd.KeyDown += Input_StockToAdd_KeyDown;
+            this.Input_StockToAdd.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.Input_StockToAdd.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_StockToAdd.Location = new System.Drawing.Point(13, 49);
+            this.Input_StockToAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_StockToAdd.Name = "Input_StockToAdd";
+            this.Input_StockToAdd.ReadOnly = true;
+            this.Input_StockToAdd.Size = new System.Drawing.Size(224, 38);
+            this.Input_StockToAdd.TabIndex = 4;
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(128, 255, 128);
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(266, 476);
-            button1.Name = "button1";
-            button1.Size = new Size(151, 76);
-            button1.TabIndex = 6;
-            button1.Text = "Update";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(266, 381);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 61);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(255, 128, 128);
-            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(481, 476);
-            button2.Name = "button2";
-            button2.Size = new Size(151, 76);
-            button2.TabIndex = 7;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(481, 381);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 61);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Cancel";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(363, 131);
-            label4.Name = "label4";
-            label4.Size = new Size(167, 41);
-            label4.TabIndex = 8;
-            label4.Text = "Model No:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(363, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(167, 41);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Model No:";
             // 
             // Box_ModelNo
             // 
-            Box_ModelNo.BackColor = SystemColors.GrayText;
-            Box_ModelNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Box_ModelNo.Location = new Point(242, 191);
-            Box_ModelNo.Name = "Box_ModelNo";
-            Box_ModelNo.ReadOnly = true;
-            Box_ModelNo.Size = new Size(433, 37);
-            Box_ModelNo.TabIndex = 9;
-            Box_ModelNo.Text = "";
+            this.Box_ModelNo.BackColor = System.Drawing.SystemColors.GrayText;
+            this.Box_ModelNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Box_ModelNo.Location = new System.Drawing.Point(242, 153);
+            this.Box_ModelNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Box_ModelNo.Name = "Box_ModelNo";
+            this.Box_ModelNo.ReadOnly = true;
+            this.Box_ModelNo.Size = new System.Drawing.Size(433, 30);
+            this.Box_ModelNo.TabIndex = 9;
+            this.Box_ModelNo.Text = "";
             // 
             // button_search
             // 
-            button_search.BackColor = Color.FromArgb(255, 192, 128);
-            button_search.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_search.ForeColor = SystemColors.ActiveCaptionText;
-            button_search.Location = new Point(567, 35);
-            button_search.Name = "button_search";
-            button_search.Size = new Size(151, 47);
-            button_search.TabIndex = 10;
-            button_search.Text = "Search";
-            button_search.UseVisualStyleBackColor = false;
-            button_search.Click += button_search_Click;
+            this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button_search.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button_search.Location = new System.Drawing.Point(567, 28);
+            this.button_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_search.Name = "button_search";
+            this.button_search.Size = new System.Drawing.Size(151, 46);
+            this.button_search.TabIndex = 10;
+            this.button_search.Text = "Search";
+            this.button_search.UseVisualStyleBackColor = false;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
             // Panel_AddStock
             // 
-            Panel_AddStock.BackColor = SystemColors.ScrollBar;
-            Panel_AddStock.Controls.Add(Input_StockToAdd);
-            Panel_AddStock.Controls.Add(Label_AddStock);
-            Panel_AddStock.Location = new Point(322, 332);
-            Panel_AddStock.Name = "Panel_AddStock";
-            Panel_AddStock.Size = new Size(250, 125);
-            Panel_AddStock.TabIndex = 11;
+            this.Panel_AddStock.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Panel_AddStock.Controls.Add(this.Input_StockToAdd);
+            this.Panel_AddStock.Controls.Add(this.Label_AddStock);
+            this.Panel_AddStock.Location = new System.Drawing.Point(322, 266);
+            this.Panel_AddStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Panel_AddStock.Name = "Panel_AddStock";
+            this.Panel_AddStock.Size = new System.Drawing.Size(250, 100);
+            this.Panel_AddStock.TabIndex = 11;
             // 
             // frm_addExistingStock
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(914, 600);
-            Controls.Add(Panel_AddStock);
-            Controls.Add(button_search);
-            Controls.Add(Box_ModelNo);
-            Controls.Add(label4);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(Box_CurrentQuantity);
-            Controls.Add(label1);
-            Controls.Add(Input_searchQuery);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "frm_addExistingStock";
-            Text = "Add Existing stock";
-            Panel_AddStock.ResumeLayout(false);
-            Panel_AddStock.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(914, 480);
+            this.Controls.Add(this.Panel_AddStock);
+            this.Controls.Add(this.button_search);
+            this.Controls.Add(this.Box_ModelNo);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Box_CurrentQuantity);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Input_searchQuery);
+            this.Name = "frm_addExistingStock";
+            this.Text = "Add Existing stock";
+            this.Panel_AddStock.ResumeLayout(false);
+            this.Panel_AddStock.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

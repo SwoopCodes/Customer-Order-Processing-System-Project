@@ -1,31 +1,276 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>softwareProject</RootNamespace>
+    <AssemblyName>softwareProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <EnableWindowsFormsHighDpiAutoResizing>true</EnableWindowsFormsHighDpiAutoResizing>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="LiveCharts.WinForms" Version="0.9.7.1" />
-    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.26.100" />
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.23.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.23.26.200\lib\net472\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=10.0.0.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.10.0.5\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.2\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=10.0.0.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.10.0.5\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
+    <Compile Include="Customers.cs" />
+    <Compile Include="Customers\frm_customers_addCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frm_customers_addCustomers.Designer.cs">
+      <DependentUpon>frm_customers_addCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\frm_customers_viewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frm_customers_viewCustomers.Designer.cs">
+      <DependentUpon>frm_customers_viewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\frm_updateCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frm_updateCustomers.Designer.cs">
+      <DependentUpon>frm_updateCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="Finances.cs" />
+    <Compile Include="Finance_folder\frm_finances_revenueAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance_folder\frm_finances_revenueAnalysis.Designer.cs">
+      <DependentUpon>frm_finances_revenueAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance_folder\frm_mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance_folder\frm_mainMenu.Designer.cs">
+      <DependentUpon>frm_mainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_General_SelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_General_SelectionForm.Designer.cs">
+      <DependentUpon>frm_General_SelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Inventory\frm_addExistingStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frm_addExistingStock.Designer.cs">
+      <DependentUpon>frm_addExistingStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frm_addNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frm_addNewItem.Designer.cs">
+      <DependentUpon>frm_addNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_addStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_addStock.Designer.cs">
+      <DependentUpon>frm_inventory_addStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_lowStockAlerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_lowStockAlerts.Designer.cs">
+      <DependentUpon>frm_inventory_lowStockAlerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_manageStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_manageStock.Designer.cs">
+      <DependentUpon>frm_inventory_manageStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_viewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frm_inventory_viewStock.Designer.cs">
+      <DependentUpon>frm_inventory_viewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Orders\frm_modifyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders\frm_modifyOrder.Designer.cs">
+      <DependentUpon>frm_modifyOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\frm_orders_createOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders\frm_orders_createOrder.Designer.cs">
+      <DependentUpon>frm_orders_createOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\frm_orders_viewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders\frm_orders_viewOrders.Designer.cs">
+      <DependentUpon>frm_orders_viewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Customers\frm_customers_addCustomers.resx">
+      <DependentUpon>frm_customers_addCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\frm_customers_viewCustomers.resx">
+      <DependentUpon>frm_customers_viewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\frm_updateCustomers.resx">
+      <DependentUpon>frm_updateCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance_folder\frm_finances_revenueAnalysis.resx">
+      <DependentUpon>frm_finances_revenueAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance_folder\frm_mainMenu.resx">
+      <DependentUpon>frm_mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_General_SelectionForm.resx">
+      <DependentUpon>frm_General_SelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frm_addExistingStock.resx">
+      <DependentUpon>frm_addExistingStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frm_addNewItem.resx">
+      <DependentUpon>frm_addNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frm_inventory_addStock.resx">
+      <DependentUpon>frm_inventory_addStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frm_inventory_lowStockAlerts.resx">
+      <DependentUpon>frm_inventory_lowStockAlerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frm_inventory_manageStock.resx">
+      <DependentUpon>frm_inventory_manageStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frm_inventory_viewStock.resx">
+      <DependentUpon>frm_inventory_viewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\frm_modifyOrder.resx">
+      <DependentUpon>frm_modifyOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\frm_orders_createOrder.resx">
+      <DependentUpon>frm_orders_createOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\frm_orders_viewOrders.resx">
+      <DependentUpon>frm_orders_viewOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\navigation.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\softwareProject.csproj.AssemblyReference.cache" />
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
-
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <None Include="App.config" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

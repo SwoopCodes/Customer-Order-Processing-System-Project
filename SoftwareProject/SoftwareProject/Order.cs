@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Reflection.Metadata;
 using System.Text;
+using System.Windows.Forms;
 
 namespace SoftwareProject
 {
@@ -25,24 +26,8 @@ namespace SoftwareProject
             this.shipping_address = shipping_address;
         }
 
-        public static bool findCompany(String searchItem, TextBox companyName, TextBox companyAddress)
-        {
-            string query = $" SELECT company_name, address FROM customer WHERE company_name LIKE '{searchItem}%' ORDER BY company_name";
 
-            var result = Database.ExecuteMultiRowQuery(query);
-
-            try
-            {
-                companyName.Text = result.Tables[0].Rows[0]["company_name"].ToString();
-                companyAddress.Text = result.Tables[0].Rows[0]["address"].ToString();
-                return true;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-        }
-
+        //found in create order
         public void createOrder()
         {
 
@@ -53,6 +38,7 @@ namespace SoftwareProject
             MessageBox.Show($"Success\nOrder has been created\nOrder ID: {this.order_ID}");
         }
 
+        // found in create order
         public static int getNextOrderID()
         {
 
@@ -72,6 +58,7 @@ namespace SoftwareProject
             return nextId;
         }
 
+        // found in create order
         public static string getCustomerID(String companyName)
         {
             string findCompanyIDQuery = $"Select customer_id from customer WHERE company_name LIKE '{companyName}'";
@@ -80,6 +67,7 @@ namespace SoftwareProject
 
         }
 
+        // found in create order
         public static int getLatestOrderID()
         {
             string getLatestOrder = "SELECT MAX(order_ID) AS max FROM orders";
@@ -87,6 +75,7 @@ namespace SoftwareProject
             return Int32.Parse(order_id);
         }
 
+        // found in create order
         public static Boolean checkItemToAdd(String itemName, int quantity) 
         {
 
@@ -122,6 +111,7 @@ namespace SoftwareProject
 
         }
 
+        //found in create order
         public static void addOrderItems(int order_ID, string model_no, int quantity)
         {
 
@@ -143,13 +133,8 @@ namespace SoftwareProject
 
         }
 
-        public static DataSet getAllOrders()
-        {
-            string query = "SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id";
 
-            return Database.ExecuteMultiRowQuery(query);
-        }
-
+        // found in view orders
         public static DataSet findOrderByName(string searchQuery)
         {
             string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE LOWER(company_name) LIKE '{searchQuery.ToLower()}%'";
@@ -165,21 +150,7 @@ namespace SoftwareProject
         }
 
 
-        
-        public static DataSet viewOrderByDateDesc()
-        {
-            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id ORDER BY order_date DESC";
-
-            return Database.ExecuteMultiRowQuery(query);
-        }
-
-        public static DataSet viewOrderByDateAsc()
-        {
-            string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id ORDER BY order_date asc";
-
-            return Database.ExecuteMultiRowQuery(query);
-        }
-
+        // found in view order details
         public static DataSet retrieveOrderItems(string order_id)
         {
             String query = $"SELECT * FROM order_items WHERE order_id = {order_id}";
@@ -187,23 +158,7 @@ namespace SoftwareProject
             return Database.ExecuteMultiRowQuery(query);
         }
 
-        public static void viewOrderDetails(Int32 order_id, TextBox customerNameBox, TextBox shippingAddressBox, DataGridView itemsTable ,Button markComplete, Button removeOrder)
-        {
-            String companyNameQuery = $"SELECT c.company_name FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE order_id = {order_id}";
-            String shippingAddressQuery = $"SELECT shipping_address FROM orders WHERE order_id = {order_id}";
-            String retrieveOrderItemsQuery = $"SELECT oi.model_no, i.description, oi.quantity, oi.total FROM order_items oi INNER JOIN inventory i ON oi.model_no = i.model_no WHERE order_id = {order_id}";
-
-            customerNameBox.Text = Database.ExecuteMultiRowQuery(companyNameQuery).Tables[0].Rows[0]["company_name"].ToString();
-            shippingAddressBox.Text = Database.ExecuteMultiRowQuery(shippingAddressQuery).Tables[0].Rows[0]["shipping_address"].ToString();
-            markComplete.Enabled = true;
-            markComplete.BackColor = Color.FromArgb(152, 251, 152);
-
-            removeOrder.Enabled = true;
-            removeOrder.BackColor = Color.FromArgb(233, 150, 122);
-
-            itemsTable.DataSource = Database.ExecuteMultiRowQuery(retrieveOrderItemsQuery).Tables[0];
-        }
-
+        // found in view order details
         public static void markOrderComplete(Int32 orderID) 
         {
             try
@@ -218,6 +173,7 @@ namespace SoftwareProject
             }
         }
 
+        // found in view order details
         public static void removeOrder(Int32 orderID)
         {
             try
@@ -232,6 +188,7 @@ namespace SoftwareProject
             }
         }
 
+        // found in view order details
         public static void getOrderTotal(Int32 orderID, Label orderTotalField)
         {
             string findOrderTotalQuery = $"SELECT SUM(total) AS total FROM order_items WHERE order_ID = {orderID}";
@@ -239,6 +196,7 @@ namespace SoftwareProject
             orderTotalField.Visible = true;
         }
 
+        // found in view order details
         public static void displayOrderStatus(Int32 orderID, Label statusText) 
         {
             string findStatusQuery = $"SELECT status FROM orders WHERE order_ID = {orderID}";

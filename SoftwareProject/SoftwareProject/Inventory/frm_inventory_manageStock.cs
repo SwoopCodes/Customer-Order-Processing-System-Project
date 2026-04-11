@@ -84,8 +84,6 @@ namespace SoftwareProject
 
             bool isValid = true;
 
-
-            // Check if user chose item
             if(!itemActive)
             {
                 Input_searchQuery.BackColor = Color.OrangeRed;
