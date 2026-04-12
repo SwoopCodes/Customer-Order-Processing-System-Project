@@ -31,70 +31,76 @@ namespace SoftwareProject
         /// </summary>
         private void InitializeComponent()
         {
-            button_search = new Button();
-            label2 = new Label();
-            input_search = new TextBox();
-            dataGrid = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
-            SuspendLayout();
+            this.button_search = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.input_search = new System.Windows.Forms.TextBox();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+            this.SuspendLayout();
             // 
             // button_search
             // 
-            button_search.BackColor = Color.FromArgb(0, 192, 0);
-            button_search.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_search.ForeColor = SystemColors.ActiveCaptionText;
-            button_search.Location = new Point(852, 48);
-            button_search.Name = "button_search";
-            button_search.Size = new Size(113, 43);
-            button_search.TabIndex = 7;
-            button_search.Text = "Search";
-            button_search.UseVisualStyleBackColor = false;
-            button_search.Click += button_search_Click;
+            this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button_search.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button_search.Location = new System.Drawing.Point(639, 31);
+            this.button_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_search.Name = "button_search";
+            this.button_search.Size = new System.Drawing.Size(85, 35);
+            this.button_search.TabIndex = 7;
+            this.button_search.Text = "Search";
+            this.button_search.UseVisualStyleBackColor = false;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 18);
-            label2.Name = "label2";
-            label2.Size = new Size(295, 31);
-            label2.TabIndex = 6;
-            label2.Text = "Search by Customer Name";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(246, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search by Customer Name";
             // 
             // input_search
             // 
-            input_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            input_search.Location = new Point(313, 18);
-            input_search.Name = "input_search";
-            input_search.Size = new Size(276, 34);
-            input_search.TabIndex = 5;
+            this.input_search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input_search.Location = new System.Drawing.Point(259, 30);
+            this.input_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.input_search.Name = "input_search";
+            this.input_search.Size = new System.Drawing.Size(208, 29);
+            this.input_search.TabIndex = 5;
             // 
             // dataGrid
             // 
-            dataGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGrid.Location = new Point(12, 107);
-            dataGrid.Name = "dataGrid";
-            dataGrid.ReadOnly = true;
-            dataGrid.RowHeadersWidth = 51;
-            dataGrid.Size = new Size(953, 416);
-            dataGrid.TabIndex = 4;
+            this.dataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(9, 70);
+            this.dataGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.ReadOnly = true;
+            this.dataGrid.RowHeadersWidth = 51;
+            this.dataGrid.Size = new System.Drawing.Size(715, 270);
+            this.dataGrid.TabIndex = 4;
             // 
             // frm_orders_viewOrders
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(997, 553);
-            Controls.Add(button_search);
-            Controls.Add(label2);
-            Controls.Add(input_search);
-            Controls.Add(dataGrid);
-            Name = "frm_orders_viewOrders";
-            Text = "View Orders";
-            ((System.ComponentModel.ISupportInitialize)dataGrid).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(748, 359);
+            this.Controls.Add(this.button_search);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.input_search);
+            this.Controls.Add(this.dataGrid);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "frm_orders_viewOrders";
+            this.Text = "View Orders";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
