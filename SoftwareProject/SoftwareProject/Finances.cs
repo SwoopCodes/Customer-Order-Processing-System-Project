@@ -28,73 +28,85 @@ namespace SoftwareProject
 
         }
 
-        public static int getTotalOrdersYTD()
+        public static double getPotentialInventoryProfit()
+        {
+            string query = "SELECT SUM(current_stock * sale_price) as TOTAL_SALEVALUE FROM inventory";
+
+            DataSet totalInventorySaleValue = Database.ExecuteMultiRowQuery(query);
+
+            double convertedTotalInventorySaleValue = Convert.ToDouble(totalInventorySaleValue.Tables[0].Rows[0]["TOTAL_SALEVALUE"]);
+            double totalInventoryValue = getTotalInventoryValue();
+
+            return Convert.ToDouble(convertedTotalInventorySaleValue - totalInventoryValue);
+
+
+        }
+
+        public static int getTotalOrders(String year)
         {
 
-            string query = @"SELECT COUNT(*) FROM orders
-                            WHERE order_date >= trunc(sysdate, 'YEAR')";
+            string query = $@"SELECT COUNT(DISTINCT ORDER_ID) AS TOTAL_ORDERS
+                            FROM ORDERS
+                            WHERE EXTRACT(YEAR FROM ORDER_DATE) = {2026}";
 
             DataSet totalOrders = Database.ExecuteMultiRowQuery(query);
 
-            string convertedTotalorders = totalOrders.Tables[0].Rows[0]["COUNT(*)"].ToString();
+            string convertedTotalorders = totalOrders.Tables[0].Rows[0]["total_orders"].ToString();
 
             return Convert.ToInt32(convertedTotalorders);
         }
 
-        public static double getAverageOrderValue()
+        public static double getAverageOrderValue(String year)
         {
 
-            string query = @"SELECT ROUND(AVG(order_total), 2) as avg_value 
-                            FROM (
-                                SELECT o.order_ID, SUM(oi.TOTAL) AS order_total 
-                                FROM orders o 
-                                JOIN order_items oi ON o.order_id = oi.order_id 
-                                WHERE o.order_date >= trunc(sysdate, 'YEAR') 
-                                AND o.status NOT IN ('D') 
-                                GROUP BY o.order_ID
-                            )";
+            string query = $@"SELECT ROUND(SUM(OI.TOTAL) / COUNT(DISTINCT OI.ORDER_ID), 2) AS AVG_ORDER_VALUE
+                            FROM ORDER_ITEMS OI
+                            JOIN ORDERS O ON OI.ORDER_ID = O.ORDER_ID
+                            WHERE EXTRACT(YEAR FROM O.ORDER_DATE) = {year}";
 
             DataSet averageOrderValue = Database.ExecuteMultiRowQuery(query);
 
-            string convertedAvgOrderValue = averageOrderValue.Tables[0].Rows[0]["avg_value"].ToString();
+            string convertedAvgOrderValue = averageOrderValue.Tables[0].Rows[0]["AVG_ORDER_VALUE"].ToString();
 
             return Convert.ToDouble(convertedAvgOrderValue);
         }
 
-        public static double getTotalOrderValue()
+        public static double getTotalOrderValue(String year)
         {
 
-            string query = @"SELECT sum(total) FROM orders o
-                            JOIN order_items oi ON o.order_id = oi.order_id
-                            WHERE o.order_date >= trunc(sysdate, 'Year')
+            string query = $@"SELECT ROUND(SUM(OI.TOTAL), 2) AS TOTAL_REVENUE
+                            FROM ORDER_ITEMS OI
+                            JOIN ORDERS O ON OI.ORDER_ID = O.ORDER_ID
+                            WHERE EXTRACT(YEAR FROM O.ORDER_DATE) = {year}
                             AND o.status NOT IN ('D')";
 
             DataSet totalOrderValue = Database.ExecuteMultiRowQuery(query);
-            string convertedTotalOrderValue = totalOrderValue.Tables[0].Rows[0]["sum(total)"].ToString();
+            string convertedTotalOrderValue = totalOrderValue.Tables[0].Rows[0]["TOTAL_REVENUE"].ToString();
                 
 
             return Convert.ToDouble(convertedTotalOrderValue);
         }  
 
-        public static double getTotalCostOfItems()
+        public static double getTotalCostOfItems(String year)
         {
 
-            string query = @"SELECT sum(cost) FROM order_items oi
-                            JOIN orders o ON o.order_id = oi.order_id
-                            WHERE o.order_date >= trunc(sysdate, 'Year')
+            string query = $@"SELECT ROUND(SUM(OI.COST), 2) AS TOTAL_COST
+                            FROM ORDER_ITEMS OI
+                            JOIN ORDERS O ON OI.ORDER_ID = O.ORDER_ID
+                            WHERE EXTRACT(YEAR FROM O.ORDER_DATE) = {year}
                             AND o.status NOT IN ('D')";
 
             DataSet totalOrderCostValue = Database.ExecuteMultiRowQuery(query);
-            string convertedTotalOrderCostValue = totalOrderCostValue.Tables[0].Rows[0]["sum(cost)"].ToString();
+            string convertedTotalOrderCostValue = totalOrderCostValue.Tables[0].Rows[0]["TOTAL_COST"].ToString();
 
             return Convert.ToDouble(convertedTotalOrderCostValue);
         }
 
-        public static double totalProfit()
+        public static double totalProfit(String year)
         {
 
-            double totalProfit = getTotalOrderValue();
-            double totalCost = getTotalCostOfItems();
+            double totalProfit = getTotalOrderValue(year);
+            double totalCost = getTotalCostOfItems(year);
 
             
 
@@ -120,8 +132,7 @@ namespace SoftwareProject
                 return;
             }
 
-            string[] months = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
-                         "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+            string[] months = { "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
             decimal[] amounts = new decimal[12]; 
 
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
@@ -132,14 +143,12 @@ namespace SoftwareProject
 
             chart.Series[0].Points.Clear();
 
-            chart.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
-            chart.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
-
             chart.ChartAreas[0].AxisX.Interval = 1;
 
             chart.Series[0].LegendText = "Sales Total";
             chart.Series[0].Label = "€#VALY";
 
+            chart.Titles.Clear();
             chart.Titles.Add("Sales Analysis " + year);
             chart.ChartAreas[0].AxisX.Title = "Month";
             chart.ChartAreas[0].AxisY.Title = "Total Sales";
