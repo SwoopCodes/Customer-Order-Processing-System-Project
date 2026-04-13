@@ -13,18 +13,13 @@ namespace SoftwareProject
         public frm_finances_revenueAnalysis()
         {
             InitializeComponent();
-
-            Label_InventoryValue.Text = "€" + FinancesData.getTotalInventoryValue().ToString();
-            Label_totalOrders.Text = FinancesData.getTotalOrdersYTD().ToString();
-            Label_AverageOrderValue.Text = "€" + FinancesData.getAverageOrderValue().ToString();
-            Label_totalOrderValue.Text = "€" + FinancesData.getTotalOrderValue().ToString();
-            Label_CostOfItemsSold.Text = "-€" + FinancesData.getTotalCostOfItems().ToString();
-            Label_TotalProfit.Text = "€" + FinancesData.totalProfit().ToString();
-
         }
 
         private void frm_finances_revenueAnalysis_Load(object sender, EventArgs e)
         {
+            Label_InventoryValue.Text = "€" + FinancesData.getTotalInventoryValue().ToString();
+            Label_potentialProfit.Text = "€" + FinancesData.getPotentialInventoryProfit().ToString();
+
             string yearQuery = "SELECT EXTRACT(YEAR FROM MIN(ORDER_DATE)) FROM Orders";
             DataSet ds = Database.ExecuteMultiRowQuery(yearQuery);
 
@@ -39,7 +34,6 @@ namespace SoftwareProject
                 }
             }
 
-            chart1.Visible = false;
         }
 
         private void extractYearComboBox(object sender, EventArgs e)
@@ -48,12 +42,18 @@ namespace SoftwareProject
             {
                 string selectedYear = comboBox1.SelectedItem.ToString();
                 FinancesData.LoadChart(selectedYear, chart1);
+                Label_totalOrders.Text = FinancesData.getTotalOrders(selectedYear).ToString();
+                Label_AverageOrderValue.Text = "€" + FinancesData.getAverageOrderValue(selectedYear).ToString();
+                Label_totalOrderValue.Text = "€" + FinancesData.getTotalOrderValue(selectedYear).ToString();
+                Label_CostOfItemsSold.Text = "-€" + FinancesData.getTotalCostOfItems(selectedYear).ToString();
+                Label_TotalProfit.Text = "€" + FinancesData.totalProfit(selectedYear).ToString();
             }
         }
 
         private void button_filter_Click(object sender, EventArgs e)
         {
             extractYearComboBox(sender, e);
+
         }
     }
 }
