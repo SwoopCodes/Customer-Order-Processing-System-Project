@@ -38,9 +38,6 @@ namespace SoftwareProject
             this.Input_Quantity = new System.Windows.Forms.TextBox();
             this.Button_Add_Item = new System.Windows.Forms.Button();
             this.Order_Items_Table = new System.Windows.Forms.DataGridView();
-            this.Order_Model_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Data_Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteButtonColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Input_CompanyName = new System.Windows.Forms.TextBox();
             this.Input_ShippingAddress = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,6 +46,12 @@ namespace SoftwareProject
             this.Input_itemSearch = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Button_findItem = new System.Windows.Forms.Button();
+            this.Order_Model_no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data_Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deleteButtonColumn = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Label_totalPrefix = new System.Windows.Forms.Label();
+            this.Label_totalPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Order_Items_Table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +59,10 @@ namespace SoftwareProject
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 19);
+            this.label1.Location = new System.Drawing.Point(25, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 41);
+            this.label1.Size = new System.Drawing.Size(210, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Company Name: ";
             // 
@@ -66,9 +70,10 @@ namespace SoftwareProject
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(542, 220);
+            this.label2.Location = new System.Drawing.Point(506, 163);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 41);
+            this.label2.Size = new System.Drawing.Size(142, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Model No: ";
             // 
@@ -76,9 +81,10 @@ namespace SoftwareProject
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(542, 267);
+            this.label3.Location = new System.Drawing.Point(506, 201);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 41);
+            this.label3.Size = new System.Drawing.Size(120, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Quantity:";
             // 
@@ -86,22 +92,22 @@ namespace SoftwareProject
             // 
             this.Input_ModelNo.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Input_ModelNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_ModelNo.Location = new System.Drawing.Point(727, 222);
-            this.Input_ModelNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_ModelNo.Location = new System.Drawing.Point(645, 164);
+            this.Input_ModelNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_ModelNo.Name = "Input_ModelNo";
             this.Input_ModelNo.ReadOnly = true;
-            this.Input_ModelNo.Size = new System.Drawing.Size(197, 38);
+            this.Input_ModelNo.Size = new System.Drawing.Size(149, 32);
             this.Input_ModelNo.TabIndex = 3;
             // 
             // Input_Quantity
             // 
             this.Input_Quantity.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Input_Quantity.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_Quantity.Location = new System.Drawing.Point(727, 267);
-            this.Input_Quantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_Quantity.Location = new System.Drawing.Point(645, 201);
+            this.Input_Quantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_Quantity.Name = "Input_Quantity";
             this.Input_Quantity.ReadOnly = true;
-            this.Input_Quantity.Size = new System.Drawing.Size(87, 38);
+            this.Input_Quantity.Size = new System.Drawing.Size(66, 32);
             this.Input_Quantity.TabIndex = 4;
             // 
             // Button_Add_Item
@@ -109,10 +115,10 @@ namespace SoftwareProject
             this.Button_Add_Item.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Button_Add_Item.Enabled = false;
             this.Button_Add_Item.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Add_Item.Location = new System.Drawing.Point(542, 317);
-            this.Button_Add_Item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_Add_Item.Location = new System.Drawing.Point(506, 242);
+            this.Button_Add_Item.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Button_Add_Item.Name = "Button_Add_Item";
-            this.Button_Add_Item.Size = new System.Drawing.Size(151, 46);
+            this.Button_Add_Item.Size = new System.Drawing.Size(113, 37);
             this.Button_Add_Item.TabIndex = 24;
             this.Button_Add_Item.Text = "Add";
             this.Button_Add_Item.UseVisualStyleBackColor = false;
@@ -124,14 +130,109 @@ namespace SoftwareProject
             this.Order_Items_Table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Order_Model_no,
             this.Data_Quantity,
+            this.Data_price,
             this.deleteButtonColumn});
-            this.Order_Items_Table.Location = new System.Drawing.Point(31, 201);
-            this.Order_Items_Table.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Order_Items_Table.Location = new System.Drawing.Point(23, 163);
+            this.Order_Items_Table.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Order_Items_Table.Name = "Order_Items_Table";
             this.Order_Items_Table.ReadOnly = true;
             this.Order_Items_Table.RowHeadersWidth = 51;
-            this.Order_Items_Table.Size = new System.Drawing.Size(483, 243);
+            this.Order_Items_Table.Size = new System.Drawing.Size(463, 197);
             this.Order_Items_Table.TabIndex = 25;
+            // 
+            // Input_CompanyName
+            // 
+            this.Input_CompanyName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_CompanyName.Location = new System.Drawing.Point(250, 15);
+            this.Input_CompanyName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Input_CompanyName.Name = "Input_CompanyName";
+            this.Input_CompanyName.Size = new System.Drawing.Size(303, 32);
+            this.Input_CompanyName.TabIndex = 26;
+            // 
+            // Input_ShippingAddress
+            // 
+            this.Input_ShippingAddress.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Input_ShippingAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_ShippingAddress.Location = new System.Drawing.Point(250, 55);
+            this.Input_ShippingAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Input_ShippingAddress.Name = "Input_ShippingAddress";
+            this.Input_ShippingAddress.ReadOnly = true;
+            this.Input_ShippingAddress.Size = new System.Drawing.Size(427, 32);
+            this.Input_ShippingAddress.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(25, 52);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(217, 32);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Shipping address:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(564, 12);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 37);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Find";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(772, 315);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 53);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Complete";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Input_itemSearch
+            // 
+            this.Input_itemSearch.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Input_itemSearch.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input_itemSearch.Location = new System.Drawing.Point(182, 116);
+            this.Input_itemSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Input_itemSearch.Name = "Input_itemSearch";
+            this.Input_itemSearch.ReadOnly = true;
+            this.Input_itemSearch.Size = new System.Drawing.Size(278, 32);
+            this.Input_itemSearch.TabIndex = 32;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(25, 116);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(128, 32);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Find item:";
+            // 
+            // Button_findItem
+            // 
+            this.Button_findItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Button_findItem.Enabled = false;
+            this.Button_findItem.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_findItem.Location = new System.Drawing.Point(473, 113);
+            this.Button_findItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Button_findItem.Name = "Button_findItem";
+            this.Button_findItem.Size = new System.Drawing.Size(113, 37);
+            this.Button_findItem.TabIndex = 33;
+            this.Button_findItem.Text = "Find";
+            this.Button_findItem.UseVisualStyleBackColor = false;
+            this.Button_findItem.Click += new System.EventHandler(this.Button_findItem_Click);
             // 
             // Order_Model_no
             // 
@@ -149,6 +250,12 @@ namespace SoftwareProject
             this.Data_Quantity.ReadOnly = true;
             this.Data_Quantity.Width = 125;
             // 
+            // Data_price
+            // 
+            this.Data_price.HeaderText = "Price";
+            this.Data_price.Name = "Data_price";
+            this.Data_price.ReadOnly = true;
+            // 
             // deleteButtonColumn
             // 
             this.deleteButtonColumn.HeaderText = "Delete";
@@ -159,104 +266,36 @@ namespace SoftwareProject
             this.deleteButtonColumn.UseColumnTextForButtonValue = true;
             this.deleteButtonColumn.Width = 60;
             // 
-            // Input_CompanyName
+            // Label_totalPrefix
             // 
-            this.Input_CompanyName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_CompanyName.Location = new System.Drawing.Point(333, 19);
-            this.Input_CompanyName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Input_CompanyName.Name = "Input_CompanyName";
-            this.Input_CompanyName.Size = new System.Drawing.Size(403, 38);
-            this.Input_CompanyName.TabIndex = 26;
+            this.Label_totalPrefix.AutoSize = true;
+            this.Label_totalPrefix.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_totalPrefix.Location = new System.Drawing.Point(500, 328);
+            this.Label_totalPrefix.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_totalPrefix.Name = "Label_totalPrefix";
+            this.Label_totalPrefix.Size = new System.Drawing.Size(98, 32);
+            this.Label_totalPrefix.TabIndex = 34;
+            this.Label_totalPrefix.Text = "Total: €";
             // 
-            // Input_ShippingAddress
+            // Label_totalPrice
             // 
-            this.Input_ShippingAddress.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.Input_ShippingAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_ShippingAddress.Location = new System.Drawing.Point(333, 68);
-            this.Input_ShippingAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Input_ShippingAddress.Name = "Input_ShippingAddress";
-            this.Input_ShippingAddress.ReadOnly = true;
-            this.Input_ShippingAddress.Size = new System.Drawing.Size(447, 38);
-            this.Input_ShippingAddress.TabIndex = 28;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 64);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(270, 41);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Shipping address:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(752, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 45);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Find";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(845, 390);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 65);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Complete";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Input_itemSearch
-            // 
-            this.Input_itemSearch.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.Input_itemSearch.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_itemSearch.Location = new System.Drawing.Point(240, 156);
-            this.Input_itemSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Input_itemSearch.Name = "Input_itemSearch";
-            this.Input_itemSearch.ReadOnly = true;
-            this.Input_itemSearch.Size = new System.Drawing.Size(370, 38);
-            this.Input_itemSearch.TabIndex = 32;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 41);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Find item:";
-            // 
-            // Button_findItem
-            // 
-            this.Button_findItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.Button_findItem.Enabled = false;
-            this.Button_findItem.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_findItem.Location = new System.Drawing.Point(628, 153);
-            this.Button_findItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Button_findItem.Name = "Button_findItem";
-            this.Button_findItem.Size = new System.Drawing.Size(151, 46);
-            this.Button_findItem.TabIndex = 33;
-            this.Button_findItem.Text = "Find";
-            this.Button_findItem.UseVisualStyleBackColor = false;
-            this.Button_findItem.Click += new System.EventHandler(this.Button_findItem_Click);
+            this.Label_totalPrice.AutoSize = true;
+            this.Label_totalPrice.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_totalPrice.Location = new System.Drawing.Point(590, 328);
+            this.Label_totalPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_totalPrice.Name = "Label_totalPrice";
+            this.Label_totalPrice.Size = new System.Drawing.Size(63, 32);
+            this.Label_totalPrice.TabIndex = 35;
+            this.Label_totalPrice.Text = "0.00";
             // 
             // frm_orders_createOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1038, 466);
+            this.ClientSize = new System.Drawing.Size(919, 379);
+            this.Controls.Add(this.Label_totalPrice);
+            this.Controls.Add(this.Label_totalPrefix);
             this.Controls.Add(this.Button_findItem);
             this.Controls.Add(this.Input_itemSearch);
             this.Controls.Add(this.label5);
@@ -272,7 +311,7 @@ namespace SoftwareProject
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_orders_createOrder";
             this.Text = "Create Order";
             ((System.ComponentModel.ISupportInitialize)(this.Order_Items_Table)).EndInit();
@@ -295,11 +334,14 @@ namespace SoftwareProject
         private Label label4;
         private Button button1;
         private Button button2;
-        private DataGridViewTextBoxColumn Order_Model_no;
-        private DataGridViewTextBoxColumn Data_Quantity;
-        private DataGridViewButtonColumn deleteButtonColumn;
         private TextBox Input_itemSearch;
         private Label label5;
         private Button Button_findItem;
+        private DataGridViewTextBoxColumn Order_Model_no;
+        private DataGridViewTextBoxColumn Data_Quantity;
+        private DataGridViewTextBoxColumn Data_price;
+        private DataGridViewButtonColumn deleteButtonColumn;
+        private Label Label_totalPrefix;
+        private Label Label_totalPrice;
     }
 }
