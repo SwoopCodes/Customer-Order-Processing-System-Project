@@ -21,45 +21,56 @@ namespace SoftwareProject
         private void button_search_Click(object sender, EventArgs e)
         {
 
-            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_searchQuery.Text);
-            selectionTable.ShowDialog();
-            DataRow selectedRow = selectionTable.selectedItem;
-
-           
-            if (selectedRow != null)
+            if (Input_searchQuery.Text.Length > 2)
             {
 
-                itemActive = true;
+                frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_searchQuery.Text);
+                selectionTable.ShowDialog();
+                DataRow selectedRow = selectionTable.selectedItem;
 
-                Input_ModelNo.Text = selectedRow["model_no"].ToString();
-                Input_ModelNo.BackColor = Color.White;
 
-                Input_Description.Text = selectedRow["Description"].ToString();
-                Input_Description.BackColor = Color.White;
-                Input_Description.ReadOnly = false;
+                if (selectedRow != null)
+                {
 
-                Input_CurrentStock.Text = selectedRow["current_stock"].ToString();
-                Input_CurrentStock.BackColor = Color.White;
-                Input_CurrentStock.ReadOnly = false;
+                    itemActive = true;
 
-                Input_MinStock.Text = selectedRow["minimum_stock"].ToString();
-                Input_MinStock.BackColor = Color.White;
-                Input_MinStock.ReadOnly = false;
+                    Input_ModelNo.Text = selectedRow["model_no"].ToString();
+                    Input_ModelNo.BackColor = Color.White;
 
-                Input_SalePrice.Text = selectedRow["sale_price"].ToString();
-                Input_SalePrice.BackColor = Color.White;
-                Input_SalePrice.ReadOnly = false;
+                    Input_Description.Text = selectedRow["Description"].ToString();
+                    Input_Description.BackColor = Color.White;
+                    Input_Description.ReadOnly = false;
 
-                Input_CostPrice.Text = selectedRow["cost_price"].ToString();
-                Input_CostPrice.BackColor = Color.White;
-                Input_CostPrice.ReadOnly = false;
+                    Input_CurrentStock.Text = selectedRow["current_stock"].ToString();
+                    Input_CurrentStock.BackColor = Color.White;
+                    Input_CurrentStock.ReadOnly = false;
 
-                Input_Supplier.Text = selectedRow["supplier"].ToString();
-                Input_Supplier.BackColor = Color.White;
-                Input_Supplier.ReadOnly = false;
+                    Input_MinStock.Text = selectedRow["minimum_stock"].ToString();
+                    Input_MinStock.BackColor = Color.White;
+                    Input_MinStock.ReadOnly = false;
 
+                    Input_SalePrice.Text = selectedRow["sale_price"].ToString();
+                    Input_SalePrice.BackColor = Color.White;
+                    Input_SalePrice.ReadOnly = false;
+
+                    Input_CostPrice.Text = selectedRow["cost_price"].ToString();
+                    Input_CostPrice.BackColor = Color.White;
+                    Input_CostPrice.ReadOnly = false;
+
+                    Input_Supplier.Text = selectedRow["supplier"].ToString();
+                    Input_Supplier.BackColor = Color.White;
+                    Input_Supplier.ReadOnly = false;
+
+
+                }
 
             }
+            else
+            {
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+           
 
 
         }

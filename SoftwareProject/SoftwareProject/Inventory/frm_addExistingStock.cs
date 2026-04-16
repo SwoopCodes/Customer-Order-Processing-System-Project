@@ -30,27 +30,39 @@ namespace SoftwareProject
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_searchQuery.Text);
-            selectionTable.ShowDialog();
-            DataRow selectedRow = selectionTable.selectedItem;
 
-            if (selectedRow != null)
+            if (Input_searchQuery.Text.Length > 2)
             {
 
-                isActive = true;
+                frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Inventory", Input_searchQuery.Text);
+                selectionTable.ShowDialog();
+                DataRow selectedRow = selectionTable.selectedItem;
 
-                Box_ModelNo.Text = selectedRow["model_no"].ToString();
-                Box_ModelNo.BackColor = Color.White;
+                if (selectedRow != null)
+                {
 
-                Box_CurrentQuantity.Text = selectedRow["current_stock"].ToString();
-                Box_CurrentQuantity.BackColor = Color.White;
+                    isActive = true;
 
-                Panel_AddStock.BackColor = Color.LightGray;
-                Input_StockToAdd.BackColor = Color.White;
-                Label_AddStock.ForeColor = Color.Black;
-                Input_StockToAdd.ReadOnly = false;
+                    Box_ModelNo.Text = selectedRow["model_no"].ToString();
+                    Box_ModelNo.BackColor = Color.White;
+
+                    Box_CurrentQuantity.Text = selectedRow["current_stock"].ToString();
+                    Box_CurrentQuantity.BackColor = Color.White;
+
+                    Panel_AddStock.BackColor = Color.LightGray;
+                    Input_StockToAdd.BackColor = Color.White;
+                    Label_AddStock.ForeColor = Color.Black;
+                    Input_StockToAdd.ReadOnly = false;
+
+                }
 
             }
+            else
+            {
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
 
         }
 

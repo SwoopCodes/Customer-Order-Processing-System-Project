@@ -15,6 +15,7 @@ namespace SoftwareProject
         public string phone { get; set;}
         public string address { get; set;}
         public string representative { get; set;}
+        public string status { get; set;}
 
 
         public Customers(Int32 customer_id, string company_name, string email, string phone, string address, string representative)
@@ -63,13 +64,14 @@ namespace SoftwareProject
         public void AddCustomer()
         {
 
-            string sqlQuery = "INSERT INTO customer VALUES (" +
-                              this.customer_ID + ", '" +
-                              this.Company_name.Replace("'", "''") + "', '" +
-                              this.email.Replace("'", "''") + "', " +
-                              this.phone + ", '" +
-                              this.address.Replace("'", "''") + "', '" +
-                              this.representative.Replace("'", "''") + "')";
+            string sqlQuery = $@"INSERT INTO customer VALUES(
+                                {this.customer_ID},
+                                '{this.Company_name}',
+                                '{this.email}',
+                                {this.phone},
+                                '{this.address}',
+                                '{this.representative}',
+                                'A')";
 
             Database.ExecuteNonQuery(sqlQuery);
 

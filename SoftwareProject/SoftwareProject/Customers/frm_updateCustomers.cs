@@ -23,36 +23,46 @@ namespace SoftwareProject
 
         private void button_search_Click(object sender, EventArgs e)
         {
-            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Customers", Input_CompanyName.Text);
-            selectionTable.ShowDialog();
-            DataRow selectedRow = selectionTable.selectedItem;
 
-            if (selectedRow != null)
+            if(Input_CompanyName.Text.Length > 2)
             {
+                frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Customers", Input_CompanyName.Text);
+                selectionTable.ShowDialog();
+                DataRow selectedRow = selectionTable.selectedItem;
 
-                Input_CompanyName.Text = selectedRow["company_name"].ToString();
-                Input_CompanyName.ReadOnly = true;
+                if (selectedRow != null)
+                {
 
-                Input_email.Text = selectedRow["email"].ToString();
-                Input_email.BackColor = Color.White;
-                Input_email.ReadOnly = false;
+                    Input_CompanyName.Text = selectedRow["company_name"].ToString();
+                    Input_CompanyName.ReadOnly = true;
 
-                Input_phone.Text = selectedRow["phone"].ToString();
-                Input_phone.BackColor = Color.White;
-                Input_phone.ReadOnly = false;
+                    Input_email.Text = selectedRow["email"].ToString();
+                    Input_email.BackColor = Color.White;
+                    Input_email.ReadOnly = false;
 
-                Input_address.Text = selectedRow["address"].ToString();
-                Input_address.BackColor = Color.White;
-                Input_address.ReadOnly = false;
+                    Input_phone.Text = selectedRow["phone"].ToString();
+                    Input_phone.BackColor = Color.White;
+                    Input_phone.ReadOnly = false;
 
-                Input_representative.Text = selectedRow["representative"].ToString();
-                Input_representative.BackColor = Color.White;
-                Input_representative.ReadOnly = false;
+                    Input_address.Text = selectedRow["address"].ToString();
+                    Input_address.BackColor = Color.White;
+                    Input_address.ReadOnly = false;
 
-                Box_status.Text = selectedRow["status"].ToString();
-                Box_status.BackColor = Color.White;
+                    Input_representative.Text = selectedRow["representative"].ToString();
+                    Input_representative.BackColor = Color.White;
+                    Input_representative.ReadOnly = false;
 
+                    Box_status.Text = selectedRow["status"].ToString();
+                    Box_status.BackColor = Color.White;
+
+                }
             }
+            else
+            {
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+           
 
         }
 

@@ -27,35 +27,41 @@ namespace SoftwareProject
         private void button1_Click(object sender, EventArgs e)
         {
 
-            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Orders", Input_orderID.Text);
-            selectionTable.ShowDialog();
-            DataRow selectedRow = selectionTable.selectedItem;
-
-            if (selectedRow != null)
+            if(Input_orderID.Text.Length > 2)
             {
+                frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Orders", Input_orderID.Text);
+                selectionTable.ShowDialog();
+                DataRow selectedRow = selectionTable.selectedItem;
 
-                orderID = Convert.ToInt32(selectedRow["order_id"].ToString());
+                if (selectedRow != null)
+                {
 
-                DataSet orderItems = Order.retrieveOrderItems(selectedRow["order_id"].ToString());
-                Order_Items_Table.DataSource = orderItems.Tables[0];
-                Order.getOrderTotal(Convert.ToInt32(orderID), label_orderTotal);
-                Order.displayOrderStatus(Convert.ToInt32(orderID), Label_Status);
+                    orderID = Convert.ToInt32(selectedRow["order_id"].ToString());
 
-                button1.Enabled = false;
-                button1.BackColor = Color.Gray;
-                Input_orderID.Enabled = false;
+                    DataSet orderItems = Order.retrieveOrderItems(selectedRow["order_id"].ToString());
+                    Order_Items_Table.DataSource = orderItems.Tables[0];
+                    Order.getOrderTotal(Convert.ToInt32(orderID), label_orderTotal);
+                    Order.displayOrderStatus(Convert.ToInt32(orderID), Label_Status);
 
-                box_companyName.Text = selectedRow["company_name"].ToString();
-                box_shippingAddress.Text = selectedRow["shipping_address"].ToString();
+                    button1.Enabled = false;
+                    button1.BackColor = Color.Gray;
+                    Input_orderID.Enabled = false;
 
-                button_markComplete.Enabled = true;
-                button_markComplete.BackColor = Color.FromArgb(152, 251, 152);
+                    box_companyName.Text = selectedRow["company_name"].ToString();
+                    box_shippingAddress.Text = selectedRow["shipping_address"].ToString();
 
-                button_removeOrder.Enabled = true;
-                button_removeOrder.BackColor = Color.FromArgb(233, 150, 122);
+                    button_markComplete.Enabled = true;
+                    button_markComplete.BackColor = Color.FromArgb(152, 251, 152);
+
+                    button_removeOrder.Enabled = true;
+                    button_removeOrder.BackColor = Color.FromArgb(233, 150, 122);
 
 
-
+                }
+            }
+            else
+            {
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }

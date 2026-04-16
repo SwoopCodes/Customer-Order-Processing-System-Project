@@ -37,35 +37,43 @@ namespace SoftwareProject
         private void button1_Click(object sender, EventArgs e)
         {
 
-            frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Customers", Input_CompanyName.Text);
-            selectionTable.ShowDialog();
-            DataRow selectedRow = selectionTable.selectedItem;
+            if(Input_CompanyName.Text.Length > 2)
+            {
+                frm_General_SelectionForm selectionTable = new frm_General_SelectionForm("Customers", Input_CompanyName.Text);
+                selectionTable.ShowDialog();
+                DataRow selectedRow = selectionTable.selectedItem;
 
-            if (selectedRow != null)
+                if (selectedRow != null)
+                {
+
+                    Input_ModelNo.BackColor = Color.White;
+                    Input_CompanyName.Text = selectedRow["company_name"].ToString();
+
+                    Input_Quantity.ReadOnly = false;
+                    Input_Quantity.BackColor = Color.White;
+
+                    Input_ShippingAddress.ReadOnly = false;
+                    Input_ShippingAddress.BackColor = Color.White;
+                    Input_ShippingAddress.Text = selectedRow["address"].ToString();
+
+                    Button_Add_Item.BackColor = Color.FromArgb(127, 253, 127);
+                    Button_Add_Item.Enabled = true;
+
+                    button2.BackColor = Color.FromArgb(127, 253, 127);
+                    button2.Enabled = true;
+
+                    Button_findItem.BackColor = Color.FromArgb(255, 192, 128);
+                    Button_findItem.Enabled = true;
+
+                    Input_itemSearch.BackColor = Color.White;
+                    Input_itemSearch.ReadOnly = false;
+
+                }
+            }
+            else 
             {
 
-                Input_ModelNo.BackColor = Color.White;
-                Input_CompanyName.Text = selectedRow["company_name"].ToString();
-
-                Input_Quantity.ReadOnly = false;
-                Input_Quantity.BackColor = Color.White;
-
-                Input_ShippingAddress.ReadOnly = false;
-                Input_ShippingAddress.BackColor = Color.White;
-                Input_ShippingAddress.Text = selectedRow["address"].ToString();
-
-                Button_Add_Item.BackColor = Color.FromArgb(127, 253, 127);
-                Button_Add_Item.Enabled = true;
-
-                button2.BackColor = Color.FromArgb(127, 253, 127);
-                button2.Enabled = true;
-
-                Button_findItem.BackColor = Color.FromArgb(255, 192, 128);
-                Button_findItem.Enabled = true;
-
-                Input_itemSearch.BackColor = Color.White;
-                Input_itemSearch.ReadOnly = false ;
-
+                MessageBox.Show("Search query is too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
