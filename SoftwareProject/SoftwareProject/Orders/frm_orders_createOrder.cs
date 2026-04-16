@@ -22,8 +22,6 @@ namespace SoftwareProject
 
         }
 
-
-
         private void frm_orders_createOrder_Load(object sender, EventArgs e)
         {
 
@@ -92,6 +90,8 @@ namespace SoftwareProject
             if (Order.checkItemToAdd(Input_ModelNo.Text, Int32.Parse(Input_Quantity.Text)))
             {
 
+                double total = 0;
+
                 foreach (DataGridViewRow row in Order_Items_Table.Rows)
                 {
                     String userModel = Input_ModelNo.Text.Trim();
@@ -108,7 +108,15 @@ namespace SoftwareProject
                     }
                 }
 
-                Order_Items_Table.Rows.Add(Input_ModelNo.Text, Input_Quantity.Text);
+                string findSalePrice = $"SELECT sale_price FROM inventory WHERE model_no LIKE '{Input_ModelNo.Text}'";
+                Double salePrice= Double.Parse(Database.ExecuteMultiRowQuery(findSalePrice).Tables[0].Rows[0]["sale_price"].ToString());
+
+                double rowPrice = salePrice * Int32.Parse(Input_Quantity.Text);
+                double currentTotal = Convert.ToDouble(Label_totalPrice.Text);
+                currentTotal += rowPrice;
+
+                Order_Items_Table.Rows.Add(Input_ModelNo.Text, Input_Quantity.Text, rowPrice);
+                Label_totalPrice.Text = currentTotal.ToString();
             }
         }
 
@@ -136,11 +144,14 @@ namespace SoftwareProject
 
                 if (modelNo == null)
                 {
+                    this.Close();
                     return;
                 }
 
                 Order.addOrderItems(latestOrder, modelNo.ToString(), Convert.ToInt32(quantity));
             }
+
+            
 
         }
 
@@ -187,8 +198,7 @@ namespace SoftwareProject
                 MessageBox.Show("Description too short", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-
-
         }
+
     }
 }

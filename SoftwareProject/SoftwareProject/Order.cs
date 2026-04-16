@@ -87,14 +87,20 @@ namespace SoftwareProject
                 Database.ExecuteMultiRowQuery(checkItemExists).Tables[0].Rows[0]["model_no"].ToString();
                 int currentInventory = Int32.Parse(Database.ExecuteMultiRowQuery(checkQuantity).Tables[0].Rows[0]["current_stock"].ToString());
 
-                if (quantity < currentInventory)
+                if (quantity <= currentInventory && quantity > 0)
                 {
-
                     return true;
+                } else if(quantity <= 0)
+                {
+                    
+                    MessageBox.Show("Cannot enter value less than 1", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
-
-                MessageBox.Show("Chosen quantity exceeds current stock");
-                return false;
+                else
+                {
+                    MessageBox.Show("Chosen quantity exceeds current stock", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }    
 
             }
             catch (IndexOutOfRangeException)
