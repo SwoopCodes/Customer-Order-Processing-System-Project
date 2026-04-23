@@ -59,10 +59,10 @@ namespace SoftwareProject
             this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button_search.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_search.Location = new System.Drawing.Point(513, 28);
-            this.button_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_search.Location = new System.Drawing.Point(385, 23);
+            this.button_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(151, 49);
+            this.button_search.Size = new System.Drawing.Size(113, 40);
             this.button_search.TabIndex = 13;
             this.button_search.Text = "Search";
             this.button_search.UseVisualStyleBackColor = false;
@@ -72,9 +72,10 @@ namespace SoftwareProject
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 12);
+            this.label1.Location = new System.Drawing.Point(16, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 41);
+            this.label1.Size = new System.Drawing.Size(142, 32);
             this.label1.TabIndex = 12;
             this.label1.Text = "Model No: ";
             // 
@@ -82,11 +83,11 @@ namespace SoftwareProject
             // 
             this.Input_ModelNo.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_ModelNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_ModelNo.Location = new System.Drawing.Point(210, 14);
-            this.Input_ModelNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_ModelNo.Location = new System.Drawing.Point(158, 11);
+            this.Input_ModelNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_ModelNo.Name = "Input_ModelNo";
             this.Input_ModelNo.ReadOnly = true;
-            this.Input_ModelNo.Size = new System.Drawing.Size(224, 38);
+            this.Input_ModelNo.Size = new System.Drawing.Size(169, 32);
             this.Input_ModelNo.TabIndex = 11;
             // 
             // panel1
@@ -106,19 +107,20 @@ namespace SoftwareProject
             this.panel1.Controls.Add(this.Input_CurrentStock);
             this.panel1.Controls.Add(this.Input_Description);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(21, 81);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(16, 66);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(734, 282);
+            this.panel1.Size = new System.Drawing.Size(550, 229);
             this.panel1.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(387, 179);
+            this.label6.Location = new System.Drawing.Point(290, 145);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(157, 41);
+            this.label6.Size = new System.Drawing.Size(128, 32);
             this.label6.TabIndex = 27;
             this.label6.Text = "Cost Price";
             // 
@@ -126,20 +128,21 @@ namespace SoftwareProject
             // 
             this.Input_CostPrice.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_CostPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_CostPrice.Location = new System.Drawing.Point(573, 179);
-            this.Input_CostPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_CostPrice.Location = new System.Drawing.Point(430, 145);
+            this.Input_CostPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_CostPrice.Name = "Input_CostPrice";
             this.Input_CostPrice.ReadOnly = true;
-            this.Input_CostPrice.Size = new System.Drawing.Size(148, 38);
+            this.Input_CostPrice.Size = new System.Drawing.Size(112, 32);
             this.Input_CostPrice.TabIndex = 26;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 230);
+            this.label7.Location = new System.Drawing.Point(18, 187);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 41);
+            this.label7.Size = new System.Drawing.Size(109, 32);
             this.label7.TabIndex = 25;
             this.label7.Text = "Supplier";
             // 
@@ -147,20 +150,21 @@ namespace SoftwareProject
             // 
             this.Input_Supplier.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_Supplier.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_Supplier.Location = new System.Drawing.Point(210, 230);
-            this.Input_Supplier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_Supplier.Location = new System.Drawing.Point(158, 187);
+            this.Input_Supplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_Supplier.Name = "Input_Supplier";
             this.Input_Supplier.ReadOnly = true;
-            this.Input_Supplier.Size = new System.Drawing.Size(254, 38);
+            this.Input_Supplier.Size = new System.Drawing.Size(192, 32);
             this.Input_Supplier.TabIndex = 24;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 182);
+            this.label5.Location = new System.Drawing.Point(18, 148);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 41);
+            this.label5.Size = new System.Drawing.Size(124, 32);
             this.label5.TabIndex = 23;
             this.label5.Text = "Sale Price";
             // 
@@ -168,20 +172,21 @@ namespace SoftwareProject
             // 
             this.Input_SalePrice.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_SalePrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_SalePrice.Location = new System.Drawing.Point(210, 179);
-            this.Input_SalePrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_SalePrice.Location = new System.Drawing.Point(158, 145);
+            this.Input_SalePrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_SalePrice.Name = "Input_SalePrice";
             this.Input_SalePrice.ReadOnly = true;
-            this.Input_SalePrice.Size = new System.Drawing.Size(148, 38);
+            this.Input_SalePrice.Size = new System.Drawing.Size(112, 32);
             this.Input_SalePrice.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 138);
+            this.label2.Location = new System.Drawing.Point(18, 112);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(364, 41);
+            this.label2.Size = new System.Drawing.Size(293, 32);
             this.label2.TabIndex = 21;
             this.label2.Text = "Minimum Stock Allowed";
             // 
@@ -189,20 +194,21 @@ namespace SoftwareProject
             // 
             this.Input_MinStock.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_MinStock.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_MinStock.Location = new System.Drawing.Point(394, 138);
-            this.Input_MinStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_MinStock.Location = new System.Drawing.Point(315, 111);
+            this.Input_MinStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_MinStock.Name = "Input_MinStock";
             this.Input_MinStock.ReadOnly = true;
-            this.Input_MinStock.Size = new System.Drawing.Size(109, 38);
+            this.Input_MinStock.Size = new System.Drawing.Size(83, 32);
             this.Input_MinStock.TabIndex = 20;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 93);
+            this.label3.Location = new System.Drawing.Point(18, 76);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 41);
+            this.label3.Size = new System.Drawing.Size(169, 32);
             this.label3.TabIndex = 19;
             this.label3.Text = "Current Stock";
             // 
@@ -210,22 +216,22 @@ namespace SoftwareProject
             // 
             this.Input_CurrentStock.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_CurrentStock.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_CurrentStock.Location = new System.Drawing.Point(249, 93);
-            this.Input_CurrentStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_CurrentStock.Location = new System.Drawing.Point(187, 76);
+            this.Input_CurrentStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_CurrentStock.Name = "Input_CurrentStock";
             this.Input_CurrentStock.ReadOnly = true;
-            this.Input_CurrentStock.Size = new System.Drawing.Size(109, 38);
+            this.Input_CurrentStock.Size = new System.Drawing.Size(83, 32);
             this.Input_CurrentStock.TabIndex = 18;
             // 
             // Input_Description
             // 
             this.Input_Description.BackColor = System.Drawing.SystemColors.GrayText;
             this.Input_Description.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_Description.Location = new System.Drawing.Point(210, 55);
-            this.Input_Description.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_Description.Location = new System.Drawing.Point(187, 42);
+            this.Input_Description.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_Description.Name = "Input_Description";
             this.Input_Description.ReadOnly = true;
-            this.Input_Description.Size = new System.Drawing.Size(433, 38);
+            this.Input_Description.Size = new System.Drawing.Size(326, 32);
             this.Input_Description.TabIndex = 16;
             this.Input_Description.Text = "";
             // 
@@ -233,9 +239,10 @@ namespace SoftwareProject
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 48);
+            this.label4.Location = new System.Drawing.Point(18, 39);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 41);
+            this.label4.Size = new System.Drawing.Size(146, 32);
             this.label4.TabIndex = 15;
             this.label4.Text = "Description";
             // 
@@ -244,10 +251,10 @@ namespace SoftwareProject
             this.Button_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Button_Cancel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button_Cancel.Location = new System.Drawing.Point(604, 383);
-            this.Button_Cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_Cancel.Location = new System.Drawing.Point(453, 311);
+            this.Button_Cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Button_Cancel.Name = "Button_Cancel";
-            this.Button_Cancel.Size = new System.Drawing.Size(151, 61);
+            this.Button_Cancel.Size = new System.Drawing.Size(113, 50);
             this.Button_Cancel.TabIndex = 16;
             this.Button_Cancel.Text = "Cancel";
             this.Button_Cancel.UseVisualStyleBackColor = false;
@@ -257,10 +264,10 @@ namespace SoftwareProject
             // 
             this.Button_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Button_Update.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Update.Location = new System.Drawing.Point(447, 383);
-            this.Button_Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_Update.Location = new System.Drawing.Point(335, 311);
+            this.Button_Update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Button_Update.Name = "Button_Update";
-            this.Button_Update.Size = new System.Drawing.Size(151, 61);
+            this.Button_Update.Size = new System.Drawing.Size(113, 50);
             this.Button_Update.TabIndex = 15;
             this.Button_Update.Text = "Update";
             this.Button_Update.UseVisualStyleBackColor = false;
@@ -270,35 +277,36 @@ namespace SoftwareProject
             // 
             this.Input_searchQuery.BackColor = System.Drawing.SystemColors.HighlightText;
             this.Input_searchQuery.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_searchQuery.Location = new System.Drawing.Point(247, 33);
-            this.Input_searchQuery.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_searchQuery.Location = new System.Drawing.Point(185, 27);
+            this.Input_searchQuery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_searchQuery.Name = "Input_searchQuery";
-            this.Input_searchQuery.Size = new System.Drawing.Size(224, 38);
+            this.Input_searchQuery.Size = new System.Drawing.Size(169, 32);
             this.Input_searchQuery.TabIndex = 28;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(23, 30);
+            this.label8.Location = new System.Drawing.Point(17, 24);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(196, 41);
+            this.label8.Size = new System.Drawing.Size(160, 32);
             this.label8.TabIndex = 28;
             this.label8.Text = "Description: ";
             // 
             // frm_inventory_manageStock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(787, 463);
+            this.ClientSize = new System.Drawing.Size(590, 376);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Input_searchQuery);
             this.Controls.Add(this.Button_Cancel);
             this.Controls.Add(this.Button_Update);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_search);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_inventory_manageStock";
             this.Text = "Manage Stock";
             this.panel1.ResumeLayout(false);

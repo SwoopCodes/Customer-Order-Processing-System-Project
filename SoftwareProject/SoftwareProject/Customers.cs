@@ -66,11 +66,11 @@ namespace SoftwareProject
 
             string sqlQuery = $@"INSERT INTO customer VALUES(
                                 {this.customer_ID},
-                                '{this.Company_name}',
-                                '{this.email}',
+                                '{this.Company_name.Replace("'", " ")}',
+                                '{this.email.Replace("'", " ")}',
                                 {this.phone},
-                                '{this.address}',
-                                '{this.representative}',
+                                '{this.address.Replace("'", " ")}',
+                                '{this.representative.Replace("'", " ")}',
                                 'A')";
 
             Database.ExecuteNonQuery(sqlQuery);
