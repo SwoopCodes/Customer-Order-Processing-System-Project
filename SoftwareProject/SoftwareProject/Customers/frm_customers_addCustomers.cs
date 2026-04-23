@@ -40,7 +40,7 @@ namespace SoftwareProject
             }
             else
             {
-                MessageBox.Show("An error has occured");
+                MessageBox.Show("Information failed to validate", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
         }
@@ -80,6 +80,11 @@ namespace SoftwareProject
             {
                 Input_email.BackColor = Color.LightPink;
                 MessageBox.Show("Enter valid email.");
+                isValid = false;
+            }
+            else if (Input_email.Text.IndexOf("@") < 3)
+            {
+                MessageBox.Show("Enter Valid email", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 isValid = false;
             }
 

@@ -49,19 +49,20 @@ namespace SoftwareProject
             // Input_searchQuery
             // 
             this.Input_searchQuery.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_searchQuery.Location = new System.Drawing.Point(322, 33);
-            this.Input_searchQuery.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_searchQuery.Location = new System.Drawing.Point(260, 27);
+            this.Input_searchQuery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_searchQuery.Name = "Input_searchQuery";
-            this.Input_searchQuery.Size = new System.Drawing.Size(224, 38);
+            this.Input_searchQuery.Size = new System.Drawing.Size(169, 32);
             this.Input_searchQuery.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 33);
+            this.label1.Location = new System.Drawing.Point(8, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 41);
+            this.label1.Size = new System.Drawing.Size(248, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Find by description: ";
             // 
@@ -69,9 +70,10 @@ namespace SoftwareProject
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(242, 194);
+            this.label2.Location = new System.Drawing.Point(182, 158);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 41);
+            this.label2.Size = new System.Drawing.Size(207, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Current Quantity";
             // 
@@ -79,11 +81,11 @@ namespace SoftwareProject
             // 
             this.Box_CurrentQuantity.BackColor = System.Drawing.SystemColors.GrayText;
             this.Box_CurrentQuantity.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Box_CurrentQuantity.Location = new System.Drawing.Point(532, 198);
-            this.Box_CurrentQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Box_CurrentQuantity.Location = new System.Drawing.Point(399, 161);
+            this.Box_CurrentQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Box_CurrentQuantity.Name = "Box_CurrentQuantity";
             this.Box_CurrentQuantity.ReadOnly = true;
-            this.Box_CurrentQuantity.Size = new System.Drawing.Size(112, 38);
+            this.Box_CurrentQuantity.Size = new System.Drawing.Size(85, 32);
             this.Box_CurrentQuantity.TabIndex = 2;
             // 
             // Label_AddStock
@@ -91,9 +93,10 @@ namespace SoftwareProject
             this.Label_AddStock.AutoSize = true;
             this.Label_AddStock.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_AddStock.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Label_AddStock.Location = new System.Drawing.Point(49, 6);
+            this.Label_AddStock.Location = new System.Drawing.Point(37, 5);
+            this.Label_AddStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_AddStock.Name = "Label_AddStock";
-            this.Label_AddStock.Size = new System.Drawing.Size(159, 41);
+            this.Label_AddStock.Size = new System.Drawing.Size(128, 32);
             this.Label_AddStock.TabIndex = 5;
             this.Label_AddStock.Text = "Add stock";
             // 
@@ -101,21 +104,21 @@ namespace SoftwareProject
             // 
             this.Input_StockToAdd.BackColor = System.Drawing.SystemColors.MenuBar;
             this.Input_StockToAdd.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input_StockToAdd.Location = new System.Drawing.Point(13, 49);
-            this.Input_StockToAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Input_StockToAdd.Location = new System.Drawing.Point(10, 40);
+            this.Input_StockToAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Input_StockToAdd.Name = "Input_StockToAdd";
             this.Input_StockToAdd.ReadOnly = true;
-            this.Input_StockToAdd.Size = new System.Drawing.Size(224, 38);
+            this.Input_StockToAdd.Size = new System.Drawing.Size(169, 32);
             this.Input_StockToAdd.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(266, 381);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(200, 310);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 61);
+            this.button1.Size = new System.Drawing.Size(113, 50);
             this.button1.TabIndex = 6;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
@@ -126,10 +129,10 @@ namespace SoftwareProject
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(481, 381);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(361, 310);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 61);
+            this.button2.Size = new System.Drawing.Size(113, 50);
             this.button2.TabIndex = 7;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
@@ -139,9 +142,10 @@ namespace SoftwareProject
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(363, 105);
+            this.label4.Location = new System.Drawing.Point(272, 85);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 41);
+            this.label4.Size = new System.Drawing.Size(135, 32);
             this.label4.TabIndex = 8;
             this.label4.Text = "Model No:";
             // 
@@ -149,11 +153,11 @@ namespace SoftwareProject
             // 
             this.Box_ModelNo.BackColor = System.Drawing.SystemColors.GrayText;
             this.Box_ModelNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Box_ModelNo.Location = new System.Drawing.Point(242, 153);
-            this.Box_ModelNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Box_ModelNo.Location = new System.Drawing.Point(182, 124);
+            this.Box_ModelNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Box_ModelNo.Name = "Box_ModelNo";
             this.Box_ModelNo.ReadOnly = true;
-            this.Box_ModelNo.Size = new System.Drawing.Size(433, 30);
+            this.Box_ModelNo.Size = new System.Drawing.Size(326, 25);
             this.Box_ModelNo.TabIndex = 9;
             this.Box_ModelNo.Text = "";
             // 
@@ -162,10 +166,10 @@ namespace SoftwareProject
             this.button_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button_search.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_search.Location = new System.Drawing.Point(567, 28);
-            this.button_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_search.Location = new System.Drawing.Point(442, 22);
+            this.button_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(151, 46);
+            this.button_search.Size = new System.Drawing.Size(113, 37);
             this.button_search.TabIndex = 10;
             this.button_search.Text = "Search";
             this.button_search.UseVisualStyleBackColor = false;
@@ -176,18 +180,18 @@ namespace SoftwareProject
             this.Panel_AddStock.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Panel_AddStock.Controls.Add(this.Input_StockToAdd);
             this.Panel_AddStock.Controls.Add(this.Label_AddStock);
-            this.Panel_AddStock.Location = new System.Drawing.Point(322, 266);
-            this.Panel_AddStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Panel_AddStock.Location = new System.Drawing.Point(242, 216);
+            this.Panel_AddStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Panel_AddStock.Name = "Panel_AddStock";
-            this.Panel_AddStock.Size = new System.Drawing.Size(250, 100);
+            this.Panel_AddStock.Size = new System.Drawing.Size(188, 81);
             this.Panel_AddStock.TabIndex = 11;
             // 
             // frm_addExistingStock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(914, 480);
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Controls.Add(this.Panel_AddStock);
             this.Controls.Add(this.button_search);
             this.Controls.Add(this.Box_ModelNo);
@@ -198,6 +202,7 @@ namespace SoftwareProject
             this.Controls.Add(this.Box_CurrentQuantity);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Input_searchQuery);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_addExistingStock";
             this.Text = "Add Existing stock";
             this.Panel_AddStock.ResumeLayout(false);

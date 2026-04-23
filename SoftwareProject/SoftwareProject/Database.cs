@@ -21,7 +21,6 @@ namespace SoftwareProject
         }
 
         public static DataSet ExecuteMultiRowQuery(string query)
-
         {
 
             OracleConnection conn = OpenConnection();
