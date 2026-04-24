@@ -1,4 +1,5 @@
-﻿using OracleInternal.Common;
+﻿using Oracle.ManagedDataAccess.Client;
+using OracleInternal.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,19 +21,28 @@ namespace SoftwareProject.Finances
 
             InitializeComponent();
 
-            if (category == "Inventory")
+            try
             {
-                dataGridView.DataSource = Inventory.findItemToUpdate(query).Tables[0];
-            }
+                if (category == "Inventory")
+                {
+                    dataGridView.DataSource = Inventory.findItemToUpdate(query).Tables[0];
+                }
 
-            if(category == "Customers")
-            {
-                dataGridView.DataSource = Customers.findCustomer(query).Tables[0];
-            }
+                if (category == "Customers")
+                {
+                    dataGridView.DataSource = Customers.findCustomer(query).Tables[0];
+                }
 
-            if (category == "Orders")
+                if (category == "Orders")
+                {
+                    dataGridView.DataSource = Order.findOrderByName(query).Tables[0];
+                }
+            } catch(OracleException ex)
             {
-                dataGridView.DataSource = Order.findOrderByName(query).Tables[0];
+                if(ex.Number == 933)
+                {
+                    MessageBox.Show("No special chars");
+                }
             }
         }
 

@@ -143,6 +143,7 @@ namespace SoftwareProject
         // found in view orders
         public static DataSet findOrderByName(string searchQuery)
         {
+            searchQuery = searchQuery.Replace("'", "");
             string query = $"SELECT o.order_id, c.company_name, o.order_date, o.status, o.shipping_address FROM orders o INNER JOIN Customer c ON o.customer_id = c.customer_id WHERE LOWER(company_name) LIKE '{searchQuery.ToLower()}%'";
 
             DataSet orderSet = Database.ExecuteMultiRowQuery(query);
