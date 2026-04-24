@@ -33,6 +33,8 @@ namespace SoftwareProject
         // found in view customers
         public static DataSet searchCustomer(String searchItem)
         {
+
+            searchItem = searchItem.Replace("'", "");
             string query = $"SELECT * FROM customer WHERE LOWER(customer.company_name) LIKE '%{searchItem.ToLower()}%'";
 
             DataSet customerSet = Database.ExecuteMultiRowQuery(query);
@@ -48,6 +50,7 @@ namespace SoftwareProject
         // found in general selection form
         public static DataSet findCustomer(String searchCompany)
         {
+            searchCompany = searchCompany.Replace("'", "");
             String query = $"SELECT * FROM customer WHERE LOWER(company_name) LIKE '%{searchCompany.ToLower()}%'";
             DataSet customerData = Database.ExecuteMultiRowQuery(query);
 
@@ -66,11 +69,11 @@ namespace SoftwareProject
 
             string sqlQuery = $@"INSERT INTO customer VALUES(
                                 {this.customer_ID},
-                                '{this.Company_name.Replace("'", " ")}',
-                                '{this.email.Replace("'", " ")}',
+                                '{this.Company_name.Replace("'", "")}',
+                                '{this.email.Replace("'", "")}',
                                 {this.phone},
                                 '{this.address.Replace("'", " ")}',
-                                '{this.representative.Replace("'", " ")}',
+                                '{this.representative.Replace("'", "")}',
                                 'A')";
 
             Database.ExecuteNonQuery(sqlQuery);
@@ -110,7 +113,8 @@ namespace SoftwareProject
         public static void deleteCustomer(String companyName)
         {
 
-            if(companyName == null)
+            companyName = companyName.Replace("'", "");
+            if (companyName == null)
             {
                 MessageBox.Show("No company name chosen");
                 return;

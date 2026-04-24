@@ -1,74 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\",
+  "WorkspaceRootPath": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_general_selectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\frm_general_selectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\finances.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\finances.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_inventory_addstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_addstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_addnewitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_addnewitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_addnewitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_addnewitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\frm_general_selectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\frm_general_selectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\customers\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\customers\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\customers\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\customers\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_inventory_managestock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\inventory\\frm_inventory_managestock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_managestock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_inventory_managestock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\inventory\\frm_inventory_managestock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_managestock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_inventory_viewstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\customers\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\customers\\frm_updatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_modifyorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\orders\\frm_orders_createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\inventory\\frm_addexistingstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\customers\\frm_customers_addcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\customers\\frm_customers_addcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\customers\\frm_customers_addcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareproject\\finance_folder\\frm_finances_revenueanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\finance_folder\\frm_finances_revenueanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\finance_folder\\frm_finances_revenueanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|c:\\users\\pat2g\\desktop\\customer-order-processing-system-project\\softwareproject\\softwareproject\\finance_folder\\frm_finances_revenueanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareproject\\finance_folder\\frm_finances_revenueanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\finance_folder\\frm_finances_revenueanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareproject\\finances.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B918A8A9-20C3-4C63-A382-CB0D510A8EA2}|softwareProject\\softwareProject.csproj|solutionrelative:softwareproject\\finances.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,39 +115,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frm_updateCustomers.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_updateCustomers.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Customers\\frm_updateCustomers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_updateCustomers.cs",
-              "RelativeToolTip": "softwareProject\\Customers\\frm_updateCustomers.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowD0AAAB0AAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Order.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Order.cs",
+              "RelativeToolTip": "SoftwareProject\\Order.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwI4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:25:08.22Z",
+              "WhenOpened": "2026-04-24T00:17:31.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frm_updateCustomers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_updateCustomers.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Customers\\frm_updateCustomers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_updateCustomers.cs [Design]",
-              "RelativeToolTip": "softwareProject\\Customers\\frm_updateCustomers.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Inventory.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory.cs",
+              "RelativeToolTip": "SoftwareProject\\Inventory.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAmwHoAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:25:07.027Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frm_modifyOrder.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_modifyOrder.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs",
-              "RelativeToolTip": "softwareProject\\Orders\\frm_modifyOrder.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowD8AAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:22:42.83Z",
+              "WhenOpened": "2026-04-24T00:01:37.9Z",
               "EditorCaption": ""
             },
             {
@@ -144,11 +164,74 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "frm_addNewItem.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory\\frm_addNewItem.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Inventory\\frm_addNewItem.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory\\frm_addNewItem.cs",
+              "RelativeToolTip": "SoftwareProject\\Inventory\\frm_addNewItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:50:25.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frm_addNewItem.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory\\frm_addNewItem.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Inventory\\frm_addNewItem.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory\\frm_addNewItem.cs [Design]",
+              "RelativeToolTip": "SoftwareProject\\Inventory\\frm_addNewItem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:50:24.221Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frm_inventory_addStock.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory\\frm_inventory_addStock.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Inventory\\frm_inventory_addStock.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Inventory\\frm_inventory_addStock.cs [Design]",
+              "RelativeToolTip": "SoftwareProject\\Inventory\\frm_inventory_addStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:50:23.207Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_General_SelectionForm.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_General_SelectionForm.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\frm_General_SelectionForm.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_General_SelectionForm.cs",
+              "RelativeToolTip": "SoftwareProject\\frm_General_SelectionForm.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:47:13.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Database.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Database.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Database.cs",
+              "RelativeToolTip": "SoftwareProject\\Database.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAwwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:44:56.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "frm_modifyOrder.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs",
               "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_modifyOrder.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs [Design]",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs [Design]",
               "RelativeToolTip": "softwareProject\\Orders\\frm_modifyOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T00:22:40.525Z",
@@ -156,137 +239,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frm_orders_createOrder.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_orders_createOrder.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs",
-              "RelativeToolTip": "softwareProject\\Orders\\frm_orders_createOrder.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAowEsAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:20:46.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frm_orders_createOrder.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_orders_createOrder.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs [Design]",
-              "RelativeToolTip": "softwareProject\\Orders\\frm_orders_createOrder.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:20:45.317Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frm_inventory_viewStock.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_viewStock.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs",
-              "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_viewStock.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:14:57.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frm_inventory_manageStock.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_manageStock.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs",
-              "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_manageStock.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAowEYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:14:38.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frm_inventory_manageStock.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_manageStock.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs [Design]",
-              "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_manageStock.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:14:37.78Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "frm_addExistingStock.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_addExistingStock.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs",
-              "RelativeToolTip": "softwareProject\\Inventory\\frm_addExistingStock.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAuwCgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:14:20.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frm_addExistingStock.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_addExistingStock.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs [Design]",
-              "RelativeToolTip": "softwareProject\\Inventory\\frm_addExistingStock.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:14:17.964Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Customers.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Customers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers.cs",
-              "RelativeToolTip": "softwareProject\\Customers.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAUwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T23:14:21.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Finances.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Finances.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Finances.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Finances.cs",
-              "RelativeToolTip": "softwareProject\\Finances.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T19:50:26.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "frm_finances_revenueAnalysis.cs",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
-              "RelativeToolTip": "softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T19:45:26.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "frm_inventory_viewStock.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs",
               "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_viewStock.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs [Design]",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs [Design]",
               "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_viewStock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T19:08:50.598Z",
@@ -294,27 +251,196 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frm_customers_addCustomers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_customers_addCustomers.cs",
-              "RelativeDocumentMoniker": "softwareProject\\Customers\\frm_customers_addCustomers.cs",
-              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_customers_addCustomers.cs [Design]",
-              "RelativeToolTip": "softwareProject\\Customers\\frm_customers_addCustomers.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "frm_inventory_viewStock.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_viewStock.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_viewStock.cs",
+              "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_viewStock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T23:14:18.111Z",
+              "WhenOpened": "2026-04-16T00:14:57.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Finances.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Finances.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Finances.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Finances.cs",
+              "RelativeToolTip": "softwareProject\\Finances.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:50:26.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customers.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Customers.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Customers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Customers.cs",
+              "RelativeToolTip": "softwareProject\\Customers.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwIkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T23:14:21.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frm_General_SelectionForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_General_SelectionForm.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\frm_General_SelectionForm.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\frm_General_SelectionForm.cs [Design]",
+              "RelativeToolTip": "SoftwareProject\\frm_General_SelectionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T23:47:26.298Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frm_modifyOrder.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_modifyOrder.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_modifyOrder.cs",
+              "RelativeToolTip": "softwareProject\\Orders\\frm_modifyOrder.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowD8AAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:22:42.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frm_updateCustomers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Customers\\frm_updateCustomers.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Customers\\frm_updateCustomers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_updateCustomers.cs [Design]",
+              "RelativeToolTip": "softwareProject\\Customers\\frm_updateCustomers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:25:07.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frm_updateCustomers.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Customers\\frm_updateCustomers.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Customers\\frm_updateCustomers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\SoftwareProject\\Customers\\frm_updateCustomers.cs",
+              "RelativeToolTip": "SoftwareProject\\Customers\\frm_updateCustomers.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:25:08.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frm_orders_createOrder.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_orders_createOrder.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs",
+              "RelativeToolTip": "softwareProject\\Orders\\frm_orders_createOrder.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowEsAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:20:46.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frm_orders_createOrder.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Orders\\frm_orders_createOrder.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Orders\\frm_orders_createOrder.cs [Design]",
+              "RelativeToolTip": "softwareProject\\Orders\\frm_orders_createOrder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:20:45.317Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "frm_inventory_manageStock.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_manageStock.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs",
+              "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_manageStock.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBoAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:14:38.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frm_inventory_manageStock.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_inventory_manageStock.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_inventory_manageStock.cs [Design]",
+              "RelativeToolTip": "softwareProject\\Inventory\\frm_inventory_manageStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:14:37.78Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frm_addExistingStock.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_addExistingStock.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs",
+              "RelativeToolTip": "softwareProject\\Inventory\\frm_addExistingStock.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:14:20.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frm_addExistingStock.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Inventory\\frm_addExistingStock.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Inventory\\frm_addExistingStock.cs [Design]",
+              "RelativeToolTip": "softwareProject\\Inventory\\frm_addExistingStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:14:17.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frm_finances_revenueAnalysis.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
+              "RelativeToolTip": "softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:45:26.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frm_customers_addCustomers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Customers\\frm_customers_addCustomers.cs",
+              "RelativeDocumentMoniker": "softwareProject\\Customers\\frm_customers_addCustomers.cs",
+              "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Customers\\frm_customers_addCustomers.cs [Design]",
+              "RelativeToolTip": "softwareProject\\Customers\\frm_customers_addCustomers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T23:14:18.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "frm_finances_revenueAnalysis.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
+              "DocumentMoniker": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\SoftwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
               "RelativeDocumentMoniker": "softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs",
               "ToolTip": "C:\\Users\\pat2g\\Desktop\\Customer-Order-Processing-System-Project\\softwareProject\\softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs [Design]",
               "RelativeToolTip": "softwareProject\\Finance_folder\\frm_finances_revenueAnalysis.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T19:08:02.618Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-04-12T19:08:02.618Z"
             }
           ]
         }

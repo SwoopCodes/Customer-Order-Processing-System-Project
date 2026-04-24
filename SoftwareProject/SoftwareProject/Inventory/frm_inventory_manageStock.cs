@@ -93,13 +93,12 @@ namespace SoftwareProject
         private bool validateInputs()
         {
 
-            bool isValid = true;
 
             if(!itemActive)
             {
                 Input_searchQuery.BackColor = Color.OrangeRed;
                 MessageBox.Show("Must choose an item first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                isValid = false;
+                return false;
             }
             else
             {
@@ -108,13 +107,13 @@ namespace SoftwareProject
                 {
                     Input_ModelNo.BackColor = Color.OrangeRed;
                     MessageBox.Show("Model number is required.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (Input_ModelNo.Text.Length > 50)
                 {
                     Input_ModelNo.BackColor = Color.OrangeRed;
                     MessageBox.Show("Model number cannot exceed 50 characters.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
 
                 // Validate Description
@@ -122,13 +121,13 @@ namespace SoftwareProject
                 {
                     Input_Description.BackColor = Color.OrangeRed;
                     MessageBox.Show("Description is required.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (Input_Description.Text.Length > 200)
                 {
                     Input_Description.BackColor = Color.OrangeRed;
                     MessageBox.Show("Description cannot exceed 200 characters.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
 
                 // Validate Current Stock
@@ -136,13 +135,13 @@ namespace SoftwareProject
                 {
                     Input_CurrentStock.BackColor = Color.OrangeRed;
                     MessageBox.Show("Current stock must be a whole number.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (currentStock < 0)
                 {
                     Input_CurrentStock.BackColor = Color.OrangeRed;
                     MessageBox.Show("Current stock must be between 0 and 99999.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
 
                 // Validate Minimum Stock
@@ -150,13 +149,13 @@ namespace SoftwareProject
                 {
                     Input_MinStock.BackColor = Color.OrangeRed;
                     MessageBox.Show("Minimum stock must be a whole number.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (minStock < 0 || minStock > 99999)
                 {
                     Input_MinStock.BackColor = Color.OrangeRed;
                     MessageBox.Show("Minimum stock must be between 0 and 99999.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
 
                 // Validate sales price
@@ -164,13 +163,13 @@ namespace SoftwareProject
                 {
                     Input_SalePrice.BackColor = Color.OrangeRed;
                     MessageBox.Show("Sale price must be a valid number.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (salePrice < 0 || salePrice > 999999.99m)
                 {
                     Input_SalePrice.BackColor = Color.OrangeRed;
                     MessageBox.Show("Sale price must be between 0 and 999999.99", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
 
                 // Validate Cost Price
@@ -178,13 +177,13 @@ namespace SoftwareProject
                 {
                     Input_CostPrice.BackColor = Color.OrangeRed;
                     MessageBox.Show("Cost price must be a valid number.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (costPrice < 0 || costPrice > 999999.99m)
                 {
                     Input_CostPrice.BackColor = Color.OrangeRed;
                     MessageBox.Show("Cost price must be between 0 and 999999.99", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
 
                 // Validate Supplier
@@ -192,19 +191,19 @@ namespace SoftwareProject
                 {
                     Input_Supplier.BackColor = Color.OrangeRed;
                     MessageBox.Show("Supplier is required.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
                 else if (Input_Supplier.Text.Length > 100)
                 {
                     Input_Supplier.BackColor = Color.OrangeRed;
                     MessageBox.Show("Supplier name cannot exceed 100 characters.", "Validation Error");
-                    isValid = false;
+                    return false;
                 }
             }
             
             
 
-            return isValid;
+            return true;
         }
 
         private void Button_Delete_Click(object sender, EventArgs e)

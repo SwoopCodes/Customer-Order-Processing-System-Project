@@ -81,27 +81,25 @@ namespace SoftwareProject
 
         private bool ValidateCustomerInputs()
         {
-            bool isValid = true;
-
 
             // Email
             if (string.IsNullOrWhiteSpace(Input_email.Text))
             {
                 Input_email.BackColor = Color.LightPink;
                 MessageBox.Show("Email is required.");
-                isValid = false;
+                return false;
             }
             else if (Input_email.Text.Length > 50)
             {
                 Input_email.BackColor = Color.LightPink;
                 MessageBox.Show("Email max 50 characters.");
-                isValid = false;
+                return false;
             }
             else if (!Input_email.Text.Contains("@"))
             {
                 Input_email.BackColor = Color.LightPink;
                 MessageBox.Show("Enter valid email.");
-                isValid = false;
+                return false;
             }
 
             // Phone
@@ -109,13 +107,13 @@ namespace SoftwareProject
             {
                 Input_phone.BackColor = Color.LightPink;
                 MessageBox.Show("Phone is required.");
-                isValid = false;
+                return false;
             }
             else if (Input_phone.Text.Length > 10)
             {
                 Input_phone.BackColor = Color.LightPink;
                 MessageBox.Show("Phone max 10 digits.");
-                isValid = false;
+                return false;
             }
 
             // Address
@@ -123,13 +121,13 @@ namespace SoftwareProject
             {
                 Input_address.BackColor = Color.LightPink;
                 MessageBox.Show("Address is required.");
-                isValid = false;
+                return false;
             }
             else if (Input_address.Text.Length > 300)
             {
                 Input_address.BackColor = Color.LightPink;
                 MessageBox.Show("Address max 300 characters.");
-                isValid = false;
+                return false;
             }
 
             // Representative
@@ -137,16 +135,16 @@ namespace SoftwareProject
             {
                 Input_representative.BackColor = Color.LightPink;
                 MessageBox.Show("Representative is required.");
-                isValid = false;
+                return false;
             }
             else if (Input_representative.Text.Length > 50)
             {
                 Input_representative.BackColor = Color.LightPink;
                 MessageBox.Show("Representative max 50 characters.");
-                isValid = false;
+                return  false;
             }
 
-            return isValid;
+            return true;
         }
 
         private void ClearForm()

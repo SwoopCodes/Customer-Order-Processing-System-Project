@@ -40,6 +40,7 @@ namespace SoftwareProject
         //Found in viewStock form
         public static DataSet getInventory(string search_query)
         {
+            search_query = search_query.Replace("'", "");
             string query = $"SELECT * FROM inventory WHERE LOWER(inventory.description) LIKE '%{search_query.ToLower()}%'";
 
             DataSet inventorySet = Database.ExecuteMultiRowQuery(query);
@@ -49,7 +50,7 @@ namespace SoftwareProject
                 MessageBox.Show($"No items found with description {search_query}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            return Database.ExecuteMultiRowQuery(query);
+            return inventorySet;
         }
 
         //Unknown
@@ -121,6 +122,8 @@ namespace SoftwareProject
         // Found in general selection form
         public static DataSet findItemToUpdate(string item_description)
         {
+            item_description = item_description.Replace("'", "");
+
             string query = $"SELECT * FROM inventory WHERE LOWER(inventory.description) LIKE '%{item_description.ToLower()}%'";
 
             DataSet inventoryData = Database.ExecuteMultiRowQuery(query);
