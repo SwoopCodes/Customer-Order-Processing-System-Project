@@ -1,11 +1,19 @@
-﻿using Oracle.ManagedDataAccess.Client;
+﻿using System;
+using Oracle.ManagedDataAccess.Client;
 using System.Data;
 
 namespace SoftwareProject
 {
     class Database
     {
-        public const string connectionString = "Data Source = localhost/orcl; User Id = C##user1; Password = Oracle123456";
+        // Connection string (including the DB password) is read from an environment
+        // variable instead of being hard-coded in source. Set ORDER_DB_CONNECTION in
+        // the environment, e.g. in Windows:
+        //   setx ORDER_DB_CONNECTION "Data Source=localhost/orcl;User Id=C##user1;Password=YOUR_NEW_PASSWORD"
+        public static readonly string connectionString =
+            Environment.GetEnvironmentVariable("ORDER_DB_CONNECTION")
+            ?? throw new InvalidOperationException(
+                "ORDER_DB_CONNECTION environment variable must be set (Oracle connection string).");
 
         public static OracleConnection OpenConnection()
 
